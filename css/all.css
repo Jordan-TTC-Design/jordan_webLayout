@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    font-family: PingFangSC-Regular, sans-serif;
+}
+.wrap {
+    width: 1920px;
+    padding: 0 360px;
+    position: relative;
+}
+
+.col {
+    margin-bottom: 48px;
+}
+.txt-box {
+    margin-bottom: 24px;
+}
+.box-title {
+    border-bottom: 1px solid #000;
+    margin-bottom: 16px;
+display: flex;
+align-items: center;
+}
+.name{
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+.box-title h3,
+.skill h3 {
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.box-title h4,
+.skill span {
+    font-size: 24px;
+    line-height: 32px;
+    color: #a00404;
+    margin-left: 16px;
+    font-weight: 500;
+}
+.txt {
+    display: flex;
+    
+}
+.dot {
+    width: 16px;
+    height: 16px;
+    margin: 8px 16px;
+    border-radius: 50%;
+    background-color: #96a9c4;
+}
+.txt-box ul {
+    position: relative;
+}
+.txt-box li,
+.skill li ,
+.footer li{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    font-weight: 100;
+}
+.bg{
+    background-color: #96A9C4;
+    height: 360px;
+    position: absolute;
+    top:70px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.skill {
+    width: 1200px;
+    padding: 24px 102px;
+    background-color: #415165;
+    margin-bottom: 72px;
+}
+.footer .box-title,.skill .box-title{
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill ul {
+    margin: 0 381px;
+    margin-bottom: 32px;
+    padding-left: 24px;
+    border-left: 1px solid white;
+}
+.skill .box-title h3,
+.skill .box-title h4,
+.footer .box-title h3,
+.footer .box-title h4,
+.skill li,.footer li {
+    color: white;
+}
+.skill li{
+    margin-bottom: 16px;
+}
+
+img {
+    width: 324px;
+    height: 324px;
+}
+h1{
+    font-size: 80px;
+    line-height: 90px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #000;
+}
+.experience{
+    margin-bottom: 48px;
+}
+.experience .txt{
+    border-left: 1px solid #96A9C4;
+    padding-left: 24px;
+    margin-left: 24px;
+}
+.experience li{
+    font-size: 24px;
+    font-weight: 600;
+}
+.experience li h5{
+    margin-bottom: 8px;
+}
+.experience li img{
+    display: block;
+    width: 89.5px;
+    height: 66.85px;
+margin-bottom: 8px;
+}
+.experience li p{
+    font-weight: 100;
+padding-bottom: 8px;}
+.footer{
+    background-color: #415165;
+    padding: 24px 360px ;
+text-align: center;
+}
+.social-media img{
+    width: 48px;
+    height: 48px;
+    margin-left: 24px;
+}
+
+.social-media img:nth-child(1){
+    margin-left: 0;
+}
