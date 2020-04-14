@@ -17,25 +17,22 @@
 .inner-box {
     margin-bottom: 72px;
 }
-.box-title {
-    border-bottom: 1px solid #000;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-}
-.box-title h3 {
+.title {
     font-size: 32px;
     line-height: 45px;
     font-weight: 600;
-    margin-bottom: 8px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
 }
-.box-title h4 {
+.title span {
     font-size: 24px;
     line-height: 32px;
     color: #a00404;
     margin-left: 16px;
     font-weight: 500;
 }
+
 .flex {
     display: flex;
 }
@@ -76,23 +73,45 @@
 }
 
 /* 以下css：學歷 */
-.edu li {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 24px;
-    font-weight: 100;
+
+.time {
+    position: relative;
+    padding-left: 48px;
 }
-.edu ul {
+.time li {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 36px;
+    font-weight: 100;
     position: relative;
 }
-.dot-line {
+.time li:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #96a9c4;
+    position: absolute;
+    top: 0.35em;
+    left: -32px;
+}
+.time::before {
+    content: '';
+    position: absolute;
+    border-left: 1px solid #96a9c4;
+    top: 10%;
+    /* bottom: 0; */
+    height: 80%;
+    left: 24px;
+}
+/* .dot-line {
     display: block;
     border-left: 1px solid #96a9c4;
     height: 80%;
     top: 10%;
     left: 24px;
     position: absolute;
-}
+} */
 
 /* 以下css：技能 */
 .skill {
@@ -101,13 +120,11 @@
     background-color: #415165;
     margin-bottom: 72px;
 }
-.skill .box-title,
-.footer .box-title {
+.skill .title,
+.footer .title {
     border-bottom: 1px solid white;
     margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 .skill ul {
     margin: 0 381px;
@@ -116,10 +133,10 @@
     border-left: 1px solid white;
 }
 
-.skill .box-title h3,
-.skill .box-title h4,
-.footer .box-title h3,
-.footer .box-title h4 {
+.skill .title,
+.skill .title span,
+.footer .title,
+.footer .title span {
     color: white;
 }
 .exp li,
@@ -144,7 +161,7 @@
 }
 
 /* 以下css：工作經驗 */
-.exp .box-title {
+.exp .title {
     margin-bottom: 22px;
 }
 
