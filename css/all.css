@@ -5,11 +5,16 @@
 }
 /* 以下css：共用區塊 */
 .wrap {
-    width: 1920px;
-    padding: 0 360px;
+    width: 100%;
     position: relative;
 }
-.col {
+.container {
+    max-width: 1920px;
+    padding: 0 360px;
+    position: relative;
+    margin: 0 auto;
+}
+.inner-box {
     margin-bottom: 72px;
 }
 .box-title {
@@ -39,7 +44,7 @@
 }
 
 /* 以下css：姓名區塊 */
-.box-person {
+.person {
     margin-bottom: 48px;
 }
 .name {
@@ -56,7 +61,7 @@
 }
 
 /* 以下css：基本資料 */
-.box-intro li {
+.intro li {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 24px;
@@ -71,13 +76,13 @@
 }
 
 /* 以下css：學歷 */
-.box-edu li {
+.edu li {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 24px;
     font-weight: 100;
 }
-.box-edu ul {
+.edu ul {
     position: relative;
 }
 .dot-line {
@@ -90,13 +95,13 @@
 }
 
 /* 以下css：技能 */
-.box-skill {
+.skill {
     width: 1200px;
     padding: 24px 102px;
     background-color: #415165;
     margin-bottom: 72px;
 }
-.box-skill .box-title,
+.skill .box-title,
 .footer .box-title {
     border-bottom: 1px solid white;
     margin-bottom: 40px;
@@ -104,27 +109,27 @@
     justify-content: center;
     align-items: center;
 }
-.box-skill ul {
+.skill ul {
     margin: 0 381px;
     margin-bottom: 32px;
     padding-left: 24px;
     border-left: 1px solid white;
 }
 
-.box-skill .box-title h3,
-.box-skill .box-title h4,
+.skill .box-title h3,
+.skill .box-title h4,
 .footer .box-title h3,
 .footer .box-title h4 {
     color: white;
 }
-.box-exp li,
-.box-skill li,
+.exp li,
+.skill li,
 .footer li {
     font-size: 24px;
     line-height: 32px;
     font-weight: 100;
 }
-.box-skill li {
+.skill li {
     margin-bottom: 16px;
     color: white;
 }
@@ -139,36 +144,36 @@
 }
 
 /* 以下css：工作經驗 */
-.box-exp .box-title {
+.exp .box-title {
     margin-bottom: 22px;
 }
 
-.box-exp ul {
+.exp ul {
     border-left: 1px solid #96a9c4;
     padding-left: 24.5px;
     margin-left: 24.5px;
 }
-.box-exp li {
+.exp li {
     font-weight: 600;
     margin-bottom: 32px;
 }
-.box-exp li h5 {
+.exp li h5 {
     margin-bottom: 8px;
 }
-.box-exp li img {
+.exp li img {
     display: block;
     width: 89.5px;
     height: 66.85px;
     margin-bottom: 8px;
 }
-.box-exp li p {
+.exp li p {
     font-weight: 100;
 }
 
 /* 以下css：footer */
 .footer {
     background-color: #415165;
-    padding: 24px 360px;
+    padding: 24px 0;
     text-align: center;
 }
 .footer li {
