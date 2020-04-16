@@ -14,7 +14,7 @@
     position: relative;
     margin: 0 auto;
 }
-.inner-box {
+.mb72 {
     margin-bottom: 72px;
 }
 .title {
@@ -95,7 +95,7 @@
     top: 0.35em;
     left: -32px;
 }
-.time::before {
+.time:before {
     content: '';
     position: absolute;
     border-left: 1px solid #96a9c4;
