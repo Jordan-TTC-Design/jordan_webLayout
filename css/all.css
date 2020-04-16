@@ -85,17 +85,17 @@
     font-weight: 100;
     position: relative;
 }
-.time li:before {
+.time li::before {
     content: '';
     width: 16px;
     height: 16px;
     border-radius: 50%;
     background-color: #96a9c4;
     position: absolute;
-    top: 0.35em;
+    top: 6px;
     left: -32px;
 }
-.time:before {
+.time::after {
     content: '';
     position: absolute;
     border-left: 1px solid #96a9c4;
