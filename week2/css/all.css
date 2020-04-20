@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 以下css：共用區塊 */
+.wrap {
+    margin: 0 auto;
+    max-width: 1920;
+}
+.flex {
+    display: flex;
+}
+.lh1_6 {
+    line-height: 1.6;
+}
+.italic {
+    font-style: italic;
+}
+
+/* .container{
+    padding-left: 755px;
+    padding-right: 754px;
+} */
+/* 以下css：Banner */
+.banner {
+    background-image: url(../img/banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 960px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.txtBox {
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    flex-direction: column;
+    align-items: center;
+}
+.txtBox h2 {
+    font-size: 80px;
+    line-height: 94px;
+    margin-bottom: 32px;
+    font-weight: 900;
+}
+.txtBox h2 span {
+    font-size: 24px;
+    line-height: 42px;
+}
+.txtBox p {
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 64px;
+}
+.txtBox .title p{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.txtBox .social {
+    justify-content: center;
+}
+.txtBox .social li img {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.txtBox .social li:not(:last-child) {
+    margin-right: 16px;
+}
+/* 以下css：About*/
+
+.about {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+}
+.about .txt {
+    padding-bottom: 24px;
+    position: relative;
+}
+.about .txt:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    /* width: 100%; */
+    left: 5%;
+    right: 5%;
+    background: #000;
+    height: 1px;
+}
+.about h2 {
+    font-size: 64px;
+    line-height: 75px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.about  img {
+    width: 384px;
+    height: 384px;
+    margin-bottom: 24px;
+}
+.about .txt p {
+    font-size: 24px;
+    line-height: 42px;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.about-exp {
+    padding-top: 34px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.about-exp li {
+    font-size: 24px;
+    line-height: 42px;
+    font-style: italic;
+    position: relative;
+    font-weight: 900;
+    margin-bottom: 32px;
+    padding-left: 38px;
+}
+
+.about-exp li:before{
+content: '';
+width: 22px;
+height: 22px;
+position: absolute;
+background-color: #891818;
+border-radius: 50%;
+top: 8px;
+left: 0;
+}
+/* 以下css：myBrand*/
+.myBrand {
+    font-style: italic;
+    font-weight: 400;
+    background-color: #000;
+    color: white;
+    padding-top: 64px;
+    text-align: center;
+    padding-bottom: 120px;
+}
+.myBrand h2 {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 16px;
+}
+.myBrand h4 {
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 32px;
+}
+.myBrand p {
+    font-size: 20px;
+    line-height: 42px;
+    margin-bottom: 42px;
+}
+.myBrand-pic{
+    flex-direction: column;
+    /* 不知道為何如果寫這裡mb120就會跑到下面一個區塊去，一定要在父層寫一個pb才能正常 */
+    /* margin-bottom: 120px; */
+}
+.Brandlist{
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: center;
+}
+
+.myBrand-pic .Brandlist img:not(:first-child) {
+    margin-left: 24px;
+}
+/* 以下css：otherWorks*/
+.otherWorks {
+    /* border-bottom: 1px solid blue; */
+    padding-top: 64px;
+    position: relative;
+    padding-bottom: 104px;
+}
+.otherWorks h2 {
+    font-size: 64px;
+    line-height: 72px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.otherWorks > p {
+    font-size: 20px;
+    line-height: 42px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.otherWorksBg{
+    background-image: url(../img/photo-1561291386-5be50364cfb5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 20%;
+    z-index: -1;
+}
+.otherWorks-pic{
+    flex-direction: column;
+    align-items: center;
+}
+.WorksList {
+    margin-bottom: 56px;
+}
+.worksCard {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 42px;
+}
+.worksCard img {
+    margin-bottom: 16px;
+}
+.otherWorks-pic .WorksList .worksCard:not(:first-child) {
+    margin-left: 24px;
+}
+
+/* 以下css：footer*/
+
+.footer{
+    background-color: #000;
+    padding: 64px 0;
+}
+.footer li{
+    color: white;
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+.footer li p{
+font-size: 24px;
+line-height: 36px;
+
+}
+.footer li h2{
+font-size: 64px;
+line-height: 72px;
+}
