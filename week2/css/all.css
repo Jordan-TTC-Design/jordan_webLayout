@@ -38,42 +38,42 @@ body {
     justify-content: center;
     align-items: center;
 }
-.txtBox {
+.banner-txtBox {
     color: white;
     font-weight: 700;
     font-style: italic;
     flex-direction: column;
     align-items: center;
 }
-.txtBox h2 {
+.banner-txtBox h2 {
     font-size: 80px;
     line-height: 94px;
     margin-bottom: 32px;
     font-weight: 900;
 }
-.txtBox h2 span {
+.banner-txtBox h2 span {
     font-size: 24px;
     line-height: 42px;
 }
-.txtBox p {
+.banner-txtBox p {
     font-size: 24px;
     line-height: 42px;
     margin-bottom: 64px;
 }
-.txtBox .title p{
+.banner-txtBox .title p{
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 700;
 }
-.txtBox .social {
+.banner-txtBox .social {
     justify-content: center;
 }
-.txtBox .social li img {
+.banner-txtBox .social li img {
     width: 60px;
     height: 60px;
     display: block;
 }
-.txtBox .social li:not(:last-child) {
+.banner-txtBox .social li:not(:last-child) {
     margin-right: 16px;
 }
 /* 以下css：About*/
@@ -83,11 +83,12 @@ body {
     align-items: center;
     padding-top: 64px;
 }
-.about .txt {
+.about .about-info {
     padding-bottom: 24px;
     position: relative;
+    margin-bottom: 34px;
 }
-.about .txt:after {
+.about .about-info:after {
     position: absolute;
     content: '';
     bottom: 0;
@@ -109,7 +110,7 @@ body {
     height: 384px;
     margin-bottom: 24px;
 }
-.about .txt p {
+.about .about-info p {
     font-size: 24px;
     line-height: 42px;
     font-style: italic;
@@ -118,7 +119,6 @@ body {
     text-align: center;
 }
 .about-exp {
-    padding-top: 34px;
     margin-bottom: 24px;
     display: flex;
     flex-direction: column;
