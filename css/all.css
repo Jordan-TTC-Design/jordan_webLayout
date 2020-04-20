@@ -95,15 +95,22 @@
     top: 6px;
     left: -32px;
 }
-.time::after {
+.time:after {
     content: '';
     position: absolute;
+    /* display: block; */
+    /* width: 1px; */
+    /* background-color: black; */
     border-left: 1px solid #96a9c4;
-    top: 10%;
-    /* bottom: 0; */
-    height: 80%;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    top: 8%;
+    bottom: 10%;
+    /* height: 1%; */
     left: 24px;
+    transform: translateX(-100%);
 }
+
 /* .dot-line {
     display: block;
     border-left: 1px solid #96a9c4;
