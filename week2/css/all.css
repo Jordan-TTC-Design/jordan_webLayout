@@ -11,7 +11,6 @@ body {
 /* 以下css：共用區塊 */
 .wrap {
     margin: 0 auto;
-    max-width: 1920;
 }
 .flex {
     display: flex;
@@ -22,11 +21,9 @@ body {
 .italic {
     font-style: italic;
 }
-
-/* .container{
-    padding-left: 755px;
-    padding-right: 754px;
-} */
+img {
+    display: block;
+}
 /* 以下css：Banner */
 .banner {
     background-image: url(../img/banner.png);
@@ -42,8 +39,6 @@ body {
     color: white;
     font-weight: 700;
     font-style: italic;
-    flex-direction: column;
-    align-items: center;
 }
 .banner-txtBox h2 {
     font-size: 80px;
@@ -55,18 +50,20 @@ body {
     font-size: 24px;
     line-height: 42px;
 }
-.banner-txtBox p {
-    font-size: 24px;
-    line-height: 42px;
-    margin-bottom: 64px;
-}
-.banner-txtBox .title p{
+.banner-txtBox .title p {
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 700;
 }
+.banner-txtBox > p {
+    margin-right: 12px;
+    margin-left: 12px;
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 64px;
+}
 .banner-txtBox .social {
-    justify-content: center;
+    margin: 0 12px;
 }
 .banner-txtBox .social li img {
     width: 60px;
@@ -76,6 +73,7 @@ body {
 .banner-txtBox .social li:not(:last-child) {
     margin-right: 16px;
 }
+
 /* 以下css：About*/
 
 .about {
@@ -83,32 +81,36 @@ body {
     align-items: center;
     padding-top: 64px;
 }
-.about .about-info {
-    padding-bottom: 24px;
-    position: relative;
-    margin-bottom: 34px;
-}
-.about .about-info:after {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    /* width: 100%; */
-    left: 5%;
-    right: 5%;
-    background: #000;
-    height: 1px;
-}
 .about h2 {
     font-size: 64px;
     line-height: 75px;
     font-style: italic;
     font-weight: 400;
     margin-bottom: 40px;
+    text-align: center;
 }
-.about  img {
+.about .about-info {
+    padding-bottom: 24px;
+    position: relative;
+    margin-bottom: 34px;
+    /* width: 100%; */
+}
+.about .about-info:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 384px;
+    background: #000;
+    height: 1px;
+    /* 偽元素絕對定位置中方式 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-info img {
     width: 384px;
     height: 384px;
-    margin-bottom: 24px;
+    margin: 0 auto 24px;
 }
 .about .about-info p {
     font-size: 24px;
@@ -123,7 +125,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .about-exp li {
     font-size: 24px;
@@ -135,15 +136,15 @@ body {
     padding-left: 38px;
 }
 
-.about-exp li:before{
-content: '';
-width: 22px;
-height: 22px;
-position: absolute;
-background-color: #891818;
-border-radius: 50%;
-top: 8px;
-left: 0;
+.about-exp li:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background-color: #891818;
+    border-radius: 50%;
+    top: 8px;
+    left: 0;
 }
 /* 以下css：myBrand*/
 .myBrand {
@@ -153,7 +154,7 @@ left: 0;
     color: white;
     padding-top: 64px;
     text-align: center;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
 }
 .myBrand h2 {
     font-size: 64px;
@@ -170,18 +171,18 @@ left: 0;
     line-height: 42px;
     margin-bottom: 42px;
 }
-.myBrand-pic{
-    flex-direction: column;
+.myBrand-pic {
+    display: inline-block;
     /* 不知道為何如果寫這裡mb120就會跑到下面一個區塊去，一定要在父層寫一個pb才能正常 */
-    /* margin-bottom: 120px; */
+    margin-bottom: 120px;
 }
-.Brandlist{
-    margin-bottom: 40px;
-    width: 100%;
+.brandList {
+    margin: 0 auto 40px;
+    /* width: 100%; */
     justify-content: center;
 }
 
-.myBrand-pic .Brandlist img:not(:first-child) {
+.myBrand-pic .brandList img:not(:first-child) {
     margin-left: 24px;
 }
 /* 以下css：otherWorks*/
@@ -207,7 +208,7 @@ left: 0;
     text-align: center;
     margin-bottom: 48px;
 }
-.otherWorksBg{
+.otherWorksBg {
     background-image: url(../img/photo-1561291386-5be50364cfb5.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -218,7 +219,7 @@ left: 0;
     top: 20%;
     z-index: -1;
 }
-.otherWorks-pic{
+.otherWorks-pic {
     flex-direction: column;
     align-items: center;
 }
@@ -240,23 +241,21 @@ left: 0;
 
 /* 以下css：footer*/
 
-.footer{
+.footer {
     background-color: #000;
     padding: 64px 0;
 }
-.footer li{
+.footer h2,
+.footer li {
     color: white;
     text-align: center;
     margin-bottom: 16px;
     font-weight: 400;
     font-style: italic;
+    font-size: 24px;
+    line-height: 36px;
 }
-.footer li p{
-font-size: 24px;
-line-height: 36px;
-
-}
-.footer li h2{
-font-size: 64px;
-line-height: 72px;
+.footer h2 {
+    font-size: 64px;
+    line-height: 72px;
 }

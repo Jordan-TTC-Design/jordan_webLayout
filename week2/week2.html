@@ -12,11 +12,12 @@
     <body>
         <div class="wrap">
             <div class="banner flex">
-                <div class="banner-txtBox flex">
+                <div class="banner-txtBox">
                     <div class="title">
                         <p>Here's</p>
                         <h2>JOANNE</h2>
                     </div>
+                    <!-- 在想下面p和ul要不要多包一個div，最後沒有包但是就要分別下ml&mr，但想包div又不知道要想什麼名字 -->
                     <p>Founder of ‘’XXXD Official’’ <br />& Graphic Designer</p>
                     <ul class="social flex">
                         <li>
@@ -34,27 +35,29 @@
                     </ul>
                 </div>
             </div>
-            <div class="about flex">
+            <div class="about">
                 <h2>About</h2>
-                <img src="./img/photo.png" alt="" />
-                <div class="about-info">
-                    <p>Joanne Chen</p>
-                    <p>1997/10/10</p>
-                    <p class="lh1_6">National Hex School Normal University <br />Department of Visual Design</p>
-                </div>
+                <ul class="about-info">
+                    <li><img src="./img/photo.png" alt="" /></li>
+                    <li><p>Joanne Chen</p></li>
+                    <li><p>1997/10/10</p></li>
+                    <li>
+                        <p class="lh1_6">National Hex School Normal University <br />Department of Visual Design</p>
+                    </li>
+                </ul>
                 <ul class="about-exp">
-                    <li><p>Founder of ‘’XXXD Official’’</p></li>
-                    <li><p>Graphic Designer</p></li>
-                    <li><p>Graphic Intern of Hex School</p></li>
+                    <li>Founder of ‘’XXXD Official’’</li>
+                    <li>Graphic Designer</li>
+                    <li>Graphic Intern of Hex School</li>
                 </ul>
             </div>
             <div class="myBrand">
                 <h2>My Brand ‘’XXXD’’</h2>
                 <h4>Just Keep XXXD Everyday</h4>
                 <p>2020 年創立的個人服飾品牌 <br />引領叛逆少年開啟與社會對話的窗口 <br />主打概念潮流T-Shirt</p>
-                <div class="myBrand-pic flex">
-                    <div class="Brandlist"><img src="./img/brand_img1.png" alt="" /></div>
-                    <div class="Brandlist flex">
+                <div class="myBrand-pic">
+                    <div class="brandList flex"><img src="./img/brand_img1.png" alt="" /></div>
+                    <div class="brandList flex">
                         <img src="./img/brand_img2.png" alt="" />
                         <img src="./img/brand_img3.png" alt="" />
                     </div>
@@ -112,10 +115,10 @@
                 </ul>
             </div>
             <div class="footer">
+                <h2>Contact</h2>
                 <ul>
-                    <li><h2>Contact</h2></li>
-                    <li><p>Mail：xxxd@hexschool.com</p></li>
-                    <li><p>Phone Number：0910123456</p></li>
+                    <li>Mail：xxxd@hexschool.com</li>
+                    <li>Phone Number：0910123456</li>
                 </ul>
             </div>
         </div>
