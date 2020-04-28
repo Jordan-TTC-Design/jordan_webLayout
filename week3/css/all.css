@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-body{
+body {
     font-size: 16px;
     line-height: 1.5;
 }
@@ -32,8 +32,6 @@ h4 {
 h5 {
     font-size: 24px;
 }
-
-
 
 /* 以下：Header style */
 header {
@@ -58,7 +56,7 @@ header {
 
 /* 以下：首頁-Banner */
 .homeBanner {
-    background-image: url(/week3/img/68@2x.png);
+    background-image: url(./img/68@2x.png);
     background-size: cover;
     background-position: center center;
     height: 840px;
@@ -123,15 +121,15 @@ h4 {
 
 .glasses h3 {
     display: flex;
-    color: #AA0601;
+    color: #aa0601;
     font-weight: 900;
     text-transform: uppercase;
     align-items: center;
     margin-left: 24px;
     font-style: italic;
 }
-.glasses h3 img{
-margin-right: 8px;
+.glasses h3 img {
+    margin-right: 8px;
 }
 .glasses:nth-child(even) {
     flex-direction: row-reverse;
