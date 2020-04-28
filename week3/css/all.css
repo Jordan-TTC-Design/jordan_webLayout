@@ -1,0 +1,145 @@
+/* 以下：全域style */
+.flex {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+}
+h2 {
+    font-size: 64px;
+}
+h3 {
+    font-size: 48px;
+}
+h4 {
+    font-size: 36px;
+}
+h5 {
+    font-size: 24px;
+}
+
+
+
+/* 以下：Header style */
+header {
+    background-color: #aa0601;
+    justify-content: space-between;
+    padding: 30px 88px;
+    align-items: center;
+}
+.headerMenu {
+    color: white;
+    font-size: 20px;
+}
+.headerMenu li:not(:first-child) {
+    margin-left: 64px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 64px 0 80px;
+}
+
+/* 以下：首頁-Banner */
+.homeBanner {
+    background-image: url(/week3/img/68@2x.png);
+    background-size: cover;
+    background-position: center center;
+    height: 840px;
+}
+.homeBanner .container {
+    padding: 0;
+    align-items: flex-end;
+    justify-content: center;
+}
+.homeBanner h2,
+h4 {
+    font-weight: 500;
+    color: #650300;
+}
+/* 以下：首頁-About */
+.homeAboutUs {
+    background-color: #aa06010d;
+}
+.homeAboutUs .container {
+    align-items: center;
+}
+.homeAboutUs h3 {
+    color: #650300;
+    font-weight: 600;
+    margin-bottom: 44px;
+}
+.homeAbout-list li {
+    align-items: center;
+    padding: 16px 37px 0;
+    width: 25%;
+}
+.homeAbout-list li:not(:first-child) {
+    margin-left: 24px;
+}
+.homeAbout-list .icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.homeAbout-list .icon img {
+    width: 100px;
+    height: auto;
+}
+.homeAbout-list h5 {
+    color: #650300;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.homeAbout-list p {
+    /* font-size: 16px; */
+    font-weight: 300;
+}
+
+/* 以下：首頁-Products */
+.glasses {
+    margin-bottom: 32px;
+}
+
+.glasses h3 {
+    display: flex;
+    color: #AA0601;
+    font-weight: 900;
+    text-transform: uppercase;
+    align-items: center;
+    margin-left: 24px;
+    font-style: italic;
+}
+.glasses h3 img{
+margin-right: 8px;
+}
+.glasses:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.glasses:nth-child(even) h3 {
+    margin-right: 24px;
+    margin-left: 0;
+}
+.glasses:nth-child(:last-child) {
+    margin-bottom: 0;
+}
