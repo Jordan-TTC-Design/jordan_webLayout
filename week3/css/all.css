@@ -1,6 +1,7 @@
 /* 以下：全域style */
 * {
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 body {
     font-size: 16px;
@@ -41,6 +42,9 @@ a {
     text-align: center;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
 section {
     width: 100%;
 }
@@ -67,6 +71,46 @@ section {
     margin-bottom: 60px;
     font-weight: 800;
 }
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 64px 50px 80px;
+}
+.container-lg {
+    max-width: 1640px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 40px 48px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        padding: 24px 12px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+}
 /* 以下：Header style */
 header {
     background-color: #aa0601;
@@ -81,19 +125,69 @@ header {
 .headerMenu li:not(:first-child) {
     margin-left: 64px;
 }
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    padding: 64px 0 80px;
-}
+
 .relative {
     position: relative;
 }
 .uppercase {
     text-transform: uppercase;
 }
+img.menu {
+    display: none;
+}
+.hamMenu {
+    display: none;
+}
 
+@media (max-width: 992px) {
+    header {
+        padding: 30px 48px;
+    }
+    .headerMenu li:not(:first-child) {
+        margin-left: 40px;
+    }
+}
+@media (max-width: 767px) {
+    header {
+        justify-content: center;
+        position: relative;
+        padding: 0;
+        align-items: center;
+        height: 50px;
+        flex-direction: column;
+    }
+    header .logo img {
+        height: 30px;
+    }
+    .headerMenu {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        height: 0;
+        display: flex;
+        overflow: hidden;
+        transition: all 0.8s;
+    }
+    .headerMenu li:not(:first-child) {
+        margin-left: 0px;
+    }
+    .headerMenu li {
+        border-top: 1px solid #fff;
+        text-align: center;
+        padding: 16px 0;
+        background-color: #aa0601;
+    }
+    .headerMenu.menuActive {
+        height: 300px;
+    }
+    .hamMenu {
+        display: block;
+        position: absolute;
+        top: 13px;
+        left: 16px;
+    }
+}
 /* 以下：首頁-Banner */
 .homeBanner {
     background-image: url(../img/68.png);
@@ -102,7 +196,7 @@ header {
     height: 840px;
 }
 .homeBanner .container {
-    padding: 0;
+    padding: 0 50px;
     align-items: flex-end;
     justify-content: center;
 }
@@ -110,6 +204,11 @@ header {
 h4 {
     font-weight: 500;
     color: #650300;
+}
+@media (max-width: 767px) {
+    .homeBanner {
+        height: 394px;
+    }
 }
 /* 以下：首頁-About */
 .homeAboutUs {
@@ -123,14 +222,19 @@ h4 {
     font-weight: 600;
     margin-bottom: 44px;
 }
+.homeAbout-list {
+    justify-content: space-between;
+}
+
 .homeAbout-list li {
     align-items: center;
     padding: 16px 37px 0;
-    width: 25%;
+    width: calc(25% - 18px);
 }
-.homeAbout-list li:not(:first-child) {
+/* 在想不要用推的，在li扣間距 */
+/* .homeAbout-list li:not(:first-child) {
     margin-left: 24px;
-}
+} */
 .homeAbout-list .icon {
     width: 100px;
     height: 100px;
@@ -140,7 +244,7 @@ h4 {
     margin-bottom: 40px;
 }
 .homeAbout-list .icon img {
-    width: 100px;
+    width: 100%;
     height: auto;
 }
 .homeAbout-list h5 {
@@ -153,15 +257,64 @@ h4 {
     /* font-size: 16px; */
     font-weight: 300;
 }
+@media (max-width: 992px) {
+    .homeAbout-list {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .homeAbout-list .icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 16px;
+    }
+    .homeAbout-list li {
+        align-items: center;
+        padding: 20px 50px 8px;
+        width: calc(50% - 12px);
+    }
+    .homeAbout-list h5 {
+        margin-bottom: 8px;
+    }
+    .homeAbout-list li:not(:first-child) {
+        margin-left: 0;
+    }
+    /* 這裡為了要中間間隔12但是好爛寫法 */
+    .homeAbout-list li:nth-child(1),
+    .homeAbout-list li:nth-child(2) {
+        margin-bottom: 12px;
+    }
+    .homeAbout-list h5 {
+        margin-bottom: 8px;
+    }
+}
 
+@media (max-width: 767px) {
+    .homeAboutUs .container {
+        padding-top: 32px;
+    }
+    .homeAbout-list li {
+        align-items: center;
+        padding: 20px 50px 8px;
+        width: 100%;
+    }
+    .homeAbout-list li:nth-child(1),
+    .homeAbout-list li:nth-child(2) {
+        margin-bottom: 0px;
+    }
+}
 /* 以下：首頁-Products */
 .homeProducts .title {
     color: #aa0601;
 }
 .glasses {
     margin-bottom: 32px;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
 }
 .glasses h3 {
+    /* 老師我想問這裡的width用這種寫法好？還是用double A+那裡那種 */
+    width: calc(40%-24px);
+    /* flex-shrink: 1; */
     display: flex;
     color: #aa0601;
     font-weight: 900;
@@ -180,9 +333,77 @@ h4 {
 .glasses:nth-child(:last-child) {
     margin-bottom: 0;
 }
-.glasses img {
-    max-width: 792px;
+
+.glasses-pic {
+    flex-shrink: 1;
     width: 60%;
+    height: 320px;
+    background-position: center center;
+    background-size: cover;
+}
+.glassesP-optical {
+    background-image: url(../img/8.png);
+}
+.glassesP-sunGlasses {
+    background-image: url(../img/15.png);
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+.glassesP-sunGlasses:hover {
+    filter: grayscale(0%);
+}
+.glassesP-functional {
+    background-image: url(../img/28.png);
+}
+@media (max-width: 992px) {
+    .homeProducts .title {
+        margin-bottom: 32px;
+    }
+    .glasses {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .glasses:nth-child(even) {
+        flex-direction: row;
+    }
+    .glasses h3 {
+        display: flex;
+        /* width: 40%; */
+        margin: 0;
+        font-size: 28px;
+        justify-content: center;
+        align-items: center;
+    }
+    .glasses img {
+        width: 32px;
+        height: 32px;
+    }
+    .glasses:nth-child(even) h3 {
+        margin: 0;
+    }
+    .glasses-pic {
+        width: 60%;
+        height: 168px;
+    }
+}
+@media (max-width: 767px) {
+    .homeProducts .title {
+        margin-bottom: 16px;
+    }
+    .glasses {
+        position: relative;
+    }
+    .glasses-pic {
+        width: 100%;
+    }
+    .glasses h3 {
+        position: absolute;
+        color: white;
+        /* 這裡怪怪 */
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+    }
 }
 /* 以下：首頁-聯名眼鏡 */
 .homeCrossPds {
@@ -194,34 +415,59 @@ h4 {
 .homeCrossPds .container {
     padding-bottom: 479px;
 }
-.homeCrossPds img {
-    max-width: 100%;
-}
 .homeCrossPds > h3 {
     margin-bottom: 80px;
     color: white;
     font-weight: 700;
     text-align: center;
 }
-.homeCrossPds a {
-    font-size: 72px;
-    font-weight: 800;
-    color: #aa0601;
-    text-decoration: none;
+.crossPds-Rlist {
+    width: 60%;
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.pic-blackmen {
+    width: 40%;
+    height: 840px;
+    background-image: url(../img/zac-wolff-2qfYizn95pk-unsplash.png);
+}
+.pic-whiteLady {
+    width: 100%;
+    height: 454px;
+    background-image: url(../img/61.png);
+}
+.pic-graymen {
+    width: 20%;
+    height: 378px;
+    background-image: url(../img/24.png);
+}
+.crossPds-list-innerBox .relative {
+    width: 80%;
+}
+.crossPds-list-innerBox .relative > .flex {
+    width: 100%;
+    /* 不知道為什麼不能end */
+    justify-content: center;
+}
+.pic-graywomen {
+    width: 100%;
+    height: 203px;
+    background-image: url(../img/34.png);
 }
 
-.crossPds-list {
-    width: 100%;
-    max-width: 1540px;
-    margin: 0 auto;
+.phone-only {
+    display: none;
 }
+
 .moreBtn {
-    position: absolute;
-    background: linear-gradient(30deg, #fed603, #ffd707);
+    /* position: absolute; */
+    background-image: url(../img/5.png);
     padding: 20px 0 20px 30px;
-    /* margin-right: -84px; */
-    bottom: 0;
-    right: 84px;
+    /* bottom: 0; */
+    /* right: 84px; */
 }
 .moreBtn a {
     display: flex;
@@ -229,6 +475,10 @@ h4 {
     margin-right: -84px;
     padding: 5px 19px 5px 32px;
     position: relative;
+    font-size: 72px;
+    font-weight: 800;
+    color: #aa0601;
+    text-decoration: none;
 }
 .moreBtn a::before {
     content: 'MORE';
@@ -256,10 +506,7 @@ h4 {
     transform: translateY(-170px);
     opacity: 0.5;
 }
-.crossPds-series-list {
-    width: 100%;
-    /* flex-wrap: wrap; */
-}
+
 .crossPds-series {
     width: 50%;
     height: 600px;
@@ -272,7 +519,7 @@ h4 {
     background-image: url(../img/14.png);
 }
 .youth-pic {
-    background-image: url(../img/36.png);
+    background-image: url(../img/39.png);
 }
 .crossPds-series:first-child {
     margin-right: 30px;
@@ -280,16 +527,139 @@ h4 {
 .crossPds-series a {
     position: absolute;
     display: flex;
+    font-size: 72px;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    font-size: 72px;
+    font-weight: 800;
+    color: #aa0601;
+    text-decoration: none;
     background-color: #fff;
     justify-content: center;
     align-items: center;
     opacity: 0.3;
 }
+@media (max-width: 992px) {
+    .homeCrossPds {
+        padding-top: 32px;
+    }
+    .homeCrossPds .title {
+        margin-bottom: 32px;
+    }
+    /* 老師請問，改mr-1是這樣改嗎？ */
+    .crossPds-list .mr-1 {
+        margin-right: 3px;
+    }
+    .crossPds-list .mb-1 {
+        margin-bottom: 3px;
+    }
+    .moreBtn {
+        padding: 5px 0 5px 20px;
+        right: 40px;
+    }
+    .moreBtn a {
+        font-size: 40px;
+        padding: 3px 10px 3px 19px;
+        margin-right: -40px;
+    }
+    .moreBtn img {
+        width: 27px;
+    }
+    .crossPds-series {
+        height: 280px;
+    }
+    .crossPds-series a {
+        font-size: 32px;
+    }
+    .pic-blackmen {
+        width: 40%;
+        height: 367px;
+        background-image: url(../img/zac-wolff-2qfYizn95pk-unsplash.png);
+    }
+    .pic-whiteLady {
+        width: 100%;
+        height: 198px;
+        background-image: url(../img/61.png);
+    }
+    .pic-graymen {
+        width: 20%;
+        height: 166px;
+        background-image: url(../img/24.png);
+    }
+    .crossPds-list-innerBox .relative {
+        width: 80%;
+    }
+    .pic-graywomen {
+        width: 100%;
+        height: 89px;
+        background-image: url(../img/34.png);
+    }
+}
+@media (max-width: 767px) {
+    .homeCrossPds .container {
+        padding-bottom: 390px;
+    }
+    .homeCrossPds .title {
+        margin-bottom: 16px;
+    }
+    .phone-only {
+        display: block;
+        width: 10%;
+    }
+    .crossPds-series-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .crossPds-series {
+        width: 100%;
+        max-width: 400px;
+    }
+    .crossPds-series:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .pic-blackmen {
+        height: 226px;
+    }
 
+    .pic-whiteLady {
+        height: 81px;
+    }
+    .pic-graymen {
+        display: none;
+    }
+    .crossPds-list-innerBox .relative {
+        width: 100%;
+    }
+    .crossPds-list-innerBox .relative > .flex {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .phone-only {
+        width: 20%;
+        height: 99px;
+        background-image: url(../img/24.png);
+    }
+    .pic-graywomen {
+        height: 42px;
+    }
+    .moreBtn {
+        margin-right: 33px;
+        padding-left: 12px;
+    }
+    .moreBtn a {
+        font-size: 26px;
+        margin-right: -32px;
+        padding: 4px 14px 5px 12px;
+    }
+    .moreBtn img {
+        margin: auto 0;
+        width: 18px;
+        height: 20px;
+    }
+}
 /* 以下：首頁-顧客回顧 */
 
 .homeCustomer {
@@ -305,6 +675,7 @@ h4 {
 .customer-box {
     width: 25%;
     margin-right: 24px;
+    position: relative;
 }
 .customer-box:last-child {
     margin-right: 0;
@@ -316,12 +687,27 @@ h4 {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    z-index: 2;
+    position: relative;
 }
 .customer-txt {
+    /* z-index: -1;
+    position: relative; */
+    margin-top: -1px;
     padding: 16px;
+    padding-top: 17px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
 }
 .customer-txt p:not(:last-child) {
     margin-bottom: 16px;
+}
+.customer-txt .name {
+    font-weight: 600;
+}
+.customer-txt .time {
+    font-weight: 300;
+    color: #707070;
 }
 .pic-Jessy {
     background-image: url(../img/18.png);
@@ -330,50 +716,136 @@ h4 {
     background-image: url(../img/25.png);
 }
 .pic-Chelsea {
-    background-image: url(../img/24.png);
+    background-image: url(../img/36.png);
 }
 .pic-Jane {
     background-image: url(../img/45.png);
 }
-
+@media (max-width: 992px) {
+    .homeCustomer .title {
+        margin-bottom: 32px;
+    }
+    .homeCustomer ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .customer-box {
+        margin-right: 0;
+        width: calc(50% - 12px);
+    }
+    /* 這裡有更好寫法嗎 */
+    .customer-box:nth-child(1),
+    .customer-box:nth-child(2) {
+        margin-bottom: 24px;
+    }
+    .customer-txt p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .homeCustomer ul {
+        justify-content: center;
+    }
+    .customer-box {
+        max-width: 400px;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .customer-box:nth-child(1),
+    .customer-box:nth-child(2) {
+        margin-bottom: 16px;
+    }
+}
+/* 以下：首頁-聯絡我們 */
 .homeContactUs {
     background-color: #aa06010d;
 }
 .homeContactUs .title {
     margin-bottom: 24px;
 }
-.homeContactUs > p {
+.homeContactUs > .container > p {
     margin-bottom: 20px;
-    text-align: center;
 }
 .homeContactUs .container {
-    padding-right: 204px;
-    padding-left: 204px;
+    width: 100%;
+    max-width: 892px;
 }
 
-.contactUs-box p {
-    margin-bottom: 4px;
-}
 .contactUs-box input {
     background-color: transparent;
     border: 1px solid #000;
+    font-size: 16px;
     padding: 14px 16px;
     height: 50px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     color: #979797;
     text-transform: uppercase;
     font-weight: 400;
 }
+.contactUs-box .label {
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+.contactCheck {
+    margin-left: 28px;
+    position: relative;
+}
+.contactCheck::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 2px;
+    top: 2px;
+    left: -24px;
+}
 .contactUs-btn {
+    display: block;
     background-color: #aa0601;
     padding: 16px 58px;
     margin: 0 auto;
     margin-bottom: 12px;
-}
-.contactUs-btn p {
-    font-weight: 700;
     color: white;
+    transition: 0.6s;
 }
+input[name='UserOpinion'] {
+    height: 136px;
+}
+.contactUs-btn:hover {
+    padding: 16px 80px;
+}
+@media (max-width: 992px) {
+    .homeContactUs .title {
+        margin-bottom: 16px;
+    }
+    .homeContactUs .container {
+        width: 100%;
+        max-width: 596px;
+    }
+    .contactUs-box input {
+        font-size: 16px;
+    }
+    .contactUs-btn {
+        padding: 7px 36px;
+    }
+    .contactUs-btn:hover {
+        padding: 7px 36px;
+        background-color: #5c0705;
+    }
+}
+@media (max-width: 767px) {
+    .homeContactUs .container {
+        padding: 24px 24px 36px;
+        width: 100%;
+    }
+    input[name='UserOpinion'] {
+        height: 100px;
+    }
+}
+/* 以下：首頁-footer */
 footer {
     background-color: #aa0601;
     color: white;
@@ -384,11 +856,7 @@ footer {
 footer h4 {
     color: white;
 }
-footer a {
-    display: block;
-    color: white;
-    margin-right: 48px;
-}
+
 footer a:not(:last-child) {
     margin-right: 0;
 }
@@ -401,25 +869,87 @@ footer a:not(:last-child) {
     margin-bottom: 24px;
     justify-content: space-between;
 }
-.social  li{
-    /* 不知道為啥要寫這個寬度 */
-width: 48px;
+.footerMenu a {
+    display: block;
+    color: white;
+    margin-right: 48px;
 }
-.social li:not(:last-child){
+.social li {
+    /* 不知道為啥要寫這個寬度 */
+    width: 48px;
+}
+.social a img {
+    width: 100%;
+}
+.social li:not(:last-child) {
     margin-right: 32px;
 }
-.footer-bot{
+.footer-bot {
     justify-content: space-between;
 }
-.copyright{
+.copyright {
     align-items: center;
 }
 .copyright img {
     margin-right: 38px;
 }
-.footer-bot ul{
-   align-items: center;
+.footer-bot ul {
+    align-items: center;
 }
-.footer-bot ul li:first-child{
+.footer-bot ul li:first-child {
     margin-right: 62px;
- }
+}
+@media (max-width: 992px) {
+    .footerMenu {
+        margin-bottom: 24px;
+    }
+    .footerMenu a {
+        margin-right: 40px;
+    }
+    .footer-contact mb-2 {
+        margin-bottom: 8px;
+    }
+    .footer-contact li img {
+        width: 32px;
+        height: 32px;
+    }
+    .social li {
+        /* 不知道為啥要寫這個寬度 */
+        width: 24px;
+    }
+    .social li:not(:last-child) {
+        margin-right: 24px;
+    }
+    .footer-bot img {
+        display: none;
+    }
+    .footer-bot ul li:first-child {
+        margin-right: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .footerMenu {
+        display: none;
+    }
+    .footer-bot {
+        flex-direction: column;
+        position: relative;
+    }
+    .copyright {
+        margin-bottom: 8px;
+    }
+    .copyright img {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+    }
+    .footer-bot ul {
+        flex-direction: column;
+        align-items: start;
+    }
+    .footer-bot ul li {
+        margin-bottom: 8px;
+    }
+}

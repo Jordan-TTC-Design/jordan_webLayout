@@ -12,6 +12,7 @@
             <h1 class="logo">
                 <a href="#"><img src="./img/logo-new_工作區域 1.png" alt="" /></a>
             </h1>
+            <img src="./img/ic_menu_24px.svg" alt="" class="hamMenu" id="hamMenu" />
             <ul class="headerMenu flex">
                 <li>系列鏡框</li>
                 <li>門市據點</li>
@@ -62,15 +63,16 @@
                     <h3 class="title">經典系列鏡框</h3>
                     <ul>
                         <li class="glasses flex">
-                            <img src="./img/8.png" alt="" />
+                            <div class="glasses-pic glassesP-optical"></div>
+                            <!-- 手機版icon不知道怎麼改白色 -->
                             <h3 class="uppercase"><img class="mr-1" src="./img/icon-dimend.svg" alt="" />optical</h3>
                         </li>
                         <li class="glasses flex">
-                            <img src="./img/15 2.png" alt="" />
+                            <div class="glasses-pic glassesP-sunGlasses"></div>
                             <h3 class="uppercase"><img class="mr-1" src="./img/Layer_1.svg" alt="" />sunglasses</h3>
                         </li>
                         <li class="glasses flex">
-                            <img src="./img/28.png" alt="" />
+                            <div class="glasses-pic glassesP-functional"></div>
                             <h3 class="uppercase"><img class="mr-1" src="./img/Page-1.svg" alt="" />functional</h3>
                         </li>
                     </ul>
@@ -78,24 +80,27 @@
             </section>
             <section class="homeCrossPds">
                 <h3 class="title">聯名設計鏡框</h3>
-                <ul class="crossPds-list flex">
-                    <li class="mr-1"><img src="./img/zac-wolff-2qfYizn95pk-unsplash.png" alt="" /></li>
-                    <li>
-                        <div class="mb-1"><img src="./img/61.png" alt="" /></div>
+                <ul class="crossPds-list container-lg flex">
+                    <li class="mr-1 pic-blackmen bg-cover"></li>
+                    <li class="crossPds-Rlist">
+                        <div class="mb-1 pic-whiteLady bg-cover"></div>
                         <!-- 這裡好難命名 -->
-                        <div class="flex">
+                        <ul class="crossPds-list-innerBox flex">
                             <!-- 這裡好難命名 -->
-                            <div><img class="mr-1" src="./img/24.png" alt="" /></div>
-                            <div class="relative">
-                                <div><img class="mb-1" src="./img/34.png" alt="" /></div>
-                                <div class="moreBtn flex">
-                                    <a href=""
-                                        ><p class="uppercase mr-2">more</p>
-                                        <img src="./img/ic_arrow_forward_24px.svg" alt=""
-                                    /></a>
+                            <li class="mr-1 pic-graymen bg-cover"></li>
+                            <li class="relative">
+                                <div class="mb-1 pic-graywomen bg-cover"></div>
+                                <div class="flex">
+                                    <div class="phone-only mr-1 bg-cover"></div>
+                                    <div class="moreBtn flex">
+                                        <a href="#">
+                                            <p class="uppercase mr-2">more</p>
+                                            <img src="./img/ic_arrow_forward_24px.svg" alt=""
+                                        /></a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="container">
@@ -103,7 +108,7 @@
                         <li class="crossPds-series doubleA-pic">
                             <a href="#"><p>Double A+</p></a>
                         </li>
-                        <li class="crossPds-series youth">
+                        <li class="crossPds-series youth-pic">
                             <a href="#"><p>YOUTH</p></a>
                         </li>
                     </ul>
@@ -125,7 +130,7 @@
                             </div>
                         </li>
                         <li class="customer-box">
-                            <div class="customer-pic pic-Karen">Karen</div>
+                            <div class="customer-pic pic-Karen"></div>
                             <div class="customer-txt">
                                 <p class="name">Karen</p>
                                 <p class="opinion">
@@ -167,20 +172,18 @@
                         我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
                     </p>
                     <form class="contactUs-box flex-column" action="">
-                        <p>姓名</p>
+                        <p class="label">姓名</p>
                         <input type="text" name="UserName" value="陳小明" />
-                        <p>聯絡電話</p>
+                        <p class="label">聯絡電話</p>
                         <input type="text" name="UserTel" value="0975286269" />
-                        <p>電子郵件</p>
+                        <p class="label">電子郵件</p>
                         <input type="email" name="UserEmail" value="example@email.com" />
-                        <p>意見反應</p>
+                        <p class="label">意見反應</p>
                         <input type="text" name="UserOpinion" value="請輸入" />
-                        <!-- <p><input type="checkbox" id="check">
-                        <label for="check"><span></span>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-                    </p> -->
-                        <div class="contactUs-btn">
-                            <p>確認送出</p>
-                        </div>
+                        <p class="contactCheck mb-3">
+                            我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+                        </p>
+                        <a href="#" class="contactUs-btn"><p>確認送出</p></a>
                     </form>
                 </div>
             </section>
@@ -223,7 +226,7 @@
                 </div>
                 <div class="footer-bot flex">
                     <div class="copyright flex">
-                        <img src="./img/logo-new_工作區域 1.png" alt="" class="logo" />
+                        <img src="./img/logo-new_工作區域 1.png" alt="" />
                         <p>Copyright © 2020 Glasses.All rights reserved.</p>
                     </div>
                     <ul class="flex">
@@ -234,5 +237,6 @@
             </div>
         </footer>
         <script src="../jquery/jquery-3.5.0.min.js"></script>
+        <script src="./js/all.js"></script>
     </body>
 </html>
