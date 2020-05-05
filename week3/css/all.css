@@ -104,6 +104,9 @@ section {
     .container {
         padding: 24px 12px;
     }
+    .container-lg {
+        padding: 0 24px;
+    }
     h2 {
         font-size: 32px;
     }
@@ -404,6 +407,9 @@ h4 {
         width: 100%;
         transform: translateY(-50%);
     }
+    .uppercase img {
+        filter: brightness(500);
+    }
 }
 /* 以下：首頁-聯名眼鏡 */
 .homeCrossPds {
@@ -449,8 +455,7 @@ h4 {
 }
 .crossPds-list-innerBox .relative > .flex {
     width: 100%;
-    /* 不知道為什麼不能end */
-    justify-content: center;
+    justify-content: flex-end;
 }
 .pic-graywomen {
     width: 100%;
@@ -463,6 +468,7 @@ h4 {
 }
 
 .moreBtn {
+    margin-right: 84px;
     /* position: absolute; */
     background-image: url(../img/5.png);
     padding: 20px 0 20px 30px;
@@ -557,7 +563,7 @@ h4 {
     }
     .moreBtn {
         padding: 5px 0 5px 20px;
-        right: 40px;
+        margin-right: 40px;
     }
     .moreBtn a {
         font-size: 40px;
