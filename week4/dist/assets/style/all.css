@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.color-pri {
+  color: #AA0601; }
+
+.color-sec {
+  color: #FBF2F2; }
+
+.color-dark {
+  color: #111619; }
+
+.container-lg {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 50px; }
+
+html {
+  font-size: 16px; }
+
+.title-sb {
+  font-size: 72px; }
+
+.title-lg {
+  font-size: 64px; }
+
+.title-md {
+  font-size: 48px; }
+
+.title-sm {
+  font-size: 36px; }
+
+* {
+  box-sizing: border-box; }
+
+section {
+  width: 100%; }
+
+.container {
+  max-width: 1200;
+  margin: 0 auto; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+.flex {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tac {
+  text-align: center; }
+
+.f-wrap {
+  flex-wrap: wrap; }
+
+.mr-05 {
+  margin-right: 4 px; }
+
+.mr-1 {
+  margin-right: 8 px; }
+
+.mr-2 {
+  margin-right: 16 px; }
+
+.mr-3 {
+  margin-right: 24 px; }
+
+.mb-05 {
+  margin-bottom: 4 px; }
+
+.mb-1 {
+  margin-bottom: 8 px; }
+
+.mb-2 {
+  margin-bottom: 16 px; }
+
+.mb-3 {
+  margin-bottom: 24 px; }
+
+.mb-4 {
+  margin-bottom: 32 px; }
+
+header {
+  background-color: #AA0601;
+  justify-content: space-between;
+  padding: 30px 88px;
+  align-items: center; }
+
+/*# sourceMappingURL=all.css.map */

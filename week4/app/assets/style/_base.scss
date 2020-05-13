@@ -1,0 +1,31 @@
+// 本次專案的
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: $s-8 0px $s-10;
+    @media screen and (max-width: 1200px) {
+        padding: $s-8 50px $s-10;
+    }
+    @include nb-width {
+        padding: $s-5 $s-6;
+    }
+}
+.container--lg {
+    max-width: 1640px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+html {
+    font-size: 16px;
+}
+* {
+    line-height: 1.5;
+}
+
+@include pad-width{
+   .title-md{
+       font-size: $s-4;
+   } 
+}

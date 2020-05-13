@@ -1,12 +1,260 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>home</title>
+        <link rel="stylesheet" href="./assets/style/all.css" />
+    </head>
 
-<h1>
-  這是一段話
-</h1>
+    <body>
+        <header class="flex">
+            <h1 class="logo">
+                <a href="#"><img src="./assets/img/index/logo.png" alt="" /></a>
+            </h1>
+            <img src="./img/ic_menu_24px.svg" alt="" class="hamMenu" id="hamMenu" />
+            <ul class="flex">
+                <li><a>系列鏡框</a></li>
+                <li><a>門市據點</a></li>
+                <li><a>部落格</a></li>
+                <li><a>常見問題</a></li>
+            </ul>
+        </header>
+        <main>
+            <section class="homeBanner bg-cover">
+                <div class="container flexColumn">
+                    <h4 class="title-sm">Promise-Desert 2020 早春系列</h4>
+                    <h2 class="title-lg">看得清，才能看得遠</h2>
+                </div>
+            </section>
 
-<div class="box"></div>
+            <section class="homeAbout">
+                <div class="container flexColumn">
+                    <h3 class="title-md">用專業的心，做專業的事</h3>
+                    <ul class="homeAbout__list flex">
+                        <li class="flexColumn">
+                            <div class="icon flexCenter">
+                                <img src="./assets/img/index/iconfinder_circle-dollar_430089.svg" alt="" />
+                            </div>
+                            <h5>單一價格</h5>
+                            <p>無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
+                        </li>
+                        <li class="flexColumn">
+                            <div class="icon flexCenter">
+                                <img src="./assets/img/index/iconfinder_clock-1_430090.svg" alt="" />
+                            </div>
+                            <h5>20 分鐘即可取件</h5>
+                            <p>
+                                為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘
+                                即可完成。
+                            </p>
+                        </li>
+                        <li class="flexColumn">
+                            <div class="icon flexCenter">
+                                <img src="./assets/img/index/iconfinder_heart_430099.svg" alt="" />
+                            </div>
+                            <h5>安心售後服務</h5>
+
+                            <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+                        </li>
+                        <li class="flexColumn">
+                            <div class="icon flexCenter">
+                                <img src="./assets/img/index/iconfinder_glasses_430098 (1).svg " alt="" />
+                            </div>
+                            <h5>關於鏡片</h5>
+                            <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="homeProducts">
+                <div class="container">
+                    <h3 class="title-md tac">經典系列鏡框</h3>
+                    <ul>
+                        <li class="glasses flex">
+                            <div class="glasses__pic glasses__pic--optical bg-cover"></div>
+                            <!-- 手機版icon不知道怎麼改白色 -->
+                            <h3 class="upperCase flex">
+                                <img class="mr-1" src="./assets/img/index/iconfinder_44_2529968.svg" alt="" />optical
+                            </h3>
+                        </li>
+                        <li class="glasses flex">
+                            <div class="glasses__pic glasses__pic--sunGlasses bg-cover"></div>
+                            <h3 class="upperCase flex">
+                                <img class="mr-1" src="./assets/img/index/Layer_1.svg" alt="" />sunglasses
+                            </h3>
+                        </li>
+                        <li class="glasses flex">
+                            <div class="glasses__pic glasses__pic--functional bg-cover"></div>
+                            <h3 class="upperCase flex">
+                                <img class="mr-1" src="./assets/img/index/Page-1.svg" alt="" />functional
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="homeCrossProducts bg-cover">
+                <div class="container--lg">
+                    <h3 class="title-md tac">聯名設計鏡框</h3>
+                    <div class="crossProductsBox flex">
+                        <div class="crossProduct__bm bg-cover"></div>
+                        <div class="crossProductsBox__leftBox">
+                            <div class="crossProduct__ww bg-cover"></div>
+                            <div class="crossProductsBox__leftBox__innerBox flex">
+                                <div class="crossProduct__gm bg-cover"></div>
+                                <div class="crossProductsBox__leftBox__innerBox__leftBox">
+                                    <div class="crossProduct__gw bg-cover"></div>
+                                    <div class="crossProductsBox__leftBox__innerBox__leftBox__btnBox flex">
+                                        <div class="crossProduct__gm--ph bg-cover"></div>
+                                        <div class="crossProduct__moreBtn flex">
+                                            <a href="#" class="flex">
+                                                <p class="upperCase">more</p>
+                                                <img src="./assets/img/index/ic_arrow_forward_24px.svg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="crossSeriesList flex">
+                            <div class="crossSeries__box flexCenter crossSeries__pic--double bg-cover">
+                                <a class="upperCase" href="#">Double A+</a>
+                            </div>
+                            <div class="crossSeries__box flexCenter crossSeries__pic--youth bg-cover">
+                                <a class="upperCase" href="#">Youth</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="homeReview">
+                <div class="container">
+                    <div class="title-md tac">顧客推薦</div>
+                    <ul class="reviewList flex">
+                        <li class="reviewBox">
+                            <img class="reviewBox__pic" src="./assets/img/index/18.png" alt="" />
+                            <ul class="reviewBox__textBox">
+                                <li class="review__name">Jessy</li>
+                                <li class="review__content">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content.
+                                </li>
+                                <li class="review__time">Last updated 3 mins ago</li>
+                            </ul>
+                        </li>
+                        <li class="reviewBox">
+                            <img class="reviewBox__pic" src="./assets/img/index/25.png" alt="" />
+                            <ul class="reviewBox__textBox">
+                                <li class="review__name">Jessy</li>
+                                <li class="review__content">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content.
+                                </li>
+                                <li class="review__time">Last updated 3 mins ago</li>
+                            </ul>
+                        </li>
+                        <li class="reviewBox">
+                            <img class="reviewBox__pic" src="./assets/img/index/36.png" alt="" />
+                            <ul class="reviewBox__textBox">
+                                <li class="review__name">Jessy</li>
+                                <li class="review__content">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content.
+                                </li>
+                                <li class="review__time">Last updated 3 mins ago</li>
+                            </ul>
+                        </li>
+                        <li class="reviewBox">
+                            <img class="reviewBox__pic" src="./assets/img/index/45.png" alt="" />
+                            <ul class="reviewBox__textBox">
+                                <li class="review__name">Jessy</li>
+                                <li class="review__content">
+                                    This is a wider card with supporting text below as a natural lead-in to additional
+                                    content.
+                                </li>
+                                <li class="review__time">Last updated 3 mins ago</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="homeContact">
+                <div class="container">
+                    <h3 class="title-md tac">聯絡我們</h3>
+                    <p>
+                        我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+                    </p>
+                    <form class="flexColumn" action="">
+                        <label for="name">姓名</label>
+                        <input type="text" name="name" id="contactName" placeholder="陳小明" />
+                        <label for="tel">聯絡電話</label>
+                        <input type="text" name="tel" id="contactel" placeholder="0912-345-678" />
+                        <label for="mail">電子郵件</label>
+                        <input type="text" name="mail" id="contactMail" placeholder="example@email.com" />
+                        <label for="content">意見反應</label>
+                        <!-- textarea不能用placeholder? ，除非不換行？為啥？-->
+                        <textarea name="content" id="contactContent" placeholder="請輸入您的意見"></textarea>
+
+                        <input type="checkbox" name="agree" id="contactAgree" value="agree" />
+                        <label class="form__checkbox" for="agree" >
+                            我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+                        </label>
+                        <input class="button" type="submit" value="確認送出" />
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="col-top flex">
+                    <div class="flexColumn">
+                        <ul class="footer__nav flex">
+                            <li><a>首頁</a></li>
+                            <li><a>系列鏡框</a></li>
+                            <li><a>門市據點</a></li>
+                            <li><a>部落格</a></li>
+                            <li><a>常見問題</a></li>
+                        </ul>
+                        <ul class="footer__info">
+                            <li class="flex title-sm">
+                                <div class="flex"><img src="./assets/img/index/ic_phone_48px.svg" alt="" /></div>
+                                0800-000-000
+                            </li>
+                            <li class="flex title-sm">
+                                <div class="flex"><img src="./assets/img/index/ic_mail_outline_24px.svg" alt="" /></div>
+                                glasses@business.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer__social flex">
+                            <li class="footer__social__box flex">
+                                <img src="./assets/img/index/ic_social_fb.svg" alt="" />
+                            </li>
+                            <li class="footer__social__box flex">
+                                <img src="./assets/img/index/ic_social_ig.svg" alt="" />
+                            </li>
+                            <li class="footer__social__box flex">
+                                <img src="./assets/img/index/ic_social_line.svg" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-bot flex">
+                    <div class="footer__copy__box flex">
+                        <img src="./assets/img/index/logo.png" alt="" />
+                        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+                    </div>
+                    <ul class="flex">
+                        <li><a>隱私權政策</a></li>
+                        <li><a>服務條款</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

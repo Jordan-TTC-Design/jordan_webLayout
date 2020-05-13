@@ -471,10 +471,12 @@ h4 {
     padding: 20px 0 20px 30px;
     /* bottom: 0; */
     /* right: 84px; */
+
 }
 .moreBtn a {
     display: flex;
     background-color: #fff;
+    
     margin-right: -84px;
     padding: 5px 19px 5px 32px;
     position: relative;
@@ -636,6 +638,7 @@ h4 {
     .crossPds-list-innerBox .relative > .flex {
         align-items: center;
         justify-content: space-between;
+
     }
     .phone-only {
         width: 20%;

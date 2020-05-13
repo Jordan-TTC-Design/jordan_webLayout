@@ -1,0 +1,151 @@
+// 以下code：header樣式
+
+header {
+    display: flex;
+    background-color: $color-sec;
+    justify-content: space-between;
+    padding: 30px 88px;
+    align-items: center;
+    ul {
+        color: white;
+        font-size: $font-md;
+        li {
+            height: 44px;
+        }
+        a {
+            // 覺得這個方式很爛
+            line-height: 44px;
+        }
+        li:not(:last-child) {
+            margin-right: 64px;
+        }
+    }
+    @include pad-width {
+        padding: 30px 48px;
+        h1 {
+            width: 80px;
+            height: 50px;
+            img {
+                width: 100%;
+            }
+        }
+        ul li:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+// 以下code：footer樣式
+footer {
+    background-color: $color-sec;
+    color: white;
+    .container {
+        padding-top: $s-6;
+        padding-bottom: 0;
+        @include pad-width {
+            padding-top: $s-5;
+        }
+    }
+    .col-top {
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        // margin-bottom: $s-3;
+    }
+}
+.footer__nav {
+    margin-bottom: 18px;
+    li {
+        a {
+            display: block;
+            padding: 14px 0;
+            margin-right: $s-6;
+            @include pad-width {
+                margin-right: $s-3;
+            }
+        }
+    }
+    li:last-child a {
+        margin-right: 0;
+    }
+}
+.footer__info {
+    li {
+        align-items: center;
+        margin-bottom: $s-2;
+        .flex {
+            width: $s-6;
+            height: $s-6;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+        }
+        img {
+            width: 100%;
+        }
+        &:last-child {
+            margin-bottom: $s-3;
+        }
+    }
+
+    @include pad-width {
+        li {
+            .flex {
+                width: $s-4;
+                height: $s-4;
+                margin-right: $s-1;
+            }
+        }
+        .title-sm {
+            font-size: 20px;
+        }
+    }
+}
+.footer__social__box:not(:last-child) {
+    margin-right: $s-4;
+}
+@include pad-width {
+    .footer__social__box {
+        width: 24px;
+        height: 24px;
+        img {
+            width: 100%;
+        }
+        &:not(:last-child) {
+            margin-right: $s-3;
+        }
+    }
+}
+.col-bot {
+    padding: 40px 0;
+    justify-content: space-between;
+    ul.flex {
+        li:not(:last-child) {
+            margin-right: 62px;
+            @include pad-width {
+                margin-right: 24px;
+            }
+        }
+    }
+}
+.footer__copy__box {
+    align-items: center;
+    position: relative;
+    img {
+        width: 80px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    p {
+        margin-left: 118px;
+    }
+    @include pad-width {
+        img {
+            display: none;
+        }
+        p {
+            margin-left: 0;
+        }
+    }
+}
