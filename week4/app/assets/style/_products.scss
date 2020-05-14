@@ -1,0 +1,238 @@
+.productsNav {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.productsNav__btn {
+    width: 33.333%;
+    height: 103px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    a {
+        font-size: 42px;
+        color: #000;
+        font-weight: 900;
+    }
+    &.active::after {
+        content: '';
+        width: 100%;
+        height: $s-2;
+        background-color: $color-sec;
+        position: absolute;
+        bottom: 0;
+    }
+    .productsNav__btn__icon {
+        height: $s-6;
+        margin-right: $s-1;
+        img {
+            height: 100%;
+        }
+    }
+    @include pad-width {
+        a {
+            font-size: 28px;
+        }
+        &.active::after {
+            height: $s-1;
+        }
+        .productsNav__btn__icon {
+            height: $s-4;
+        }
+    }
+    @include phone-width {
+        height: 35px;
+        a {
+            font-size: 14px;
+        }
+        &.active::after {
+            height: 1px;
+        }
+        .productsNav__btn__icon {
+            height: 15px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.products__TopBanner {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 88px;
+    @include pad-width {
+        margin-bottom: $s-5;
+    }
+    @include phone-width {
+        margin-bottom: $s-3;
+    }
+}
+.topBanner__box {
+    width: calc(50% - 12px);
+    height: 309px;
+    @include phone-width {
+        width: 50%;
+        height: 144px;
+    }
+}
+.topBanner__box--left {
+    background-image: url(../img/product_op/2.png);
+}
+.topBanner__box--right {
+    background-image: url(../img/product_op/11.png);
+}
+
+// 以下code:主要畫面
+.products__showRoom {
+    .container {
+        padding-top: 0;
+        padding-bottom: 156px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include pad-width {
+            padding-bottom: 104px;
+        }
+        @include phone-width {
+            padding-bottom: $s-7;
+        }
+    }
+    .showRoom__title--en {
+        font-size: 42px;
+        font-weight: bold;
+    }
+    .showRoom__title--cn {
+        font-size: 32px;
+        font-weight: lighter;
+        margin-bottom: $s-6;
+    }
+    @include pad-width {
+        .showRoom__title--en {
+            font-size: 32px;
+        }
+        .showRoom__title--cn {
+            font-size: $font-lg;
+            margin-bottom: $s-3;
+        }
+    }
+    @include phone-width {
+        .showRoom__title--en {
+            font-size: 20px;
+        }
+        .showRoom__title--cn {
+            font-size: 16px;
+            margin-bottom: 20;
+        }
+    }
+}
+.showRoom__list--optical {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .showRoom__list__box {
+        width: calc(25% - 18px);
+        // 想把最後一行是由下往上推，感覺比較整齊？
+        // margin-bottom: 88px;
+        .product--pic {
+            height: 164px;
+            width: 100%;
+            background-image: url(../img/product_op/16.png);
+        }
+        @include pad-width {
+            width: calc(50% - 12px);
+            // 想把最後一行是由下往上推，感覺比較整齊？
+            // margin-bottom: 53px;
+        }
+        @include phone-width {
+            width: 100%;
+            .product--pic {
+                height: 164px;
+            }
+        }
+    }
+    .showRoom__list__box:nth-child(-n + 8) {
+        margin-bottom: 104px;
+    }
+    @include pad-width {
+        .showRoom__list__box:nth-child(-n + 10) {
+            margin-bottom: $s-9;
+        }
+    }
+    @include phone-width {
+        .showRoom__list__box:nth-child(-n + 11) {
+            margin-bottom: $s-4;
+        }
+    }
+    .list__box__textBox {
+        justify-content: space-between;
+        margin-bottom: $s-05;
+        .product--name {
+            font-size: $font-lg;
+            line-height: 1.5;
+        }
+        .product--price {
+            font-size: $font-lg;
+            color: $color-sec;
+            font-weight: 600;
+        }
+        @include phone-width {
+            margin: 0;
+            .product--name {
+                font-size: 16px;
+            }
+            .product--price {
+                font-size: 16px;
+            }
+        }
+    }
+    .product--color--box {
+        width: $s-3;
+        height: $s-3;
+        border-radius: 10%;
+        &:not(:last-child) {
+            margin-right: $s-1;
+        }
+        @include phone-width {
+            width: $s-2;
+            height: $s-2;
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+        }
+    }
+    .bgColor--5F3E2D {
+        background-color: #5f3e2d;
+    }
+    .bgColor--B75929 {
+        background-color: #b75929;
+    }
+}
+.showRoom__list__pagination {
+    margin-top: 88px;
+    width: auto;
+    a {
+        display: block;
+        color: black;
+        width: 41px;
+        height: 48px;
+        text-decoration: none;
+        border: 1px solid #555;
+        line-height: 48px;
+        // 沒辦法垂直志中，求解
+        text-align: center;
+        &.active {
+            background-color: #000;
+            color: #fff;
+        }
+        &:hover {
+            background-color: #f2f2f2;
+        }
+        &.pagination__btn--change {
+            width: 81px;
+        }
+    }
+    @include pad-width {
+        margin-top: 53px;
+    }
+    @include phone-width {
+        margin-top: $s-5;
+    }
+}

@@ -11,6 +11,9 @@
     @include nb-width {
         padding: $s-5 $s-6;
     }
+    @include phone-width {
+        padding: $s-4 12px;
+    }
 }
 .container--lg {
     max-width: 1640px;
@@ -20,12 +23,29 @@
 html {
     font-size: 16px;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+p,
+a,
+li,
+label,
 * {
     line-height: 1.5;
 }
 
-@include pad-width{
-   .title-md{
-       font-size: $s-4;
-   } 
+@include pad-width {
+    .title-md {
+        font-size: $s-4;
+    }
 }
+@include phone-width {
+    .title-md {
+        font-size: $s-3;
+    }
+}
+

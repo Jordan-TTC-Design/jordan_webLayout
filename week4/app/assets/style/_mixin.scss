@@ -35,7 +35,12 @@ $phone-media: 767px;
 
 //手機
 @mixin phone-width() {
-    @media all and (max-width: $phones-media) {
+    @media all and (max-width: $phone-media) {
         @content;
     }
+}
+
+
+@mixin ft-UpCase {
+    text-transform: uppercase;
 }

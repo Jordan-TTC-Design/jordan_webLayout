@@ -10,6 +10,17 @@
             @include fw-md;
         }
     }
+    @include phone-width {
+        .container {
+            height: 394px;
+        }
+        .title-lg {
+            font-size: 32px;
+        }
+        .title-sm {
+            font-size: 16px;
+        }
+    }
 }
 .homeAbout {
     background-color: $color-light;
@@ -22,6 +33,9 @@
         @include fw-si;
         @include pad-width {
             margin-bottom: $s-4;
+        }
+        @include phone-width {
+            margin-bottom: 12px;
         }
     }
 }
@@ -51,15 +65,23 @@
             width: calc(50% - 12px);
             padding-bottom: $s-1;
             margin-bottom: 12px;
+            h5 {
+                font-size: $font-md;
+                margin-bottom: $s-1;
+            }
         }
-        h5 {
-            font-size: $font-md;
-            margin-bottom: $s-1;
-        }
+
         .icon {
             width: 80px;
             height: 80px;
             margin-bottom: $s-2;
+        }
+    }
+    @include phone-width {
+        li {
+            width: 100%;
+            padding: 20px $s-8 $s-1;
+            margin-bottom: 0;
         }
     }
 }
@@ -70,6 +92,9 @@
         @include pad-width {
             padding-bottom: $s-5;
         }
+        @include phone-width {
+            padding: $s-3 12px;
+        }
     }
     .title-md {
         font-weight: 600;
@@ -79,11 +104,14 @@
         @include pad-width {
             margin-bottom: $s-4;
         }
+        @include phone-width {
+            margin-bottom: $s-2;
+        }
     }
     .glasses {
+        position: relative;
         margin-bottom: $s-4;
         flex-wrap: wrap;
-
         .glasses__pic {
             width: 60%;
             height: 320px;
@@ -112,39 +140,56 @@
                 height: 168px;
             }
         }
-    }
-    .glasses:nth-child(2) {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        @include pad-width {
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-    }
-    .upperCase {
-        color: $color-pri;
-        font-size: $title-md;
-        align-items: center;
-        margin-left: $s-3;
-        font-weight: 900;
-        font-style: italic;
-        color: $color-sec;
-        img {
-            width: $s-6;
-            margin-right: $s-1;
-        }
-        @include pad-width {
-            width: calc(35% - 32px);
-            margin-left: $s-4;
-            font-size: 28px;
-            display: flex;
-            justify-content: center;
-            img {
-                width: $s-4;
+        @include phone-width {
+            .glasses__pic {
+                width: 100%;
+                height: 134px;
             }
         }
     }
 }
+.glasses:nth-child(2) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @include pad-width {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+.upperCase {
+    color: $color-pri;
+    font-size: $title-md;
+    align-items: center;
+    margin-left: $s-3;
+    font-weight: 900;
+    font-style: italic;
+    color: $color-sec;
+    img {
+        width: $s-6;
+        margin-right: $s-1;
+    }
+    @include pad-width {
+        width: calc(35% - 32px);
+        margin-left: $s-4;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        img {
+            width: $s-4;
+        }
+    }
+    @include phone-width {
+        color: #fff;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        img {
+            filter: brightness(500);
+        }
+    }
+}
+
 .homeCrossProducts {
     background-image: url(../img/index/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
     .container--lg {
@@ -153,15 +198,17 @@
         .container {
             padding-top: 0;
             padding-bottom: 0;
-            @include nb-width{
+            @include nb-width {
                 padding-right: 0;
                 padding-left: 0;
             }
-            
         }
-        @include pad-width{
+        @include pad-width {
             padding-bottom: 417px;
-            }
+        }
+        @include phone-width {
+            padding-bottom: 189px;
+        }
     }
     .title-md {
         text-align: center;
@@ -175,7 +222,7 @@
 .crossProductsBox {
     justify-content: space-between;
     margin-bottom: 60px;
-    @include pad-width{
+    @include pad-width {
         margin-bottom: $s-5;
     }
 }
@@ -216,6 +263,7 @@
 }
 .crossProductsBox__leftBox__innerBox__leftBox__btnBox {
     justify-content: flex-end;
+    position: relative;
 }
 .crossProduct__moreBtn {
     background-image: url(../img/index/5.png);
@@ -231,6 +279,7 @@
         margin-right: -84px;
         position: relative;
         p {
+            @include ft-UpCase;
             margin-right: 17px;
         }
     }
@@ -247,6 +296,12 @@
     position: absolute;
     transform: translateY(-100px);
     opacity: 0.7;
+    @include pad-width {
+        transform: translateY(-70px);
+    }
+    @include phone-width {
+        transform: translateY(-36px);
+    }
 }
 .crossProduct__moreBtn a::after {
     content: 'MORE';
@@ -260,6 +315,12 @@
     position: absolute;
     transform: translateY(-170px);
     opacity: 0.5;
+    @include pad-width {
+        transform: translateY(-120px);
+    }
+    @include phone-width {
+        transform: translateY(-72px);
+    }
 }
 @include pad-width {
     .crossProduct__bm {
@@ -286,7 +347,53 @@
             font-size: $s-5;
             margin-right: -47px;
             p {
+                margin-left: 0;
                 margin-right: 10px;
+            }
+            img {
+                width: 27px;
+            }
+        }
+    }
+}
+@include phone-width {
+    .crossProduct__bm {
+        height: 226px;
+        margin-right: 2px;
+    }
+    .crossProduct__ww {
+        height: 81px;
+        margin-bottom: 2px;
+    }
+    .crossProduct__gm {
+        display: none;
+    }
+    .crossProductsBox__leftBox__innerBox__leftBox {
+        width: 100%;
+    }
+    .crossProduct__gw {
+        height: 42px;
+        margin-bottom: 2px;
+    }
+    .crossProductsBox__leftBox__innerBox__leftBox__btnBox {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .crossProduct__gm--ph {
+        display: block;
+        width: 20%;
+        height: 99px;
+        margin-right: 2px;
+    }
+    .crossProduct__moreBtn {
+        padding: 8px 0px 8px 20px;
+        margin-right: 33px;
+        a {
+            padding: 3px 12px 3px 14px;
+            font-size: 26px;
+            margin-right: -33px;
+            p {
+                margin-right: 8px;
             }
             img {
                 width: 27px;
@@ -301,18 +408,29 @@
     width: calc(50% - 15px);
     height: 592px;
     position: relative;
-    a {
+    .upperCase {
         font-size: 72px;
         color: $color-sec;
         font-weight: 900;
         z-index: 1;
+        margin-left: 0;
     }
-    @include pad-width{
+    @include pad-width {
         width: calc(50% - 12px);
         height: 280px;
-        a {
+        .upperCase {
             font-size: 32px;
         }
+    }
+}
+@include phone-width {
+    .crossSeriesList {
+        flex-wrap: wrap;
+    }
+    .crossSeries__box {
+        width: 100%;
+        height: 284px;
+        margin-bottom: 20px;
     }
 }
 .crossSeries__box::after {
@@ -343,10 +461,17 @@
         margin-bottom: 60px;
         color: #fff;
     }
-    @include pad-width{
+    @include pad-width {
         margin-top: -377px;
         .title-md {
-            margin-bottom: 32px;;
+            margin-bottom: $s-4;
+        }
+    }
+    @include phone-width {
+        margin-top: -165px;
+        margin-bottom: $s-3;
+        .title-md {
+            margin-bottom: $s-2;
         }
     }
 }
@@ -378,40 +503,52 @@
         }
     }
 }
-@include pad-width{
-    .reviewList{
+@include pad-width {
+    .reviewList {
         flex-wrap: wrap;
     }
-    .reviewBox{
+    .reviewBox {
         width: calc(50% - 12px);
-        margin-bottom: 24px;
+        margin-bottom: $s-3;
     }
-    .reviewBox:nth-child(3),.reviewBox:nth-child(4){
+    .reviewBox:nth-child(3),
+    .reviewBox:nth-child(4) {
         margin-bottom: 0px;
+    }
+}
+@include phone-width {
+    .reviewBox {
+        width: calc(100%);
+        margin-bottom: $s-2;
     }
 }
 .homeContact {
     background-color: $color-light;
     .container {
         max-width: 792px;
-        
     }
     .title-md {
         margin-bottom: $s-3;
-        
     }
     p {
         margin-bottom: 20px;
     }
-    @include pad-width{
+    @include pad-width {
         .container {
             max-width: calc(497px + 96px);
             padding-bottom: 60px;
         }
-        .title-md,p {
+        .title-md,
+        p {
             margin-bottom: $s-2;
         }
     }
+    @include phone-width {
+        .container {
+            padding: 24px 24px 48px;
+        }
+    }
+
     form {
         label {
             margin-bottom: $s-05;
@@ -423,7 +560,7 @@
             font-size: 16px;
             padding: 16px;
             border: 1px solid #000;
-            @include pad-width{
+            @include pad-width {
                 margin-bottom: 12px;
             }
         }
@@ -443,7 +580,7 @@
             display: block;
             cursor: pointer;
             margin-bottom: 40px;
-            @include pad-width{
+            @include pad-width {
                 margin-bottom: $s-3;
             }
         }
@@ -475,6 +612,15 @@
         .button:hover {
             background-color: darken($color-sec, 10%);
         }
+        @include phone-width {
+            input,
+            textarea {
+                padding: 7px 12px;
+            }
+            .button {
+                height: 36px;
+                width: 136px;
+            }
+        }
     }
 }
-
