@@ -373,6 +373,7 @@ header .header__navMenu li {
 
 header .header__navMenu a {
   line-height: 44px;
+  color: white;
 }
 
 header .header__navMenu li:not(:last-child) {

@@ -19,6 +19,7 @@ header {
             // 覺得這個方式很爛
             // 有除了這個和flex之外做法嗎？
             line-height: 44px;
+            color: white;
         }
         li:not(:last-child) {
             margin-right: 64px;
@@ -178,11 +179,10 @@ footer {
                 margin-right: 24px;
             }
         }
-        
     }
     .footer__logo {
         width: 80px;
-        img{
+        img {
             width: 100%;
         }
         @include pad-width {
