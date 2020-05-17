@@ -5,5 +5,9 @@ package 3.json
 gulpfile.js
 node_modules
 .DS_Store
+<<<<<<< HEAD
 .gitignore
 
+=======
+.gitignore
+>>>>>>> bf6d3f013fd8b4b2c29a6ffbf04feeaa225c022a
