@@ -4,6 +4,6 @@ package-lock.json
 package 3.json
 gulpfile.js
 node_modules
-**/.DS_Store
+.DS_Store
 .gitignore
 README.md
