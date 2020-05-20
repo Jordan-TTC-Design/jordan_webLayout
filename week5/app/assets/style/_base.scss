@@ -1,0 +1,48 @@
+// 本次專案的
+*{
+    outline: 1px solid red;
+}
+ol,
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+html {
+    font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+p,
+a,
+li,
+label,
+span,
+* {
+    line-height: 1.5;
+}
+//以下是改bs4效果
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    margin-bottom: 0;
+    //改bs4
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+//以下是共用class
+.pageTitle{
+    font-size: 24px;
+    margin-right: 47px;
+}
+
+.icon-md{
+height: 24px;
+width: 24px;
+}
+

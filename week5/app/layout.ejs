@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title><%- title %></title>
+        <!-- <link rel="stylesheet" href="../node_modules/bootstrap/scss/bootstrap.scss" /> -->
+        <link rel="stylesheet" href="./assets/style/all.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <!-- <script src="./assets/js/all.js"></script> -->
+    </head>
+
+    <body>
+        <div class="dashBoard d-flex">
+            <nav class="sideNav d-flex flex-column justify-content-between">
+                <ul class="sideNav__menuList">
+                    <img class="logo" src="./assets/images/logo-ANSWER.svg" alt="" />
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">assessment</span>Dashboard</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">question_answer</span>Question</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">assignment</span>Assignment</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">video_library</span>Course</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center active" href="./admins.html"
+                            ><span class="material-icons">supervisor_account</span>Admin</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">settings</span>Settings</a
+                        >
+                    </li>
+                </ul>
+                <div class="userBox d-flex">
+                    <div class="userBox__pic bg-cover"></div>
+                    <div class="userBox__textBox">
+                        <h5 class="userBox__name">Andy Chen</h5>
+                        <p class="userBox--email">andy0401@mail.com</p>
+                    </div>
+                </div>
+            </nav>
+            <div class="main">
+                <%- contents %>
+            </div>
+        </div>
+    </body>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</html>

@@ -1,0 +1,46 @@
+@mixin fw-sm {
+    font-weight: 200;
+}
+@mixin fw-rg {
+    font-weight: 400;
+}
+@mixin fw-md {
+    font-weight: 500;
+}
+@mixin fw-si {
+    font-weight: 600;
+}
+@mixin fw-bg {
+    font-weight: 800;
+}
+@mixin fw-bk {
+    font-weight: 900;
+}
+$nb-media: 1280px;
+$pad-media: 992px;
+$phone-media: 767px;
+//電腦
+@mixin nb-width() {
+    @media all and (max-width: $nb-media) {
+        @content;
+    }
+}
+
+//平板
+@mixin pad-width() {
+    @media all and (max-width: $pad-media) {
+        @content;
+    }
+}
+
+//手機
+@mixin phone-width() {
+    @media all and (max-width: $phone-media) {
+        @content;
+    }
+}
+
+
+@mixin ft-UpCase {
+    text-transform: uppercase;
+}

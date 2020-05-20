@@ -1,0 +1,75 @@
+.header {
+    width: 100%;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    .row {
+        // width: calc(100% + 30px);
+        width: 100%;
+    }
+    .addAdim {
+        padding: 6px 0;
+        // vertical-align: middle;
+
+        span {
+            margin-right: $s-1;
+            color: $primary;
+        }
+    }
+}
+.admins-list {
+    th {
+        border: 0px solid #000;
+    }
+    tr:hover {
+        background-color: $light;
+    }
+    th,
+    td {
+        height: 55px;
+        vertical-align: middle;
+    }
+    th:first-child,
+    td:first-child {
+        padding-left: 0;
+    }
+    .btn--id {
+        width: 100%;
+        padding: 0;
+        justify-content: start;
+        span {
+            color: $primary;
+            margin-left: 7px;
+        }
+    }
+}
+.myPagination--Box {
+    // display: flex;
+}
+.myPagination {
+    margin-bottom: 0;
+    // display: flex;
+    li {
+        
+
+        a {
+            text-align: center;
+            font-size: 16px;
+            height: $s-4;
+            width: $s-4;
+        }
+        span {
+            // display: block;
+            // height: 100%;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .page-link{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+}

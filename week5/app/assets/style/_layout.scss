@@ -1,0 +1,80 @@
+.dashBoard {
+    height: 800px;
+    width: 100%;
+}
+.main {
+    width: calc(100% - 293px);
+    padding: 0 32px;
+}
+.sideNav {
+    width: 293px;
+    background-color: $light;
+    height: 100%;
+    padding: 32px 0;
+
+    .logo {
+        margin: 0 auto;
+        margin-bottom: 36px;
+    }
+}
+
+.sideNav__menu__item {
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+    a {
+        height: $s-4;
+        width: 100%;
+        color: $dark;
+        padding-left: 34px;
+        &:hover {
+            color: $primary;
+            padding-left: 40px;
+        }
+        span {
+            margin-right: $s-2;
+            height: $s-3;
+            width: $s-3;
+        }
+        &.active {
+            color: $primary;
+            position: relative;
+            &.active::before {
+                content: '';
+                position: absolute;
+                background-color: $primary;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 4px;
+            }
+        }
+    }
+}
+.userBox {
+    padding-left: $s-4;
+    .userBox__pic {
+        height: $s-5;
+        width: $s-5;
+        border-radius: 50%;
+        background-image: url('https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80');
+        margin-right: $s-2;
+    }
+    .userBox__name {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: $s-05;
+    }
+    .userBox__email {
+        font-weight: 14px;
+        color: $light-g;
+    }
+}
+
+// <div class="userBox d-flex ">
+//                     <div class="userBox__pic"></div>
+//                     <div class="userBox__textBox">
+//                         <h5 class="userBox__name">Andy Chen</h5>
+//                         <p class="userBox--email">andy0401@mail.com</p>
+//                     </div>
+//                 </div>
