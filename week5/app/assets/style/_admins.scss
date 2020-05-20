@@ -1,11 +1,15 @@
 .header {
     width: 100%;
-    height: 93px;
-    display: flex;
-    align-items: center;
+    // height: 93px;
+    // display: flex;
+    // align-items: center;
+    // & > div {
+    //     width: 100%;
+    // }
+    padding: 32px 0;
     .row {
         // width: calc(100% + 30px);
-        width: 100%;
+        // width: 100%;
     }
     .addAdim {
         padding: 6px 0;
@@ -50,8 +54,6 @@
     margin-bottom: 0;
     // display: flex;
     li {
-        
-
         a {
             text-align: center;
             font-size: 16px;
@@ -64,12 +66,221 @@
             vertical-align: middle;
             text-align: center;
         }
-        .page-link{
+        .page-link {
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+        }
+    }
+}
+
+// .adminBox {
+//     // position: relative;
+//     .modal-header {
+//         width: 498px;
+//         z-index: 10;
+//         background-color: #fff;
+//         // position: fixed;
+//     }
+// }
+.adminbox__section:not(:last-child) {
+    padding-bottom: $s-1;
+    border-bottom: 1px solid $light;
+    margin-bottom: $s-3;
+}
+.adminbox__section--name {
+    font-size: 20px;
+    margin-bottom: $s-2;
+}
+// }
+.newAdmin-title--style {
+    font-size: 24px;
+    font-weight: bold;
+}
+.adminbox__section--account {
+    input {
+        height: 51px;
+        border: 1px solid $dark;
+    }
+}
+.adminbox__section--account.adminbox--edit {
+    input {
+        border: 0;
+        background-color: $light;
+    }
+}
+
+.adminbox__section--Verifcation {
+    .adminbox__alert {
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        span {
+            color: $danger;
+            margin-right: $s-1;
+        }
+    }
+    .adminbox__checked {
+        position: relative;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        .icon-md {
+            color: $primary;
+            margin-right: $s-1;
+        }
+        .adminbox__checked__time {
+            position: absolute;
+            right: 0;
+            font-weight: normal;
+        }
+    }
+    .btn {
+        width: 100%;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $light;
+        margin-bottom: 16px;
+        p {
+            color: $light;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.adminbox__section--custom {
+    .form-check:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .form-check-input {
+        width: 24px;
+        height: 24px;
+        border: 1px soild $dark;
+        border-radius: 4px;
+        //    margin-right: 8px;
+    }
+    .form-check-label {
+        vertical-align: sub;
+        margin-left: 8px;
+    }
+}
+.adminbox__section--footer {
+    .btn-canel {
+        border: 1px solid $primary;
+        color: $primary;
+        padding: 8px 32px;
+    }
+    .btn-add {
+        padding: 8px 32px;
+    }
+}
+
+.adminbox__section--deactivate {
+    .adminbox__alert {
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        color: $danger;
+        span {
+            margin-right: $s-1;
+        }
+    }
+    .btn {
+        width: 100%;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $danger;
+        margin-bottom: 16px;
+        p {
+            color: $danger;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+    }
+}
+.userBox {
+    .userBox-style {
+        padding: 32px;
+        position: relative;
+    }
+    .close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: green;
+        // span位置不知道怎麼置中
+        span {
+            line-height: 24px;
+        }
+    }
+    .user-pic {
+        width: 141px;
+        height: 141px;
+        background-image: url('https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80');
+    }
+    .user-infoBox {
+        width: calc(100% - 165px);
+        margin-left: 24px;
+        p {
+            font-size: 16px;
+            margin-bottom: 0;
+            line-height: 1.2;
+            //能不能把p的mb都設定為0
+        }
+        .user--id {
+            margin-bottom: $s-1;
+        }
+        .user--name {
+            margin-bottom: $s-1;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 1;
+        }
+        .user--email {
+            margin-bottom: $s-2;
+            font-size: 14px;
+            color: $light-g;
+        }
+        .user-state {
+            padding: $s-05 $s-1;
+            font-size: 14px;
+        }
+        .user-state.user-state--verified {
+            background-color: $light;
+        }
+        .btn {
+            padding: 8px 32px;
+        }
+        .user-stateBox {
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+        .btn-deactivate {
+            color: $danger;
+            border: 1px solid $danger;
+            margin-right: $s-2;
+        }
+        .user-box__btnBox {
+            margin-top: 36px;
+            display: none;
+            transition: 0.5s;
+        }
+        .user-box__btnBox.active {
+            display: flex;
         }
     }
 }

@@ -8,6 +8,10 @@
         <!-- <link rel="stylesheet" href="../node_modules/bootstrap/scss/bootstrap.scss" /> -->
         <link rel="stylesheet" href="./assets/style/all.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
         <!-- <script src="./assets/js/all.js"></script> -->
     </head>
 
@@ -58,12 +62,13 @@
             <div class="main">
                 
 <div class="header">
+    <!-- <div> -->
     <!-- <div class="container-fluid"> -->
     <div class="row">
         <div class="col-8">
             <div class="d-flex align-items-cente">
                 <h2 class="pageTitle">Admin</h2>
-                <div class="addAdim d-flex align-items-center btn">
+                <div class="addAdim d-flex align-items-center btn" data-toggle="modal" data-target="#newAdmin">
                     <span class="material-icons icon-md"> add </span>Add New Admin
                 </div>
             </div>
@@ -82,16 +87,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
     <!-- </div> -->
 </div>
-<!-- <div class="row">
-    <div class="col-12">
-        <div class="header d-flex">
-            <h2 class="pageName">Admin</h2>
-        </div>
-    </div>
-</div> -->
+</div>
+<!-- 表格 -->
 <table class="admins-list table">
     <thead>
         <tr>
@@ -116,13 +116,13 @@
             <td>emir.wicks@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview">
                     <span class="material-icons icon-md">
                         visibility
                     </span>
                 </div>
                 <div class="btn btn-icon">
-                    <span class="material-icons icon-md">
+                    <span class="material-icons icon-md" data-toggle="modal" data-target="#editAdmin">
                         create
                     </span>
                 </div>
@@ -134,7 +134,7 @@
             <td>zaina.goldsmith@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview">
                     <span class="material-icons icon-md">
                         visibility
                     </span>
@@ -152,7 +152,7 @@
             <td>Mahima.Lopez@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview">
                     <span class="material-icons icon-md">
                         visibility
                     </span>
@@ -170,7 +170,7 @@
             <td>emir.wicks@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview">
                     <span class="material-icons icon-md">
                         visibility
                     </span>
@@ -188,7 +188,7 @@
             <td>zaina.goldsmith@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview" >
                     <span class="material-icons icon-md">
                         visibility
                     </span>
@@ -206,7 +206,7 @@
             <td>Mahima.Lopez@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview">
                     <span class="material-icons icon-md">
                         visibility
                     </span>
@@ -224,7 +224,7 @@
             <td>emir.wicks@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview">
                     <span class="material-icons icon-md">
                         visibility
                     </span>
@@ -242,7 +242,7 @@
             <td>zaina.goldsmith@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview">
                     <span class="material-icons icon-md">
                         visibility
                     </span>
@@ -260,7 +260,7 @@
             <td>Mahima.Lopez@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview">
                     <span class="material-icons icon-md">
                         visibility
                     </span>
@@ -278,7 +278,7 @@
             <td>Mahima.Lopez@mail.com</td>
             <td>YES</td>
             <td class="table__actionBox d-flex justify-content-end">
-                <div class="btn btn-icon">
+                <div class="btn btn-icon" data-toggle="modal" data-target="#userReview">
                     <span class="material-icons icon-md">
                         visibility
                     </span>
@@ -315,6 +315,253 @@
         </div>
     </div>
 </div>
+<!-- Modal1 -->
+<div
+    class="modal fade"
+    id="newAdmin"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="newAdminTitle"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="adminBox modal-content ">
+            <div class="modal-header ">
+                <h5 class=" Admin-title--style modal-title" id="newAdminTitle">New Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="adminbox__section adminbox__section--account">
+                <h5 class="adminbox__section--name" >Account</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="formGroupExampleInput"
+                            placeholder=""
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Email</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="formGroupExampleInput2"
+                            placeholder=""
+                        />
+                    </div>
+                    
+                </div>
+                <div class="adminbox__section adminbox__section--Verifcation">
+                    <h5 class="adminbox__section--name">Verifcation</h5>
+                    <p class="adminbox__alert"><span class="material-icons icon-md">
+                        report_problem
+                        </span>Unverified</p>
+                    <div class="btn"> 
+                        <p>Send Verification Mail</p>
+                    </div>
+                </div>
+                <div class="adminbox__section adminbox__section--access">
+                    <div class="form-group">
+                        <h5 class="adminbox__section--name">Access Level</h5>
+                        <select class="form-control form-control-lg">
+                            <option>-Choose access level-</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="adminbox__section adminbox__section--custom">
+                <h5 class="adminbox__section--name">Custom Access</h5>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            Lecture
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2"  />
+                        <label class="form-check-label" for="defaultCheck2">
+                            Coupon
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" />
+                        <label class="form-check-label" for="defaultCheck3">
+                            Message
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" />
+                        <label class="form-check-label" for="defaultCheck4">
+                            Setting
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" />
+                        <label class="form-check-label" for="defaultCheck5">
+                            task menu
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+            <div class="modal-footer adminbox__section--footer">
+                <button type="button" class="btn btn-canel" data-dismiss="modal">Canel</button>
+                <button type="button" class="btn btn-primary btn-add">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal2 -->
+<div
+    class="modal fade"
+    id="editAdmin"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="editAdminTitle"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="adminBox modal-content ">
+            <div class="modal-header ">
+                <h5 class=" editAdmin-title--style modal-title" id="editAdminTitle">Edit Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="adminbox__section adminbox__section--account adminbox--edit">
+                <h5 class="adminbox__section--name" >Account</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="formGroupExampleInput"
+                            placeholder="Emir Wicks"
+                        />
+
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Email</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="formGroupExampleInput2"
+                            placeholder="emir.wicks@mail.com"
+                        />
+                    </div>
+                    
+                </div>
+                <div class="adminbox__section adminbox__section--Verifcation">
+                    <h5 class="adminbox__section--name">Verifcation</h5>
+                    <p class="adminbox__checked"><span class="material-icons icon-md">
+                        check_circle
+                        </span>Verified <span class="adminbox__checked__time">2020/4/12</span></p>
+                    <div class="btn"> 
+                        <p>Send Verification Mail</p>
+                    </div>
+                </div>
+                <div class="adminbox__section adminbox__section--access">
+                    <div class="form-group">
+                        <h5 class="adminbox__section--name">Access Level</h5>
+                        <select class="form-control form-control-lg">
+                            <option>Admin</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="adminbox__section adminbox__section--custom">
+                <h5 class="adminbox__section--name">Custom Access</h5>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            Lecture
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2"  />
+                        <label class="form-check-label" for="defaultCheck2">
+                            Coupon
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" />
+                        <label class="form-check-label" for="defaultCheck3">
+                            Message
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" />
+                        <label class="form-check-label" for="defaultCheck4">
+                            Setting
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" />
+                        <label class="form-check-label" for="defaultCheck5">
+                            task menu
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="adminbox__section adminbox__section--deactivate">
+                <h5 class="adminbox__section--name">Deactivate Account</h5>
+                <p class="adminbox__alert"><span class="material-icons icon-md">
+                    report_problem
+                    </span>This cannot be undone!</p>
+                <div class="btn"> 
+                    <p>Deactivate This Account</p>
+                </div>
+            </div>
+        </div>
+        
+            <div class="modal-footer adminbox__section--footer">
+                <button type="button" class="btn btn-canel" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary btn-add">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="userBox modal fade" id="userReview" tabindex="-1" role="dialog" aria-labelledby="userReview" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content userBox-style">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="d-flex">
+            <div class="user-pic bg-cover"></div>
+            <div class="user-infoBox d-flex flex-column">
+                <p class="user--id">#1</p>
+                <p class="user--type">Admin</p>
+                <h4 class="user--name">Emir Wicks</h4>
+                <p class="user--email">emir.wicks@mail.com</p>
+                <div class=" user-stateBox d-flex justify-content-between">
+                    <span class="user-state user-state--verified">Verified</span>
+                    <div><span class="material-icons icon-md">
+                        keyboard_arrow_down
+                        </span></div>
+                </div>
+                <div class="user-box__btnBox">
+                    <div class="btn btn-deactivate">Deactivate</div>
+                <div class="btn btn-primary">Edit</div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
 
             </div>
         </div>
