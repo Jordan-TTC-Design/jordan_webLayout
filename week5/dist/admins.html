@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>admins</title>
+        <!-- <link rel="stylesheet" href="../node_modules/bootstrap/scss/bootstrap.scss" /> -->
+        <link rel="stylesheet" href="./assets/style/all.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <!-- <script src="./assets/js/all.js"></script> -->
+    </head>
+
+    <body>
+        <div class="dashBoard d-flex">
+            <nav class="sideNav d-flex flex-column justify-content-between">
+                <ul class="sideNav__menuList">
+                    <img class="logo" src="./assets/images/logo-ANSWER.svg" alt="" />
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">assessment</span>Dashboard</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">question_answer</span>Question</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">assignment</span>Assignment</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">video_library</span>Course</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center active" href="./admins.html"
+                            ><span class="material-icons">supervisor_account</span>Admin</a
+                        >
+                    </li>
+                    <li class="sideNav__menu__item">
+                        <a class="nav__link d-flex align-items-center" href="#"
+                            ><span class="material-icons">settings</span>Settings</a
+                        >
+                    </li>
+                </ul>
+                <div class="userBox d-flex">
+                    <div class="userBox__pic bg-cover"></div>
+                    <div class="userBox__textBox">
+                        <h5 class="userBox__name">Andy Chen</h5>
+                        <p class="userBox--email">andy0401@mail.com</p>
+                    </div>
+                </div>
+            </nav>
+            <div class="main">
+                
+<div class="header">
+    <!-- <div class="container-fluid"> -->
+    <div class="row">
+        <div class="col-8">
+            <div class="d-flex align-items-cente">
+                <h2 class="pageTitle">Admin</h2>
+                <div class="addAdim d-flex align-items-center btn">
+                    <span class="material-icons icon-md"> add </span>Add New Admin
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="d-flex justify-content-end align-items-center">
+                <div class="search btn btn-icon">
+                    <span class="material-icons icon-md">
+                        search
+                    </span>
+                </div>
+                <div class="notifications btn btn-icon">
+                    <span class="material-icons icon-md">
+                        notifications
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</div>
+<!-- <div class="row">
+    <div class="col-12">
+        <div class="header d-flex">
+            <h2 class="pageName">Admin</h2>
+        </div>
+    </div>
+</div> -->
+<table class="admins-list table">
+    <thead>
+        <tr>
+            <th scope="col">
+                <div class="btn--id btn btn-icon">
+                    ID
+                    <span class="material-icons">
+                        arrow_downward
+                    </span>
+                </div>
+            </th>
+            <th scope="col">NAME</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">Verified</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td scope="row">#1</td>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">#2</td>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">#3</td>
+            <td>Mahima Lopez</td>
+            <td>Mahima.Lopez@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">#4</td>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">#5</td>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">#6</td>
+            <td>Mahima Lopez</td>
+            <td>Mahima.Lopez@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">#7</td>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">#8</td>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">#9</td>
+            <td>Mahima Lopez</td>
+            <td>Mahima.Lopez@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">#10</td>
+            <td>Mahima Lopez</td>
+            <td>Mahima.Lopez@mail.com</td>
+            <td>YES</td>
+            <td class="table__actionBox d-flex justify-content-end">
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        visibility
+                    </span>
+                </div>
+                <div class="btn btn-icon">
+                    <span class="material-icons icon-md">
+                        create
+                    </span>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-end align-items-center">
+            <nav aria-label="Page navigation example">
+                <ul class="myPagination pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span class="icon-sm material-icons">chevron_left</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span class="icon-sm material-icons">chevron_right</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </body>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</html>
