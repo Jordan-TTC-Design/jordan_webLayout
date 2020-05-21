@@ -61,7 +61,6 @@
     }
 }
 
-
 .adminbox__section:not(:last-child) {
     padding-bottom: $s-1;
     border-bottom: 1px solid $light;
@@ -95,6 +94,7 @@
         font-weight: bold;
         display: flex;
         align-items: center;
+        margin-bottom: 18px;
         span {
             color: $danger;
             margin-right: $s-1;
@@ -166,6 +166,7 @@
         display: flex;
         align-items: center;
         color: $danger;
+        margin-bottom: 18px;
         span {
             margin-right: $s-1;
         }
