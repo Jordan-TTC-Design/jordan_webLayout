@@ -1,0 +1,212 @@
+---
+title: assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: assignment
+---
+
+<!-- 分頁開頭 -->
+<div class="header">
+    <div class="row">
+        <div class="col-8">
+            <div class="d-flex align-items-center">
+                <h2 class="pageTitle">Assignment</h2>
+                <div
+                    class="addAdim d-flex align-items-center btn dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    All Courses<span class="material-icons icon-md"> expand_more </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="d-flex justify-content-end align-items-center">
+                <div class="search btn btn-icon">
+                    <span class="material-icons icon-md">
+                        search
+                    </span>
+                </div>
+                <div class="notifications btn btn-icon">
+                    <span class="material-icons icon-md">
+                        notifications
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 主要內容 -->
+
+<div class="row">
+    <div class="col-4">
+        <a href="#" class="course__qusList--title"
+            >All(4) <span class="material-icons icon-md primary"> expand_more </span></a
+        >
+        <ul class="course__qusList list-group">
+            <li class="list-group-item course__qusBox active d-flex justify-content-between">
+                <div class="course__qusBox__content">
+                    <p class="qus__content__course__number">Chapter Assignment 2</p>
+                    <p class="qus__content__title">Please check this file…</p>
+                </div>
+                <div class="course__qusBox__infoBox">
+                    <p class="qus__content__time">4 hrs ago</p>
+                    <p class="qus__content__user">Emily Wang</p>
+                </div>
+            </li>
+            <li class="list-group-item course__qusBox d-flex justify-content-between">
+                <div class="course__qusBox__content">
+                    <p class="qus__content__course__number">Chapter Assignment 1</p>
+                    <p class="qus__content__title">My Homework</p>
+                </div>
+                <div class="course__qusBox__infoBox">
+                    <p class="qus__content__time">12 hrs ago</p>
+                    <p class="qus__content__user">David Xu</p>
+                </div>
+            </li>
+
+            <li class="list-group-item course__qusBox d-flex justify-content-between">
+                <div class="course__qusBox__content">
+                    <p class="qus__content__course__number">Final Assignment</p>
+                    <p class="qus__content__title">Have a problem with this…</p>
+                </div>
+                <div class="course__qusBox__infoBox">
+                    <p class="qus__content__time">18 hrs ago</p>
+                    <p class="qus__content__user">Tony Wei</p>
+                </div>
+            </li>
+            <li class="list-group-item course__qusBox d-flex justify-content-between">
+                <div class="course__qusBox__content">
+                    <p class="qus__content__course__number">Final Assignment</p>
+                    <p class="qus__content__title">Did I do it right?</p>
+                </div>
+                <div class="course__qusBox__infoBox">
+                    <p class="qus__content__time">19 hrs ago</p>
+                    <p class="qus__content__user">Christina Lin</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-8">
+        <p class="course__commentsNumber">2 comments</p>
+        <div class="course__user--list">
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <p><span>Chapter Assignment 2 / HTML&CSS</span> <br />Please check this file for me, thanks!</p>
+                        <span class="material-icons icon-md"> more_vert </span>
+                    </div>
+                </div>
+                <div class="userBox media">
+                    <div class="user__pic user__pic--emily bg-cover align-self-start mr-2"></div>
+                    <div class="media-body">
+                        <h5 class="user__name mt-0">Emily Wang</h5>
+                        <p class="user__time">10:38 AM (4 hours ago)</p>
+                        <p class="user__content">
+                            Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                            the following code the height of the <span class="highLight">div</span> is bigger than the
+                            height of the <span class="highLight">img</span> ? There is a gap below the image, but it
+                            doesn’t seems to be a padding/margin. <br />What is the gap or extra space below image?
+                        </p>
+                        <div class="btn user__file">
+                            <span class="material-icons icon-md"> attach_file </span><a href="#">HW-2-David.zip</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="userBox media">
+                    <div class="user__pic user__pic--andy bg-cover align-self-start mr-2"></div>
+                    <div class="media-body">
+                        <h5 class="user__name mt-0">Andy Chen (You)</h5>
+                        <p class="user__time">13:24 AM (1 hours ago)</p>
+                        <p class="user__content">
+                            Hi David, by default, an image is rendered inline, like a letter so it sits on the same line
+                            that a, b, c and d sit on. There is space below that line for the descenders you find on
+                            letters like g, j, p and q.
+                            <br />
+                            <br />
+                            You can: <br />
+                            <br />
+                            <span class="user__content__dotList"
+                                >• adjust the <span class="highLight">vertical-align</span> of the image to position it
+                                elsewhere (e.g. the middle ) or </span
+                            ><br />
+                            <span class="user__content__dotList"
+                                >• change the <span class="highLight">display</span> so it isn’t inline.</span
+                            >
+                        </p>
+                        <div class="userBox__btnList d-flex">
+                            <span class="material-icons icon-md mr-4">grade</span>
+                            <span class="material-icons icon-md"> create </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user__qus__controlBox d-flex justify-content-between">
+            <!-- //這裡老師可以給我命名建議嗎？ -->
+            <div class="user__qus__controlBox__innerBox">
+                <span class="material-icons icon-md">
+                    navigate_before
+                </span>
+                <span class="material-icons icon-md">
+                    navigate_next
+                </span>
+            </div>
+            <div class="user__qus__controlBox__innerBox">
+                <div class="btn btn-outline-primary">Mark as read</div>
+                <div id="qusReplyOpen" class="btn btn-primary">Reply</div>
+            </div>
+        </div>
+        <div class="replayBox card">
+            <!-- 這裡不知道怎麼設定高度是比較好 -->
+            <div class="replayBox__textControlList card-header">
+                <div class="btn-group">
+                    <button
+                        class="btn btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Body Text
+                    </button>
+                    <div class="dropdown-menu">
+                        <!-- ... -->
+                    </div>
+                </div>
+
+                <span class="material-icons icon-md">
+                    format_bold
+                </span>
+                <span class="material-icons icon-md">
+                    format_italic
+                </span>
+                <span class="material-icons icon-md">
+                    format_list_bulleted
+                </span>
+                <span class="material-icons icon-md">
+                    format_list_numbered
+                </span>
+                <span class="material-icons icon-md">
+                    image
+                </span>
+                <span class="material-icons icon-md">
+                    insert_link
+                </span>
+                <span class="material-icons icon-md">
+                    code
+                </span>
+            </div>
+            <!-- 這裡真的不知道怎麼做好 -->
+            <input class="replayBox__textContentBox" rows="12" type="textarea" placeholder="replay here...." />
+            <div class="replayBox_btnBox d-flex justify-content-end">
+                <div class="btn btn-outline-primary">Cancel</div>
+                <div id="qusRaplySend" class="btn btn-primary">Reply</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 以下為modal置放區 -->

@@ -5,9 +5,8 @@ engine: ejs
 current: admins
 ---
 
+<!-- 分頁開頭 -->
 <div class="header">
-    <!-- <div> -->
-    <!-- <div class="container-fluid"> -->
     <div class="row">
         <div class="col-8">
             <div class="d-flex align-items-cente">
@@ -31,11 +30,9 @@ current: admins
                 </div>
             </div>
         </div>
-    <!-- </div> -->
-    <!-- </div> -->
+    </div>
 </div>
-</div>
-<!-- 表格 -->
+<!-- Admins表格 -->
 <table class="admins-list table">
     <thead>
         <tr>
@@ -236,6 +233,8 @@ current: admins
         </tr>
     </tbody>
 </table>
+
+<!-- pagination -->
 <div class="row">
     <div class="col-12">
         <div class="d-flex justify-content-end align-items-center">
@@ -259,7 +258,11 @@ current: admins
         </div>
     </div>
 </div>
-<!-- Modal1 -->
+
+<!-- 以下為modal置放區 -->
+
+
+<!-- NEw Modal -->
 <div
     class="modal fade"
     id="newAdmin"
@@ -360,7 +363,10 @@ current: admins
         </div>
     </div>
 </div>
-<!-- Modal2 -->
+
+
+
+<!-- Edit Modal -->
 <div
     class="modal fade"
     id="editAdmin"
@@ -472,10 +478,9 @@ current: admins
         </div>
     </div>
 </div>
-<!-- Button trigger modal -->
 
   
-  <!-- Modal -->
+  <!-- User Modal -->
   <div class="userBox modal fade" id="userReview" tabindex="-1" role="dialog" aria-labelledby="userReview" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content userBox-style">

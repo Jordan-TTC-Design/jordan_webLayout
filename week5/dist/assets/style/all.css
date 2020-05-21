@@ -8784,13 +8784,17 @@ h1, h2, h3, h4, h5, h6,
 a:hover {
   text-decoration: none; }
 
+p {
+  margin-bottom: 0; }
+
 .pageTitle {
   font-size: 24px;
   margin-right: 47px; }
 
 .icon-md {
   height: 24px;
-  width: 24px; }
+  width: 24px;
+  vertical-align: middle; }
 
 .dashBoard {
   height: 800px;
@@ -9101,5 +9105,152 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+
+.course__qusList--title {
+  font-weight: 600;
+  color: #121212;
+  margin-bottom: 8px; }
+  .course__qusList--title .icon-md {
+    margin-left: 7px;
+    color: #2A8356; }
+
+.course__qusBox {
+  border: 1px solid #CDDDCD;
+  padding: 12px; }
+  .course__qusBox p {
+    margin-bottom: 0; }
+  .course__qusBox.active {
+    background-color: #EDF4EE;
+    border: 1px solid #CDDDCD; }
+    .course__qusBox.active p {
+      color: #121212; }
+  .course__qusBox .qus__content__course__number,
+  .course__qusBox .qus__content__user,
+  .course__qusBox .qus__content__time {
+    font-size: 12px; }
+  .course__qusBox .qus__content__title {
+    font-weight: 600; }
+  .course__qusBox .qus__content__user {
+    color: #656565; }
+
+.course__commentsNumber {
+  font-size: 12px;
+  color: #9D9D9D;
+  text-align: right;
+  margin-bottom: 8px; }
+
+.course__user--list .card-header {
+  padding: 12px 16px; }
+  .course__user--list .card-header p {
+    font-weight: 600;
+    margin-bottom: 0; }
+    .course__user--list .card-header p span {
+      font-weight: 12;
+      margin-bottom: 4px; }
+  .course__user--list .card-header .icon-md {
+    margin: auto 0; }
+
+.course__user--list .card {
+  width: 100%;
+  border: 1px solid #CDDDCD; }
+
+.course__user--list .card-header {
+  border: 1px solid #CDDDCD;
+  background-color: #EDF4EE;
+  margin-bottom: 16px; }
+
+.course__user--list .userBox {
+  padding: 0;
+  position: relative;
+  padding: 16px 32px 10px 16px; }
+  .course__user--list .userBox .user__pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
+  .course__user--list .userBox .user__pic.user__pic--emily {
+    background-image: url("https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"); }
+  .course__user--list .userBox .user__pic.user__pic--andy {
+    background-image: url("https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"); }
+  .course__user--list .userBox .user__name {
+    font-weight: 600; }
+  .course__user--list .userBox .user__time {
+    font-size: 12px;
+    color: #9D9D9D; }
+  .course__user--list .userBox .user__content {
+    font-size: 14px; }
+  .course__user--list .userBox .highLight {
+    background-color: #EDF4EE;
+    color: #2A8356;
+    padding: 2px;
+    line-height: 1.8; }
+  .course__user--list .userBox .user__file {
+    border: 1px solid #CDDDCD;
+    background-color: #EDF4EE;
+    padding: 8px 16px 8px 12px;
+    margin-bottom: 16px; }
+    .course__user--list .userBox .user__file .icon-md {
+      color: #121212; }
+    .course__user--list .userBox .user__file a {
+      vertical-align: 600;
+      color: #121212; }
+  .course__user--list .userBox:not(:last-child) .media-body {
+    border-bottom: 1px solid #CDDDCD;
+    margin-bottom: 16px; }
+  .course__user--list .userBox .user__content__dotList {
+    margin-left: 16px; }
+  .course__user--list .userBox .userBox__btnList {
+    position: absolute;
+    top: 0;
+    right: 32px; }
+
+.user__qus__controlBox {
+  margin-top: 16px;
+  margin-bottom: 32px; }
+  .user__qus__controlBox .user__qus__controlBox__innerBox .icon-md:not(:last-child) {
+    margin-right: 24px; }
+  .user__qus__controlBox .user__qus__controlBox__innerBox .btn {
+    padding: 8px 32px; }
+    .user__qus__controlBox .user__qus__controlBox__innerBox .btn:not(:last-child) {
+      margin-right: 16px; }
+
+.replayBox {
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  right: 15px;
+  bottom: 0;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  border: 0; }
+  .replayBox input {
+    border: 0; }
+
+.replayBox.active {
+  width: calc(100% - 30px);
+  right: 15px;
+  border: 1px solid #CDDDCD; }
+
+.replayBox__textControlList {
+  height: 56px;
+  background-color: #EDF4EE;
+  border: 1px solid #CDDDCD; }
+  .replayBox__textControlList .btn-group {
+    margin-right: 16px; }
+    .replayBox__textControlList .btn-group .btn {
+      font-weight: 600; }
+  .replayBox__textControlList span:not(:last-child) {
+    margin-right: 24px; }
+
+.replayBox__textContentBox {
+  height: 263px; }
+
+.replayBox_btnBox {
+  margin-right: 24px;
+  margin-bottom: 16px; }
+  .replayBox_btnBox .btn:not(:last-child) {
+    margin-right: 8px; }
+  .replayBox_btnBox .btn {
+    padding: 8px 32px; }
 
 /*# sourceMappingURL=all.css.map */

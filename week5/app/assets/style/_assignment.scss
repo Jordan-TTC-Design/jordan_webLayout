@@ -1,0 +1,187 @@
+* {
+    // outline: 1px solid red;
+}
+.course__qusList--title {
+    font-weight: 600;
+    color: $dark;
+    margin-bottom: 8px;
+    .icon-md {
+        margin-left: 7px;
+        color: $primary;
+    }
+}
+.course__qusBox {
+    border: 1px solid $secondary;
+    padding: 12px;
+    p {
+        margin-bottom: 0;
+    }
+
+    &.active {
+        background-color: $light;
+        border: 1px solid $secondary;
+        p {
+            color: $dark;
+        }
+    }
+    .qus__content__course__number,
+    .qus__content__user,
+    .qus__content__time {
+        font-size: 12px;
+    }
+    .qus__content__title {
+        font-weight: 600;
+    }
+    .qus__content__user {
+        color: $dark-g;
+    }
+}
+.course__commentsNumber {
+    font-size: 12px;
+    color: $light-g;
+    text-align: right;
+    margin-bottom: $s-1;
+}
+.course__user--list {
+    .card-header {
+        padding: 12px 16px;
+        p {
+            span {
+                font-weight: 12;
+                margin-bottom: 4px;
+            }
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        .icon-md {
+            margin: auto 0;
+        }
+    }
+    .card {
+        width: 100%;
+        border: 1px solid $secondary;
+    }
+    .card-header {
+        border: 1px solid $secondary;
+        background-color: $light;
+        margin-bottom: $s-2;
+    }
+    .userBox {
+        padding: 0;
+        position: relative;
+        padding: 16px 32px 10px 16px;
+        .user__pic {
+            width: $s-5;
+            height: $s-5;
+            border-radius: 50%;
+        }
+        .user__pic.user__pic--emily {
+            background-image: url('https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80');
+        }
+        .user__pic.user__pic--andy {
+            background-image: url('https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80');
+        }
+        .user__name {
+            font-weight: 600;
+        }
+        .user__time {
+            font-size: 12px;
+            color: $light-g;
+        }
+        .user__content {
+            font-size: 14px;
+        }
+        .highLight {
+            background-color: $light;
+            color: $primary;
+            padding: 2px;
+            line-height: 1.8;
+        }
+        .user__file {
+            border: 1px solid $secondary;
+            background-color: $light;
+            padding: 8px 16px 8px 12px;
+            margin-bottom: $s-2;
+            .icon-md {
+                color: $dark;
+            }
+            a {
+                vertical-align: 600;
+                color: $dark;
+            }
+        }
+        &:not(:last-child) .media-body {
+            border-bottom: 1px solid $secondary;
+            margin-bottom: $s-2;
+        }
+        .user__content__dotList {
+            margin-left: $s-2;
+        }
+        .userBox__btnList {
+            position: absolute;
+            top: 0;
+            right: 32px;
+        }
+    }
+}
+.user__qus__controlBox {
+    margin-top: $s-2;
+    margin-bottom: $s-4;
+    .user__qus__controlBox__innerBox {
+        .icon-md:not(:last-child) {
+            margin-right: $s-3;
+        }
+        .btn {
+            padding: 8px 32px;
+            &:not(:last-child) {
+                margin-right: $s-2;
+            }
+        }
+    }
+}
+.replayBox {
+    // display: none;
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    right: 15px;
+    bottom: 0;
+    transition: 0.6s;
+    border: 0;
+    input {
+        border: 0;
+    }
+}
+.replayBox.active {
+    width: calc(100% - 30px);
+    right: 15px;
+    border: 1px solid $secondary;
+}
+.replayBox__textControlList {
+    height: 56px;
+    background-color: $light;
+    border: 1px solid $secondary;
+    .btn-group {
+        margin-right: 16px;
+        .btn {
+            font-weight: 600;
+        }
+    }
+    span:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+.replayBox__textContentBox {
+    height: 263px;
+}
+.replayBox_btnBox {
+    margin-right: 24px;
+    margin-bottom: 16px;
+    .btn:not(:last-child) {
+        margin-right: 8px;
+    }
+    .btn {
+        padding: 8px 32px;
+    }
+}

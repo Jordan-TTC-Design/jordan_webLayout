@@ -1,20 +1,8 @@
 .header {
     width: 100%;
-    // height: 93px;
-    // display: flex;
-    // align-items: center;
-    // & > div {
-    //     width: 100%;
-    // }
     padding: 32px 0;
-    .row {
-        // width: calc(100% + 30px);
-        // width: 100%;
-    }
     .addAdim {
         padding: 6px 0;
-        // vertical-align: middle;
-
         span {
             margin-right: $s-1;
             color: $primary;
@@ -47,9 +35,7 @@
         }
     }
 }
-.myPagination--Box {
-    // display: flex;
-}
+
 .myPagination {
     margin-bottom: 0;
     // display: flex;
@@ -75,15 +61,7 @@
     }
 }
 
-// .adminBox {
-//     // position: relative;
-//     .modal-header {
-//         width: 498px;
-//         z-index: 10;
-//         background-color: #fff;
-//         // position: fixed;
-//     }
-// }
+
 .adminbox__section:not(:last-child) {
     padding-bottom: $s-1;
     border-bottom: 1px solid $light;
