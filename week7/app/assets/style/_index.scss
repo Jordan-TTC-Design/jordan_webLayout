@@ -1,0 +1,178 @@
+section {
+    position: relative;
+}
+.section__picBox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__pic--1 {
+    background-image: url('https://images.unsplash.com/photo-1497515098781-e965764ab601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1608&q=80');
+}
+
+.pic--control__btn {
+    width: 120px;
+    height: 120px;
+}
+.pic--control__name {
+    padding-left: 48px;
+    font-size: 48px;
+    font-style: italic;
+}
+.section--header {
+    .section__txtBox {
+        width: 100%;
+        padding: 216px 0;
+        .section__title {
+            margin-bottom: $s-6;
+        }
+        p {
+            margin-right: 120px;
+            color: $secondary;
+            margin-bottom: $s-6;
+        }
+        .btn {
+            padding: 16px 51px;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+}
+
+// 第個section
+.section--concept--1 {
+    // 這裡是否不應該寫死高度???
+    .section__txtbox {
+        height: 960px;
+        p {
+            margin: 96px 0;
+        }
+    }
+    .section__picBox {
+        left: 0;
+        a {
+            position: absolute;
+            top: 50%;
+            background-color: #fff;
+            right: -60px;
+            transform: translateY(-50%);
+            .btn__txtBox {
+                font-size: 24px;
+
+                margin: 0 16px;
+            }
+            .icon-sm {
+                background-color: black;
+                padding: 18px;
+                color: white;
+            }
+        }
+    }
+    .section-title {
+        position: absolute;
+        bottom: 192px;
+        right: 96px;
+        text-align: right;
+        font-size: 72px;
+    }
+}
+.section__pic--2 {
+    background-image: url('https://images.unsplash.com/photo-1499438075715-fc23ef376ab9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1308&q=80');
+}
+.bg-color--full {
+    background-color: $light-g;
+}
+.section--concept--2 {
+    // 這裡是否不應該寫死高度???
+    .section__txtbox {
+        height: 960px;
+        p {
+            margin: 96px 0;
+        }
+    }
+    .section__picBox {
+        right: 0;
+        a {
+            position: absolute;
+            top: 50%;
+            background-color: black;
+            left: 60px;
+            // 原來是y先再來才是x
+            transform: translate3d(-100%, -50%, 0);
+            .btn__txtBox {
+                font-size: 24px;
+                color: #fff;
+                margin: 0 16px;
+            }
+            .icon-sm {
+                background-color: #fff;
+                padding: 18px;
+                color: black;
+            }
+        }
+    }
+    .section-title {
+        position: absolute;
+        top: 192px;
+        left: 96px;
+        text-align: left;
+        font-size: 72px;
+    }
+}
+
+.section__pic--3 {
+    background-image: url('https://images.unsplash.com/photo-1496147011889-39d4a64b76e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+.section--text {
+    .textBox {
+        padding: 0 48px;
+        h3 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+    }
+}
+
+.section--customerReview {
+    // height: 640px;
+    background-position-y: 25%;
+    background-image: url('https://images.unsplash.com/photo-1498036471282-05a678a132e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');
+    .reviewBox {
+        background-color: #fff;
+        padding: 16px;
+        margin-top: 424px;
+        margin-bottom: 77px;
+        h5 {
+            font-size: 24px;
+            margin-bottom: $s-2;
+        }
+    }
+}
+.blog__item__pic {
+    height: 600px;
+    margin-bottom: $s-3;
+}
+.blog__item__pic--1 {
+    background-image: url('https://images.unsplash.com/photo-1565291395961-ec8c830a1227?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');
+}
+.blog__item__pic--2 {
+    background-image: url('https://images.unsplash.com/photo-1548774432-8d118269f9ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+}
+.blog__item__pic--3 {
+    background-image: url('https://images.unsplash.com/photo-1571932148037-0da9166b18f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80');
+}
+.blog__item__title {
+    margin-bottom: $s-2;
+    font-size: 24px;
+}
+.blog__item__time {
+    margin-bottom: $s-2;
+}
+.blog__item__content {
+    margin-bottom: $s-2;
+}

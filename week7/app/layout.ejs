@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title><%- title %></title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/style/all.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="d-flex flex-jcsb flex-aic">
+                <h1>
+                    <!-- header__logo的class下在h1還是a好 -->
+                    <a class="header__logo" href="#"><img src="./assets/images/logo-fixie.svg" alt="" /></a>
+                </h1>
+                <ul class="header__nav d-flex">
+                    <li class="header__nav__item"><a class="link-btn">Product</a></li>
+                    <li class="header__nav__item"><a class="link-btn">Blog</a></li>
+                    <li class="header__nav__item"><a class="link-btn">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <%- contents %>
+
+        <footer class="footer wrap">
+            <div class="d-flex flex-jcsb flex-aic">
+              <ul class="footer__nav d-flex">
+                <li><a class="link-btn fw-bd" href="#">Product</a></li>
+                <li><a class="link-btn fw-bd" href="#">Blog</a></li>
+                <li><a class="link-btn fw-bd" href="#">Contact</a></li>
+              </ul>
+              <p class="copyRight fw-light">© 2020 Fixie. All Rights Reserved.</p>
+              <a href="#"><img src="./assets/images/logo-fixie.svg" alt=""></a>
+            </div>
+        </footer>
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+.header {
+    padding: $s-3 $s-6;
+    border-bottom: 1px solid #000;
+}
+.header__logo {
+    img {
+        height: $s-6;
+    }
+}
+.header__nav {
+    li:not(:last-child) {
+        margin-right: $s-6;
+    }
+    a.link-btn {
+        height: 44px;
+    }
+}
+
+.footer{
+    padding: $s-3 $s-6;
+    background-color: $light-g;
+
+    li:not(:last-child) {
+        margin-right: $s-6;
+    }
+}
+.section__title{
+    font-size: 96px;
+    font-style: italic;
+}
