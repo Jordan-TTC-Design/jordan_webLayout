@@ -7781,6 +7781,9 @@ section {
     font-weight: 700;
     font-size: 24px; }
 
+.section--header .header__pic--control {
+  border-bottom: 1px solid #000; }
+
 .section--concept--1 .section__txtbox {
   height: 960px; }
   .section--concept--1 .section__txtbox p {
