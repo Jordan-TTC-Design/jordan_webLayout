@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>首頁</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="stylesheet" href="./assets/style/all.css" />
     </head>
 
     <body>
-        <header class="header">
+        <header data-aos="slide-down" data-aos-delay="300"   class="header">
             <div class="d-flex flex-jcsb flex-aic">
                 <h1>
                     <!-- header__logo的class下在h1還是a好 -->
@@ -28,8 +28,8 @@
 <main>
     <section class="section--header">
         <div class="d-flex justify-content-end">
-            <div class="section__picBox f-5">
-                <div class="section__pic--1 bg-cover bg-size"></div>
+            <div data-aos="slide-left" class="section__picBox f-5">
+                <div data-aos="slide-left" data-aos-delay="300" class="section__pic--1 bg-cover bg-size"></div>
                 <div class="header__pic--control d-flex flex-aic">
                     <a href="#" class="pic--control__btn flex-center box-border">
                         <span class="material-icons icon-md">
@@ -41,7 +41,7 @@
                             chevron_right
                         </span>
                     </a>
-                    <div class="pic--control__name ff-title">
+                    <div data-aos="slide-left"  class="pic--control__name ff-title">
                         <p>Collection 001-xx</p>
                     </div>
                 </div>
@@ -51,12 +51,12 @@
             <div class="row">
                 <div class="col-6">
                     <div class="section__txtBox">
-                        <h2 class="section__title ff-title mb-8">Single Speed, <br />Single Life.</h2>
-                        <p>
+                        <h2 data-aos="slide-right" class="section__title ff-title mb-8">Single Speed, <br />Single Life.</h2>
+                        <p data-aos="slide-right">
                             More recently the “fixie” has become a popular alternative among mainly urban cyclists,
                             offering the advantage of simplicity compared with the standard multi-geared bicycle.
                         </p>
-                        <button class="btn box-border">Shop Now</button>
+                        <button data-aos="slide-right" class="btn box-border">Shop Now</button>
                     </div>
                 </div>
             </div>
@@ -77,11 +77,11 @@
                     </div>
                 </div>
             </div>
-            <h3 class="section-title ff-title">One Gear,<br />Many Variations</h3>
+            <h3 data-aos="slide-left"  class="section-title ff-title">One Gear,<br />Many Variations</h3>
         </div>
         <div class="d-flex justify-content-end">
             <div class="section__picBox f-5">
-                <div class="section__pic--2 bg-cover bg-size">
+                <div data-aos="slide-right" class="section__pic--2 bg-cover bg-size">
                     <a class="d-flex flex-aic" href="#">
                         <span class="btn__txtBox">Read More</span>
                         <span class="material-icons icon-sm"> arrow_forward </span></a
@@ -95,7 +95,7 @@
             <div class="wrap">
                 <div class="row d-flex justify-content-start">
                     <div class="col-5">
-                        <div class="section__txtbox d-flex flex-column justify-content-end">
+                        <div data-aos="slide-right"  class="section__txtbox d-flex flex-column justify-content-end">
                             <p>
                                 Without the added parts required for a fully geared drive train—derailleurs, shifters,
                                 cables, cable carriers, multiple chain rings, freewheel hub, brazed-on mounting lugs—a
@@ -105,10 +105,10 @@
                     </div>
                 </div>
             </div>
-            <h3 class="section-title ff-title">Stripped-Down<br />Performance</h3>
+            <h3 data-aos="slide-right" class="section-title ff-title">Stripped-Down<br />Performance</h3>
         </div>
         <div class="d-flex justify-content-end">
-            <div class="section__picBox f-5">
+            <div data-aos="slide-left"  class="section__picBox f-5">
                 <div class="section__pic--3 bg-cover bg-size"></div>
                 <a class="d-flex flex-aic" href="#">
                     <span class="btn__txtBox">Read More</span>
@@ -121,10 +121,10 @@
         <div class="wrap wrap--p">
             <div class="row d-flex flex-jcc">
                 <div class="col-6 textBox">
-                    <h3 class="ff-title tac mb-3">
+                    <h3 data-aos="slide-up" data-aos-delay="400" class="ff-title tac mb-3">
                         A collection built for regular commuters
                     </h3>
-                    <p class="tac text-secondary">
+                    <p data-aos="slide-up" data-aos-delay="400" class="tac text-secondary">
                         Riders unknown to each other commonly greet each other when on bikes. As in many subcultures,
                         this feeling of belonging is a key factor in recruiting and retaining participants.
                     </p>
@@ -132,11 +132,11 @@
             </div>
         </div>
     </section>
-    <section class="section--customerReview bg-cover">
+    <section data-aos="slide-up" data-aos-delay="200" class="section--customerReview bg-cover">
         <div class="wrap">
             <div class="row">
                 <div class="col-4">
-                    <div class="reviewBox">
+                    <div data-aos="slide-up" data-aos-delay="400" class="reviewBox">
                         <h5 class="ff-title">
                             “I like to ride. Fixed gear. No brakes. Can’t stop. Don’t want to, either.”
                         </h5>
@@ -150,7 +150,7 @@
         <div class="wrap wrap--p">
             <!-- 之前卡斯伯老師說排版要分開，但這裡是不是可以用ul去寫？ -->
             <ul class="row">
-                <li class="col-4">
+                <li data-aos="slide-up"  data-aos-delay="400" class="col-4">
                     <div class="blog__item">
                         <div class="blog__item__pic blog__item__pic--1 bg-cover"></div>
                         <h5 class="blog__item__title">All who cycle are my friends</h5>
@@ -161,7 +161,7 @@
                         </p>
                     </div>
                 </li>
-                <li class="col-4">
+                <li data-aos="slide-up" data-aos-delay="600" class="col-4">
                     <div class="blog__item">
                         <div class="blog__item__pic blog__item__pic--2 bg-cover"></div>
                         <h5 class="blog__item__title">Swedish riders and enthusiasts</h5>
@@ -172,7 +172,7 @@
                         </p>
                     </div>
                 </li>
-                <li class="col-4">
+                <li data-aos="slide-up" class="col-4">
                     <div class="blog__item">
                         <div class="blog__item__pic blog__item__pic--3 bg-cover"></div>
                         <h5 class="blog__item__title">The Australian fixie culture</h5>
@@ -189,18 +189,44 @@
 </main>
 
 
-        <footer class="footer wrap">
+        <footer data-aos="slide-up" data-aos-delay="200"  data-aos-offset="0" class="footer wrap">
             <div class="d-flex flex-jcsb flex-aic">
-              <ul class="footer__nav d-flex">
-                <li><a class="link-btn fw-bd" href="#">Product</a></li>
-                <li><a class="link-btn fw-bd" href="#">Blog</a></li>
-                <li><a class="link-btn fw-bd" href="#">Contact</a></li>
-              </ul>
-              <p class="copyRight fw-light">© 2020 Fixie. All Rights Reserved.</p>
-              <a href="#"><img src="./assets/images/logo-fixie.svg" alt=""></a>
+                <ul class="footer__nav d-flex">
+                    <li><a class="link-btn fw-bd" href="#">Product</a></li>
+                    <li><a class="link-btn fw-bd" href="#">Blog</a></li>
+                    <li><a class="link-btn fw-bd" href="#">Contact</a></li>
+                </ul>
+                <p class="copyRight fw-light">© 2020 Fixie. All Rights Reserved.</p>
+                <a href="#"><img src="./assets/images/logo-fixie.svg" alt="" /></a>
             </div>
         </footer>
         <script src="./assets/js/vendors.js"></script>
         <script src="./assets/js/all.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 800, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+        </script>
     </body>
 </html>

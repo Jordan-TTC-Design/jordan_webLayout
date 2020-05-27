@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title><%- title %></title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="stylesheet" href="./assets/style/all.css" />
     </head>
 
     <body>
-        <header class="header">
+        <header data-aos="slide-down" data-aos-delay="300"   class="header">
             <div class="d-flex flex-jcsb flex-aic">
                 <h1>
                     <!-- header__logo的class下在h1還是a好 -->
@@ -26,18 +26,44 @@
 
         <%- contents %>
 
-        <footer class="footer wrap">
+        <footer data-aos="slide-up" data-aos-delay="200"  data-aos-offset="0" class="footer wrap">
             <div class="d-flex flex-jcsb flex-aic">
-              <ul class="footer__nav d-flex">
-                <li><a class="link-btn fw-bd" href="#">Product</a></li>
-                <li><a class="link-btn fw-bd" href="#">Blog</a></li>
-                <li><a class="link-btn fw-bd" href="#">Contact</a></li>
-              </ul>
-              <p class="copyRight fw-light">© 2020 Fixie. All Rights Reserved.</p>
-              <a href="#"><img src="./assets/images/logo-fixie.svg" alt=""></a>
+                <ul class="footer__nav d-flex">
+                    <li><a class="link-btn fw-bd" href="#">Product</a></li>
+                    <li><a class="link-btn fw-bd" href="#">Blog</a></li>
+                    <li><a class="link-btn fw-bd" href="#">Contact</a></li>
+                </ul>
+                <p class="copyRight fw-light">© 2020 Fixie. All Rights Reserved.</p>
+                <a href="#"><img src="./assets/images/logo-fixie.svg" alt="" /></a>
             </div>
         </footer>
         <script src="./assets/js/vendors.js"></script>
         <script src="./assets/js/all.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 800, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+        </script>
     </body>
 </html>
