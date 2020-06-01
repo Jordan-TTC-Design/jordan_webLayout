@@ -1,0 +1,45 @@
+.header {
+    height: 77px;
+    z-index: 99;
+}
+.header__nav {
+    li {
+        @include s-not-last {
+            margin-right: 48px;
+        }
+        a {
+            height: 44px;
+            @include f-cc;
+            color: white;
+        }
+    }
+}
+
+.header__bottom {
+    margin-top: -77px;
+    position: relative;
+    &__txtBox {
+        padding: 236px 0;
+        .pageTitle{
+            font-size: 64px;
+            font-weight: $fw-bd;
+        }
+    }
+    &__bg {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        // height: 800px;
+        background-image: url('https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+    }
+}
+
+.brandConcept{
+    .bg--specialClays{
+        background-image: url('https://images.unsplash.com/photo-1473230841016-ca42011196d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80');
+    }
+    .brandConcept__txtBox{
+        height: 400px;
+    }
+}

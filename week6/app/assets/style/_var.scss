@@ -1,0 +1,39 @@
+// 顏色
+// $color-pri: #650300;
+// $color-sec: #aa0601;
+// $color-dark: #111619;
+// $color-light: #aa06010d;
+
+//文字大小
+$title-sb: 72px;
+$title-lg: 64px;
+$title-md: 48px;
+$title-sm: 36px;
+$font-lg: 24px;
+$font-md: 20px;
+
+// 間隔
+$spc: 8;
+$s-05: (0.5px * $spc);
+$s-1: (1px * $spc);
+$s-2: (2px * $spc);
+$s-3: (3px * $spc);
+$s-4: (4px * $spc);
+$s-5: (5px * $spc);
+$s-6: (6px * $spc);
+$s-7: (7px * $spc);
+$s-8: (8px * $spc);
+$s-9: (9px * $spc);
+$s-10: (10px * $spc);
+
+//字重
+$fw-sm: 200;
+$fw-rg: 300;
+$fw-md: 500;
+$fw-bd: 700;
+$fw-bk: 900;
+
+//RWD螢幕
+$nb-media: 1280px;
+$pad-media: 992px;
+$phone-media: 767px;

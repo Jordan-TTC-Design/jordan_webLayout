@@ -1,0 +1,19 @@
+//不知道幹嘛的
+@import './node_modules/bootstrap/scss/functions';
+
+//更改bs4的var數值
+@import './helpers/variables';
+
+//預設的bootstrap
+@import './node_modules/bootstrap/scss/mixins';
+@import './node_modules/bootstrap/scss/bootstrap';
+
+//自訂scss（可延用）
+@import 'var';
+@import 'mixin';
+@import 'tool';
+@import 'base';
+
+//自訂scss（版面）
+@import 'layout';
+// @import 'index';
