@@ -9,11 +9,16 @@
     justify-content: center;
     align-items: center;
 }
+.po{
+    position: relative;
+}
 .bc-lg {
     min-width: 44px;
     height: 44px;
 }
-
+.m-0-auto{
+    margin: 0 auto;
+}
 .flex {
     display: flex;
 }
@@ -29,15 +34,30 @@
 .f-jcsb {
     justify-content: space-between;
 }
+.f-jcs {
+    justify-content: flex-start;
+}
 .f-jcc {
     justify-content: center;
+}
+.f-jce{
+    justify-content: flex-end;
+}
+.f-ais {
+    align-items: start;
 }
 .f-aic {
     align-items: center;
 }
+.f-ase{
+    align-self: flex-end;
+}
 
 .f-wrap {
     flex-wrap: wrap;
+}
+.f-nowrap {
+    flex-wrap: nowrap;
 }
 .f-row {
     flex-direction: row;
@@ -151,11 +171,11 @@
 }
 
 // 字重
-.fw-bd {
-    font-weight: $fw-bd;
-}
 .fw-bk {
     font-weight: $fw-bk;
+}
+.fw-bd {
+    font-weight: $fw-bd;
 }
 .fw-md {
     font-weight: $fw-md;
@@ -167,6 +187,10 @@
     font-weight: $fw-sm;
 }
 
+//其他工具
+.mouse-pointer{
+    cursor: pointer;
+}
 //顏色
 // .color-pri {
 //     color: $color-pri;
@@ -206,6 +230,12 @@
 .cmt-7 {
     margin-top: $s-7;
 }
+.cmt-8 {
+    margin-top: $s-8;
+}
+.cmt-9 {
+    margin-top: $s-9;
+}
 @include phone-width {
     .cmt-ph-05 {
         margin-top: $s-05;
@@ -231,6 +261,12 @@
     .cmt-ph-7 {
         margin-top: $s-7;
     }
+    .cmt-ph-8 {
+        margin-top: $s-8;
+    }
+    .cmt-ph-9 {
+        margin-top: $s-9;
+    }
 }
 @include pad-width {
     .cmt-pd-05 {
@@ -255,6 +291,12 @@
         margin-top: $s-6;
     }
     .cmt-pd-7 {
+        margin-top: $s-7;
+    }
+    .cmt-pd-8 {
+        margin-top: $s-6;
+    }
+    .cmt-pd-9 {
         margin-top: $s-7;
     }
 }
@@ -306,6 +348,12 @@
     margin-bottom: $s-6;
 }
 .cmb-7 {
+    margin-bottom: $s-7;
+}
+.cmb-8 {
+    margin-bottom: $s-6;
+}
+.cmb-9 {
     margin-bottom: $s-7;
 }
 
@@ -403,10 +451,10 @@
 .cpb-5 {
     padding-bottom: $s-5;
 }
-.cpb-4 {
+.cpb-6 {
     padding-bottom: $s-6;
 }
-.cpb-5 {
+.cpb-7 {
     padding-bottom: $s-7;
 }
 
@@ -428,9 +476,9 @@
 .cpl-5 {
     padding-left: $s-5;
 }
-.cpl-4 {
+.cpl-6 {
     padding-left: $s-6;
 }
-.cpl-5 {
+.cpl-7 {
     padding-left: $s-7;
 }

@@ -74,6 +74,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         #9E9E9E;//$gray-100 !default;
 $dark:          #121212;//$gray-800 !default;
+$gray-light: #F2F2F2;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -86,7 +87,8 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "gray-light":       $gray-light
   ),
   $theme-colors
 );
@@ -144,7 +146,13 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    // 5: ($spacer * 3)
+    5: ($spacer * 2),
+    6: ($spacer * 3),
+    7: ($spacer * 4),
+    8: ($spacer * 4.5),
+    9: ($spacer * 5),
+    10: ($spacer * 6),
   ),
   $spacers
 );
@@ -801,7 +809,7 @@ $pagination-line-height:            1.25 !default;
 $pagination-color:                  $link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           transparent;//$gray-300 !default;
 
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;

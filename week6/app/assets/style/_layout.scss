@@ -10,7 +10,6 @@
         a {
             height: 44px;
             @include f-cc;
-            color: white;
         }
     }
 }
@@ -20,8 +19,8 @@
     position: relative;
     &__txtBox {
         padding: 236px 0;
-        .pageTitle{
-            font-size: 64px;
+        .pageTitle {
+            font-size: 48px;
             font-weight: $fw-bd;
         }
     }
@@ -34,12 +33,40 @@
         background-image: url('https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
     }
 }
-
-.brandConcept{
-    .bg--specialClays{
-        background-image: url('https://images.unsplash.com/photo-1473230841016-ca42011196d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80');
+footer {
+    background-color: #000;
+    h2 a {
+        font-size: 24px;
     }
-    .brandConcept__txtBox{
+    p {
+        font-size: 14px;
+    }
+}
+.brandConcept {
+    
+    .brandConcept__txtBox {
         height: 400px;
     }
 }
+.subscribe {
+    background-image: url('https://images.unsplash.com/photo-1580485978320-cc2bc7dcf569?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    .section__txtBox {
+        h3 {
+            font-size: 48px;
+        }
+    }
+    input {
+        height: 56px;
+    }
+    .subscribe__btn {
+        padding-right: 44px;
+        padding-left: 44px;
+    }
+}
+
+// .subscribe{
+//     .subscribe__btn{
+//         // 成功不了，最後只能用rounded-right，老師可以看看嗎？
+//         border-radius:0px 5px 5px 0px;
+//     }
+// }

@@ -1,0 +1,74 @@
+// 產品頁面
+.brandDirector {
+    background-image: url('https://images.unsplash.com/photo-1579825317824-2cc3aa33f75a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+    .section--padding {
+        padding: 150px 0;
+    }
+    .section__titleBox {
+        h3 {
+            font-size: 32px;
+            font-weight: $fw-bd;
+            line-height: 1.5;
+        }
+    }
+    .section__txtBox {
+        p {
+            font-weight: $fw-sm;
+        }
+        h5 {
+            font-size: 24px;
+        }
+        a {
+            font-weight: $fw-bd;
+        }
+    }
+}
+
+.product__list {
+    background-color: $gray-300;
+    .product__list__items {
+        position: relative;
+        font-size: 24px;
+    }
+    //這裡有點土砲寫法，感覺是不正確的。
+    .product__list__amount {
+        margin-top: 4px;
+        font-size: 6px;
+    }
+}
+//個別產品頁面
+.productDetail__box {
+    .productDetail__picBox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .productDetail__box__txtbox {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        .card {
+            width: 100%;
+            h3 {
+                font-size: 48px;
+            }
+            .card__price {
+                text-align: right;
+                color: $light;
+            }
+            span {
+                color: $dark;
+                font-size: 24px;
+            }
+            .card__btnBox {
+                height: 56px;
+            }
+        }
+    }
+    .productDetail__concept {
+        font-size: 20px;
+    }
+}
+.card.cmb-6 {
+    margin-bottom: 48px;
+}

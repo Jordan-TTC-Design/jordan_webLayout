@@ -1,0 +1,64 @@
+---
+title: Tatami
+layout: ./app/layoutBlack.ejs
+engine: ejs
+current: tatami
+---
+
+<section class="productDetail">
+    <div class="container">
+        <div class="productDetail__box">
+            <div class="row po flex f-jce cmb-6">
+                <div class="col-8 productDetail__picBox">
+                    <div class="bg-size bg-tatami bg-cover"></div>
+                </div>
+                <div class="col-5 productDetail__box__txtbox flex f-aic">
+                    <!-- 這裡是這樣子做的嗎？ -->
+                    <div class="card flex f-column f-jcsb cpl-4 cpt-4 cpb-4">
+                        <p class="text-light cmb-2">Home / Product / Cup</p>
+                        <h3 class="fw-bd cmb-2">Tatami Cup</h3>
+                        <p class="card__price f-ase cmb-3">
+                            NT$1,200<br />
+                            <span>NT$1,080</span>
+                        </p>
+                        <div class="card__btnBox flex">
+                            <div class="btn-group cmr-1" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-gray-light flex f-aic">
+                                    <span class="material-icons">
+                                        remove
+                                    </span>
+                                </button>
+                                <button type="button" class="btn btn-gray-light flex f-aic">1</button>
+                                <button type="button" class="btn btn-gray-light flex f-aic">
+                                    <span class="material-icons">
+                                        add
+                                    </span>
+                                </button>
+                            </div>
+                            <button class="btn btn-primary flex-grow-1">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cmb-9">
+                <div class="col-5">
+                    <p class="productDetail__concept">
+                        This beautiful light grey cup comes from Taiwan. Add some minimalist scenes to your lifetime and
+                        use this cup for tea, coffee, dessert, or to place small items as a dish tray.
+                    </p>
+                </div>
+                <div class="col-3">
+                    <p class="text-light">
+                        Made in Taiwan
+                        <br />
+                        8 x 8 x 6 cm
+                        <br />
+                        Dishwasher and Microwave-safe
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

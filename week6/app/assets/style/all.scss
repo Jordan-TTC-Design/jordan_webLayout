@@ -7,6 +7,8 @@
 //預設的bootstrap
 @import './node_modules/bootstrap/scss/mixins';
 @import './node_modules/bootstrap/scss/bootstrap';
+// swiper
+@import 'swiper';
 
 //自訂scss（可延用）
 @import 'var';
@@ -14,6 +16,12 @@
 @import 'tool';
 @import 'base';
 
-//自訂scss（版面）
+@import './helpers/carousel';
+//專門放背景圖片
+@import 'img';
+
+//自訂scss（共同版面）
 @import 'layout';
+//自訂scss（頁面）
+@import 'page';
 // @import 'index';
