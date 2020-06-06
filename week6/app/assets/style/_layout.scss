@@ -1,11 +1,33 @@
 .header {
     height: 77px;
     z-index: 99;
+    .header__ham--white {
+        display: none;
+        color: white;
+        @include pad-width {
+            display: block;
+        }
+    }
+    .header__logo {
+        p {
+            color: $dark;
+        }
+    }
+    .header__logo--white {
+        @include pad-width {
+            p {
+                color: white;
+            }
+        }
+    }
 }
 .header__nav {
     li {
         @include s-not-last {
             margin-right: 48px;
+            @include pad-width {
+                display: none;
+            }
         }
         a {
             height: 44px;
@@ -14,25 +36,6 @@
     }
 }
 
-.header__bottom {
-    margin-top: -77px;
-    position: relative;
-    &__txtBox {
-        padding: 236px 0;
-        .pageTitle {
-            font-size: 48px;
-            font-weight: $fw-bd;
-        }
-    }
-    &__bg {
-        top: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        // height: 800px;
-        background-image: url('https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
-    }
-}
 footer {
     background-color: #000;
     h2 a {
@@ -42,25 +45,40 @@ footer {
         font-size: 14px;
     }
 }
-.brandConcept {
-    
-    .brandConcept__txtBox {
-        height: 400px;
-    }
-}
+
 .subscribe {
     background-image: url('https://images.unsplash.com/photo-1580485978320-cc2bc7dcf569?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     .section__txtBox {
         h3 {
             font-size: 48px;
+            @include pad-width {
+                font-size: 32px;
+            }
         }
     }
     input {
         height: 56px;
     }
+    @include pad-width {
+        input {
+            background-color: transparent;
+        }
+    }
     .subscribe__btn {
         padding-right: 44px;
         padding-left: 44px;
+    }
+}
+.footer__nav {
+    @include pad-width {
+        margin-bottom: 88px;
+    }
+}
+.copy-right {
+    @include pad-width {
+        position: absolute;
+        left: 15px;
+        bottom: 24px;
     }
 }
 

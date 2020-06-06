@@ -3,10 +3,16 @@
     height: 100%;
     // 更改過
     padding-left: 85px;
+    @include pad-width{
+        padding-left: 15px;
+    }
 }
 .swiper-slide {
      // 更改過
     width: 350px;
+    @include pad-width{
+        width: 240px;
+    }
     // 原生
     text-align: center;
     font-size: 18px;
@@ -29,6 +35,6 @@
 
 .swiper-wrapper {
     transition-duration: 0ms;
-    transform: translate3d(85px, 0px, 0px);
+    // transform: translate3d(85px, 0px, 0px);
 }
 

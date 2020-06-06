@@ -1,3 +1,44 @@
+//首頁
+.header__bottom {
+    margin-top: -77px;
+    position: relative;
+    &__txtBox {
+        padding: 236px 0;
+        .pageTitle {
+            font-size: 48px;
+            font-weight: $fw-bd;
+        }
+    }
+    &__bg {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-image: url('https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+    }
+    .c-btn {
+        width: 40%;
+    }
+    @include pad-width {
+        &__txtBox {
+            padding-top: 188px;
+            padding-bottom: 24px;
+        }
+        .pageTitle {
+            color: white;
+            text-align: center;
+        }
+        h5 {
+            color: $light;
+            text-align: center;
+            margin-bottom: 108px;
+        }
+        .c-btn {
+            width: 100%;
+        }
+    }
+}
+
 // 產品頁面
 .brandDirector {
     background-image: url('https://images.unsplash.com/photo-1579825317824-2cc3aa33f75a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
@@ -10,6 +51,9 @@
             font-weight: $fw-bd;
             line-height: 1.5;
         }
+        @include pad-width {
+            margin-bottom: 125px;
+        }
     }
     .section__txtBox {
         p {
@@ -20,6 +64,17 @@
         }
         a {
             font-weight: $fw-bd;
+        }
+    }
+}
+
+.brandConcept {
+    .brandConcept__txtBox {
+        height: 400px;
+    }
+    .bg-size {
+        @include pad-width {
+            height: 255px;
         }
     }
 }

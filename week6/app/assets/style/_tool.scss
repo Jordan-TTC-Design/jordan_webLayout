@@ -9,14 +9,14 @@
     justify-content: center;
     align-items: center;
 }
-.po{
+.po {
     position: relative;
 }
 .bc-lg {
     min-width: 44px;
     height: 44px;
 }
-.m-0-auto{
+.m-0-auto {
     margin: 0 auto;
 }
 .flex {
@@ -40,7 +40,7 @@
 .f-jcc {
     justify-content: center;
 }
-.f-jce{
+.f-jce {
     justify-content: flex-end;
 }
 .f-ais {
@@ -49,7 +49,7 @@
 .f-aic {
     align-items: center;
 }
-.f-ase{
+.f-ase {
     align-self: flex-end;
 }
 
@@ -188,7 +188,7 @@
 }
 
 //其他工具
-.mouse-pointer{
+.mouse-pointer {
     cursor: pointer;
 }
 //顏色
@@ -325,7 +325,76 @@
 .cmr-7 {
     margin-right: $s-7;
 }
-
+.cmr-8 {
+    margin-right: $s-8;
+}
+.cmr-9 {
+    margin-right: $s-9;
+}
+@include phone-width {
+    .cmr-ph-05 {
+        margin-right: $s-05;
+    }
+    .cmr-ph-1 {
+        margin-right: $s-1;
+    }
+    .cmr-ph-2 {
+        margin-right: $s-2;
+    }
+    .cmr-ph-3 {
+        margin-right: $s-3;
+    }
+    .cmr-ph-4 {
+        margin-right: $s-4;
+    }
+    .cmr-ph-5 {
+        margin-right: $s-5;
+    }
+    .cmr-ph-6 {
+        margin-right: $s-6;
+    }
+    .cmr-ph-7 {
+        margin-right: $s-7;
+    }
+    .cmr-ph-8 {
+        margin-right: $s-8;
+    }
+    .cmr-ph-9 {
+        margin-right: $s-9;
+    }
+}
+@include pad-width {
+    .cmr-pd-05 {
+        margin-right: $s-05;
+    }
+    .cmr-pd-1 {
+        margin-right: $s-1;
+    }
+    .cmr-pd-2 {
+        margin-right: $s-2;
+    }
+    .cmr-pd-3 {
+        margin-right: $s-3;
+    }
+    .cmr-pd-4 {
+        margin-right: $s-4;
+    }
+    .cmr-pd-5 {
+        margin-right: $s-5;
+    }
+    .cmr-pd-6 {
+        margin-right: $s-6;
+    }
+    .cmr-pd-7 {
+        margin-right: $s-7;
+    }
+    .cmr-pd-8 {
+        margin-right: $s-8;
+    }
+    .cmr-pd-9 {
+        margin-right: $s-9;
+    }
+}
 .cmb-05 {
     margin-bottom: $s-05;
 }
@@ -356,6 +425,70 @@
 .cmb-9 {
     margin-bottom: $s-7;
 }
+@include phone-width {
+    .cmb-ph-05 {
+        margin-bottom: $s-05;
+    }
+    .cmb-ph-1 {
+        margin-bottom: $s-1;
+    }
+    .cmb-ph-2 {
+        margin-bottom: $s-2;
+    }
+    .cmb-ph-3 {
+        margin-bottom: $s-3;
+    }
+    .cmb-ph-4 {
+        margin-bottom: $s-4;
+    }
+    .cmb-ph-5 {
+        margin-bottom: $s-5;
+    }
+    .cmb-ph-6 {
+        margin-bottom: $s-6;
+    }
+    .cmb-ph-7 {
+        margin-bottom: $s-7;
+    }
+    .cmb-ph-8 {
+        margin-bottom: $s-6;
+    }
+    .cmb-ph-9 {
+        margin-bottom: $s-7;
+    }
+}
+@include pad-width {
+    .cmb-pd-05 {
+        margin-bottom: $s-05;
+    }
+    .cmb-pd-1 {
+        margin-bottom: $s-1;
+    }
+    .cmb-pd-2 {
+        margin-bottom: $s-2;
+    }
+    .cmb-pd-3 {
+        margin-bottom: $s-3;
+    }
+    .cmb-pd-4 {
+        margin-bottom: $s-4;
+    }
+    .cmb-pd-5 {
+        margin-bottom: $s-5;
+    }
+    .cmb-pd-6 {
+        margin-bottom: $s-6;
+    }
+    .cmb-pd-7 {
+        margin-bottom: $s-7;
+    }
+    .cmb-pd-8 {
+        margin-bottom: $s-6;
+    }
+    .cmb-pd-9 {
+        margin-bottom: $s-7;
+    }
+}
 
 .cml-05 {
     margin-left: $s-05;
@@ -381,7 +514,76 @@
 .cml-7 {
     margin-left: $s-7;
 }
-
+.cml-8 {
+    margin-left: $s-8;
+}
+.cml-9 {
+    margin-left: $s-9;
+}
+@include phone-width {
+    .cml-ph-05 {
+        margin-left: $s-05;
+    }
+    .cml-ph-1 {
+        margin-left: $s-1;
+    }
+    .cml-ph-2 {
+        margin-left: $s-2;
+    }
+    .cml-ph-3 {
+        margin-left: $s-3;
+    }
+    .cml-ph-4 {
+        margin-left: $s-4;
+    }
+    .cml-ph-5 {
+        margin-left: $s-5;
+    }
+    .cml-ph-6 {
+        margin-left: $s-6;
+    }
+    .cml-ph-7 {
+        margin-left: $s-7;
+    }
+    .cml-ph-8 {
+        margin-left: $s-8;
+    }
+    .cml-ph-9 {
+        margin-left: $s-9;
+    }
+}
+@include pad-width {
+    .cml-pd-05 {
+        margin-left: $s-05;
+    }
+    .cml-pd-1 {
+        margin-left: $s-1;
+    }
+    .cml-pd-2 {
+        margin-left: $s-2;
+    }
+    .cml-pd-3 {
+        margin-left: $s-3;
+    }
+    .cml-pd-4 {
+        margin-left: $s-4;
+    }
+    .cml-pd-5 {
+        margin-left: $s-5;
+    }
+    .cml-pd-6 {
+        margin-left: $s-6;
+    }
+    .cml-pd-7 {
+        margin-left: $s-7;
+    }
+    .cml-pd-8 {
+        margin-left: $s-8;
+    }
+    .cml-pd-9 {
+        margin-left: $s-9;
+    }
+}
 // 間距--padding
 .cpt-05 {
     padding-top: $s-05;

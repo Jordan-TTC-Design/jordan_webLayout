@@ -1,5 +1,5 @@
 // 本次專案的
-// *{
+// * {
 //     outline: 1px solid red;
 // }
 
@@ -85,7 +85,7 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
-.wrap-full {
+.wrap-fulid {
     width: 100%;
     // margin: 0 auto;
 }
@@ -94,9 +94,22 @@ ul {
 // }
 .section-py {
     padding: 72px 0;
+    @include pad-width {
+        padding: 48px 0;
+    }
 }
 .section__rowH {
     min-height: 400px;
+    @include pad-width {
+        min-height: auto;
+    }
+}
+.section--H {
+    min-height: 400px;
+    @include pad-width {
+        min-height: auto;
+        padding: 24px 0;
+    }
 }
 // 共用class--文字
 
@@ -116,6 +129,12 @@ ul {
     justify-content: center;
 }
 
+.c-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+}
 .c-pagination {
     .page-link {
         color: $secondary;
@@ -159,5 +178,14 @@ ul {
     width: 100%;
     height: 240px;
 }
-
-
+@include pad-width{
+    .card__pic {
+        height: 240px;
+    }
+    .card__pic--lg {
+        height: 480px;
+    }
+    .card__pic--sm {
+        height: 240px;
+    }
+}
