@@ -1,12 +1,15 @@
 .header {
     height: 77px;
     z-index: 99;
-    .header__ham--white {
+    .header__ham{
         display: none;
-        color: white;
         @include pad-width {
             display: block;
         }
+    }
+    .header__ham--white {
+        color: white;
+        
     }
     .header__logo {
         p {
@@ -67,6 +70,10 @@ footer {
     .subscribe__btn {
         padding-right: 44px;
         padding-left: 44px;
+        @include phone-width{
+            padding-right: 24px;
+            padding-left: 24px;
+        }
     }
 }
 .footer__nav {

@@ -11525,6 +11525,12 @@ a.text-gray-light:hover, a.text-gray-light:focus {
   display: block;
 }
 
+@media all and (max-width: 992px) {
+  .d-none-pd {
+    display: none;
+  }
+}
+
 .bc {
   display: flex;
   justify-content: center;
@@ -11796,6 +11802,9 @@ a.text-gray-light:hover, a.text-gray-light:focus {
 }
 
 @media all and (max-width: 767px) {
+  .cmt-ph-0 {
+    margin-top: 0;
+  }
   .cmt-ph-05 {
     margin-top: 4px;
   }
@@ -11829,6 +11838,9 @@ a.text-gray-light:hover, a.text-gray-light:focus {
 }
 
 @media all and (max-width: 992px) {
+  .cmt-pd-0 {
+    margin-top: 0;
+  }
   .cmt-pd-05 {
     margin-top: 4px;
   }
@@ -11902,6 +11914,9 @@ a.text-gray-light:hover, a.text-gray-light:focus {
 }
 
 @media all and (max-width: 767px) {
+  .cmr-ph-0 {
+    margin-right: 0;
+  }
   .cmr-ph-05 {
     margin-right: 4px;
   }
@@ -11935,6 +11950,9 @@ a.text-gray-light:hover, a.text-gray-light:focus {
 }
 
 @media all and (max-width: 992px) {
+  .cmr-pd-0 {
+    margin-right: 0;
+  }
   .cmr-pd-05 {
     margin-right: 4px;
   }
@@ -12008,6 +12026,9 @@ a.text-gray-light:hover, a.text-gray-light:focus {
 }
 
 @media all and (max-width: 767px) {
+  .cmb-ph-0 {
+    margin-bottom: 0;
+  }
   .cmb-ph-05 {
     margin-bottom: 4px;
   }
@@ -12041,6 +12062,9 @@ a.text-gray-light:hover, a.text-gray-light:focus {
 }
 
 @media all and (max-width: 992px) {
+  .cmb-pd-0 {
+    margin-bottom: 0;
+  }
   .cmb-pd-05 {
     margin-bottom: 4px;
   }
@@ -12114,6 +12138,9 @@ a.text-gray-light:hover, a.text-gray-light:focus {
 }
 
 @media all and (max-width: 767px) {
+  .cml-ph-0 {
+    margin-left: 0;
+  }
   .cml-ph-05 {
     margin-left: 4px;
   }
@@ -12147,6 +12174,9 @@ a.text-gray-light:hover, a.text-gray-light:focus {
 }
 
 @media all and (max-width: 992px) {
+  .cml-pd-0 {
+    margin-left: 0;
+  }
   .cml-pd-05 {
     margin-left: 4px;
   }
@@ -12381,6 +12411,13 @@ ul {
   width: 100%;
 }
 
+@media all and (max-width: 767px) {
+  .container-ph-fulid {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
 .section-py {
   padding: 72px 0;
 }
@@ -12445,6 +12482,12 @@ ul {
   text-decoration: underline;
 }
 
+@media all and (max-width: 992px) {
+  .card-columns .card.d-none-pd {
+    display: none;
+  }
+}
+
 .card {
   position: relative;
   border: 0px;
@@ -12462,11 +12505,18 @@ ul {
 
 .card__tag {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 16;
+  right: 16;
   color: white;
   font-size: 14px;
   font-weight: 700;
+}
+
+@media all and (max-width: 992px) {
+  .card__tag {
+    top: 8px;
+    right: 8px;
+  }
 }
 
 .card__pic {
@@ -12586,15 +12636,18 @@ ul {
   z-index: 99;
 }
 
-.header .header__ham--white {
+.header .header__ham {
   display: none;
-  color: white;
 }
 
 @media all and (max-width: 992px) {
-  .header .header__ham--white {
+  .header .header__ham {
     display: block;
   }
+}
+
+.header .header__ham--white {
+  color: white;
 }
 
 .header .header__logo p {
@@ -12663,6 +12716,13 @@ footer p {
 .subscribe .subscribe__btn {
   padding-right: 44px;
   padding-left: 44px;
+}
+
+@media all and (max-width: 767px) {
+  .subscribe .subscribe__btn {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
 
 @media all and (max-width: 992px) {
@@ -12775,9 +12835,30 @@ footer p {
   font-size: 24px;
 }
 
+@media all and (max-width: 767px) {
+  .product__list .product__list__items {
+    font-size: 16px;
+  }
+}
+
 .product__list .product__list__amount {
   margin-top: 4px;
   font-size: 6px;
+}
+
+@media all and (max-width: 992px) {
+  .product__cardList .card-columns {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+  .product__cardList .card__pic--sm,
+  .product__cardList .card__pic--lg,
+  .product__cardList .card__pic {
+    height: 160px;
+  }
+  .product__cardList .card--onSale {
+    order: -1;
+  }
 }
 
 .productDetail__box .productDetail__picBox {
@@ -12787,13 +12868,27 @@ footer p {
   bottom: 0;
 }
 
+@media all and (max-width: 767px) {
+  .productDetail__box .productDetail__picBox {
+    height: 360px;
+  }
+}
+
 .productDetail__box .productDetail__box__txtbox {
   padding-top: 64px;
   padding-bottom: 64px;
 }
 
+@media all and (max-width: 767px) {
+  .productDetail__box .productDetail__box__txtbox {
+    margin-top: 325px;
+    padding: 0 30px;
+  }
+}
+
 .productDetail__box .productDetail__box__txtbox .card {
   width: 100%;
+  padding: 16px;
 }
 
 .productDetail__box .productDetail__box__txtbox .card h3 {
@@ -12818,8 +12913,16 @@ footer p {
   font-size: 20px;
 }
 
+.mightLike h3 {
+  font-size: 32px;
+}
+
 .card.cmb-6 {
   margin-bottom: 48px;
+}
+
+.card.cmb-pd-3 {
+  margin-bottom: 24px;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -84,6 +84,9 @@
     .product__list__items {
         position: relative;
         font-size: 24px;
+        @include phone-width {
+            font-size: 16px;
+        }
     }
     //這裡有點土砲寫法，感覺是不正確的。
     .product__list__amount {
@@ -91,19 +94,45 @@
         font-size: 6px;
     }
 }
+.product__cardList {
+    @include pad-width {
+        .card-columns {
+            column-count: 2;
+        }
+        .card__pic--sm,
+        .card__pic--lg,
+        .card__pic {
+            height: 160px;
+        }
+        .card--onSale {
+            order: -1;
+        }
+    }
+}
+
 //個別產品頁面
 .productDetail__box {
     .productDetail__picBox {
         position: absolute;
+
         left: 0;
+
         top: 0;
         bottom: 0;
+        @include phone-width {
+            height: 360px;
+        }
     }
     .productDetail__box__txtbox {
         padding-top: 64px;
         padding-bottom: 64px;
+        @include phone-width {
+            margin-top: 325px;
+            padding: 0 30px;
+        }
         .card {
             width: 100%;
+            padding: 16px;
             h3 {
                 font-size: 48px;
             }
@@ -124,6 +153,15 @@
         font-size: 20px;
     }
 }
+.mightLike{
+    h3{
+        font-size: 32px;
+    }
+}
 .card.cmb-6 {
     margin-bottom: 48px;
 }
+.card.cmb-pd-3 {
+    margin-bottom: 24px;
+}
+

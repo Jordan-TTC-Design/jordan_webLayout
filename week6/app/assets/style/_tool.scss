@@ -4,6 +4,12 @@
 .d-block {
     display: block;
 }
+@include pad-width {
+    .d-none-pd {
+        display: none;
+    }
+}
+
 .bc {
     display: flex;
     justify-content: center;
@@ -237,6 +243,9 @@
     margin-top: $s-9;
 }
 @include phone-width {
+    .cmt-ph-0 {
+        margin-top: 0;
+    }
     .cmt-ph-05 {
         margin-top: $s-05;
     }
@@ -269,6 +278,9 @@
     }
 }
 @include pad-width {
+    .cmt-pd-0 {
+        margin-top: 0;
+    }
     .cmt-pd-05 {
         margin-top: $s-05;
     }
@@ -332,6 +344,9 @@
     margin-right: $s-9;
 }
 @include phone-width {
+    .cmr-ph-0 {
+        margin-right: 0;
+    }
     .cmr-ph-05 {
         margin-right: $s-05;
     }
@@ -364,6 +379,9 @@
     }
 }
 @include pad-width {
+    .cmr-pd-0 {
+        margin-right: 0;
+    }
     .cmr-pd-05 {
         margin-right: $s-05;
     }
@@ -426,6 +444,9 @@
     margin-bottom: $s-7;
 }
 @include phone-width {
+    .cmb-ph-0 {
+        margin-bottom: 0;
+    }
     .cmb-ph-05 {
         margin-bottom: $s-05;
     }
@@ -458,6 +479,9 @@
     }
 }
 @include pad-width {
+    .cmb-pd-0 {
+        margin-bottom: 0;
+    }
     .cmb-pd-05 {
         margin-bottom: $s-05;
     }
@@ -521,6 +545,9 @@
     margin-left: $s-9;
 }
 @include phone-width {
+    .cml-ph-0 {
+        margin-left: 0;
+    }
     .cml-ph-05 {
         margin-left: $s-05;
     }
@@ -553,6 +580,9 @@
     }
 }
 @include pad-width {
+    .cml-pd-0 {
+        margin-left: 0;
+    }
     .cml-pd-05 {
         margin-left: $s-05;
     }
