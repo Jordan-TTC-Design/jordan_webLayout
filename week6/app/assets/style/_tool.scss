@@ -50,10 +50,13 @@
     justify-content: flex-end;
 }
 .f-ais {
-    align-items: start;
+    align-items: flex-start;
 }
 .f-aic {
     align-items: center;
+}
+.f-aie {
+    align-items: flex-end;
 }
 .f-ase {
     align-self: flex-end;
@@ -196,6 +199,23 @@
 //其他工具
 .mouse-pointer {
     cursor: pointer;
+}
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+.icon-box-lg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    span{
+        font-size: 48px;
+    }
 }
 //顏色
 // .color-pri {

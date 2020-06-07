@@ -35,7 +35,12 @@ current: tatami
                                     </span>
                                 </button>
                             </div>
-                            <button class="btn btn-primary flex-grow-1">
+                            <button
+                                id="addToCart"
+                                class="btn btn-primary flex-grow-1"
+                                data-toggle="modal"
+                                data-target="#cartList"
+                            >
                                 Add to cart
                             </button>
                         </div>
@@ -66,7 +71,7 @@ current: tatami
 </section>
 <section class="mightLike section-py">
     <div class="swiper-container">
-    <h3 class="fw-bd cmb-3 cmb-pd-2">You might also like…</h3>
+        <h3 class="fw-bd cmb-3 cmb-pd-2">You might also like…</h3>
 
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -148,3 +153,97 @@ current: tatami
         <div class="swiper-pagination"></div>
     </div>
 </section>
+
+<!-- Modal -->
+<div
+    class="cartList modal fade"
+    id="cartList"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cardListLabel">Cart List<span>3</span></h5>
+                <a class="icon-box-lg" data-dismiss="modal" aria-label="Close">
+                    <!-- <span aria-hidden="true">&times;</span> -->
+                    <span class="material-icons icon-md">
+                        close
+                    </span>
+                </a>
+            </div>
+            <div class="modal-body flex f-column f-aie">
+                <ul class="cardList__itemList">
+                    <li class="cardList__itemList__item flex cmb-1">
+                        <div class="cartList__item__pic bg-tatami bg bg-cover"></div>
+                        <div class="cartList__item__txtbox po">
+                            <span class="material-icons icon-md icon-box">
+                                close
+                            </span>
+                            <h5 class="cartList__item__name cmb-05">Tatami Cup</h5>
+                            <p class="cartList__item__price">NT$1,080<span>NT$1,200</span></p>
+                            <div class="flex f-jcsb f-aic">
+                                <div class="btn-group cmr-1" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn flex f-aic">
+                                        <span class="material-icons">
+                                            remove
+                                        </span>
+                                    </button>
+                                    <button type="button" class="btn flex f-aic">1</button>
+                                    <button type="button" class="btn flex f-aic">
+                                        <span class="material-icons">
+                                            add
+                                        </span>
+                                    </button>
+                                </div>
+                                <p class="fw-bd">NT$1,080</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cardList__itemList__item flex cmb-1">
+                        <div class="cartList__item__pic bg-baifan bg bg-cover"></div>
+                        <div class="cartList__item__txtbox po">
+                            <span class="material-icons icon-md icon-box">
+                                close
+                            </span>
+                            <h5 class="cartList__item__name cmb-05">Baifan Bowl</h5>
+                            <p class="cartList__item__price">NT$1,080</p>
+                            <div class="flex f-jcsb f-aic">
+                                <div class="btn-group cmr-1" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn flex f-aic">
+                                        <span class="material-icons">
+                                            remove
+                                        </span>
+                                    </button>
+                                    <button type="button" class="btn flex f-aic">2</button>
+                                    <button type="button" class="btn flex f-aic">
+                                        <span class="material-icons">
+                                            add
+                                        </span>
+                                    </button>
+                                </div>
+                                <p class="fw-bd">NT$3,600</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="cardList__txtList">
+                    <li>
+                        <p class="text-light flex f-jcsb cmb-2">Subtotal<span>NT$4,680</span></p>
+                    </li>
+                    <li>
+                        <p class="text-light flex f-jcsb cmb-3">Shipping<span>NT$80</span></p>
+                    </li>
+                    <li>
+                        <h5 class="flex f-jcsb cmb-3" 5>Total<span>NT$4,760</span></h5>
+                    </li>
+                    <li>
+                        <button type="button" class="w-10 btn btn-primary c-btn">Checkout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

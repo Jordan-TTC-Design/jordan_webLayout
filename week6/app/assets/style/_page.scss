@@ -153,8 +153,8 @@
         font-size: 20px;
     }
 }
-.mightLike{
-    h3{
+.mightLike {
+    h3 {
         font-size: 32px;
     }
 }
@@ -165,3 +165,107 @@
     margin-bottom: 24px;
 }
 
+// 產品頁面彈跳視窗
+
+.cartList {
+    height: 100%;
+    .modal-dialog {
+        margin: 0;
+        position: absolute;
+        right: 0;
+        width: 540px;
+        height: 100%;
+        max-width: none;
+    }
+    .modal-content {
+        padding: $s-6;
+        color: $dark;
+        border-radius: 0;
+        height: 100%;
+    }
+    .modal-header {
+        border-bottom: 0;
+    }
+    .modal-title {
+        font-size: 54px;
+        font-weight: $fw-bd;
+        display: flex;
+        align-items: flex-start;
+        span {
+            font-size: 32px;
+            color: $primary;
+        }
+    }
+    .cardList__itemList {
+        width: 100%;
+    }
+    .cardList__itemList__item {
+        background-color: $gray-200;
+    }
+    .cartList__item__name {
+        font-size: 16px;
+        font-weight: $fw-bd;
+    }
+    .cartList__item__pic {
+        width: 30%;
+        flex-shrink: 1;
+    }
+    .cartList__item__price {
+        font-size: 16px;
+        span {
+            margin-left: $s-1;
+            text-decoration: line-through;
+            color: $light;
+        }
+    }
+    .cartList__item__txtbox {
+        width: 70%;
+        padding: 16px;
+        position: relative;
+        .icon-box {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        }
+    }
+    .cardList__txtList {
+        width: 70%;
+    }
+    @include pad-width {
+        .modal-dialog {
+            width: 100%;
+        }
+        .modal-content {
+            padding: 0;
+        }
+        .cardList__txtList {
+            width: 100%;
+        }
+        .btn-group {
+            .btn {
+                padding: 8px;
+            }
+        }
+    }
+}
+.cartInfo {
+    .formGroup {
+        margin: 32px 0;
+        .form-title {
+            font-size: 20px;
+            font-weight: $fw-rg;
+        }
+        .form-control {
+            height: 56px;
+        }
+        .btn-return::before {
+            content: '<';
+            margin: 0 $s-05;
+            font-weight: $fw-rg;
+        }
+        .btn-submit {
+            padding-right: 58px;
+            padding-left: 58px;
+        }
+    }
+}

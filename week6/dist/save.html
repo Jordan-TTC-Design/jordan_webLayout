@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title><%- title %></title>
+        <title>save</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
         <link rel="stylesheet" href="./assets/style/all.css" />
         <!-- icon -->
@@ -33,7 +33,79 @@
             </ul>
         </nav>
 
-        <%- contents %>
+        <section class="cartInfo">
+<div class="container">
+    <div class="row">
+        <nav class="col-lg-10">
+            <ul class="breadList d-flex">
+                <li class="breadList-item breadList__item__pageLink">
+                    <a href="./tatami.html#cartList">cart</a>
+                </li>
+                <li class="breadList-item active">
+                    <a href="#">Information</a>
+                </li>
+                <li class="breadList-item unactive"><a href="#"> Payment</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="formGroup">
+                <h5 class="form-title cmb-1">Contact information</h5>
+                <form>
+                    <input type="text" class="form-control  cmb-1" placeholder="Email" />
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <label class="form-check-label" for="defaultCheck1">
+                            Keep me up to date on news and special offers
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="formGroup">
+                <h5 class="form-title cmb-1">Shipping address</h5>
+                <form>
+                    <div class="form-row cmb-1">
+                        <div class="col-6">
+                            <input type="text" class="form-control " placeholder="Name" />
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control " placeholder="Phone" />
+                        </div>
+                    </div>
+                </form>
+                <div class="form-row cmb-1">
+                    <div class="col-6">
+                        <select class="form-control " >
+                            <!-- 這裡不能用placeholder嗎？ -->
+                            <option>Country/Region</option>
+                          </select>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-control " >
+                            <!-- 這裡不能用placeholder嗎？ -->
+                            <option>City</option>
+                          </select>
+                    </div>
+                </div>
+                <div >
+                    <input type="text" class="form-control " placeholder="Name" />
+                </div>
+                <div class="formGroup">
+                    <div class="flex f-jcsb">
+                        <a href="./tatami.html#cartList" class="btn c-btn btn-return text-primary">Return to cart</a>
+                        <a href="#" class="btn btn-primary c-btn btn-submit">Continue to payment</a>
+                    </div>
+                </div>
+            </form>
+
+            </div>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+</div>
+</section>
+
         <section class="subscribe bg-cover">
             <div class="container-fulid">
                 <div class="container">

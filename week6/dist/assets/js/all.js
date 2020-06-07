@@ -14,5 +14,8 @@ $(document).ready(function () {
       clickable: true
     }
   });
+  $('#addToCart').click(function () {
+    $('#cartList').addClass('active');
+  });
 });
 //# sourceMappingURL=all.js.map

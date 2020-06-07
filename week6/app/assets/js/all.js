@@ -12,4 +12,8 @@ $(document).ready(() => {
       clickable: true,
     },
   });
+
+  $('#addToCart').click(function(){
+    $('#cartList').addClass('active');
+  });
 });

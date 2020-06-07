@@ -174,8 +174,8 @@ ul {
 }
 .card__tag {
     position: absolute;
-    top: 16;
-    right: 16;
+    top: 16px;
+    right: 16px;
     color: white;
     font-size: 14px;
     font-weight: $fw-bd;
@@ -207,3 +207,24 @@ ul {
         height: 240px;
     }
 }
+
+.breadList {
+    a {
+        color: $dark;
+    }
+    .breadList-item.breadList__item__pageLink {
+        a {
+            color: $primary;
+        }
+    }
+    .breadList-item.active {
+        font-weight: $fw-bd;
+    }
+    .breadList-item:not(:last-child)::after {
+        content: '>';
+        margin: 0 $s-05;
+        color: $dark;
+        font-weight: $fw-rg;
+    }
+}
+
