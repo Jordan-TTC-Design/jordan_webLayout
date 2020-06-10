@@ -1,0 +1,77 @@
+.d-block {
+    display: block;
+}
+
+// 背景
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.box-border {
+    border: 1px solid #000;
+}
+.bg-cover-size {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 1;
+}
+
+// 字體
+.title-sb {
+    font-size: $title-sb;
+}
+.title-lg {
+    font-size: $title-lg;
+}
+.title-md {
+    font-size: $title-md;
+}
+.title-sm {
+    font-size: $title-sm;
+}
+.font-lg {
+    font-size: $font-lg;
+}
+.font-md {
+    font-size: $font-md;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+.tac {
+    text-align: center;
+}
+
+// 字重
+.fw-bk {
+    font-weight: $fw-bk;
+}
+.fw-bd {
+    font-weight: $fw-bd;
+}
+.fw-md {
+    font-weight: $fw-md;
+}
+.fw-rg {
+    font-weight: $fw-rg;
+}
+.fw-sm {
+    font-weight: $fw-sm;
+}
+
+//其他工具
+.mouse-pointer {
+    cursor: pointer;
+}
+.btn--center{
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+.btn--center--lg{
+    height: 44px;
+    display: flex;
+    align-items: center;
+}

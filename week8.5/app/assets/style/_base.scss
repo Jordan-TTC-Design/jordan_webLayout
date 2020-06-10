@@ -1,0 +1,155 @@
+* {
+    outline: 1px solid red;
+}
+
+// 字型設定：
+
+// Title : Raleway
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
+
+// Text：Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.ff-logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+.ff-txt {
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+p,
+a,
+li,
+label,
+span,
+* {
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+}
+
+//以下是改bs4效果
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-bottom: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0;
+}
+ol,
+ul {
+    margin-bottom: 0;
+    list-style: none;
+}
+// 共用class--格線
+
+.wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrap-fulid {
+    width: 100%;
+    // margin: 0 auto;
+}
+// .wrap-p {
+//     padding: 96px 0;
+// }
+@include phone-width {
+    .container-ph-fulid {
+        padding: 0;
+        max-width: 100%;
+    }
+}
+.section-py {
+    padding: 72px 0;
+    @include pad-width {
+        padding: 48px 0;
+    }
+}
+.section__rowH {
+    min-height: 400px;
+    @include pad-width {
+        min-height: auto;
+    }
+}
+.section--H {
+    min-height: 400px;
+    @include pad-width {
+        min-height: auto;
+        padding: 24px 0;
+    }
+}
+// 共用class
+
+.icon-md {
+    vertical-align: middle;
+    font-size: 48px;
+}
+.icon-sm {
+    vertical-align: middle;
+    font-size: 24px;
+}
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+}
+.c-pagination {
+    .page-link {
+        color: $secondary;
+        font-size: 24px;
+    }
+    .page-link--active {
+        color: $primary;
+        text-decoration: underline;
+    }
+}
+
+//共用class-顏色
+

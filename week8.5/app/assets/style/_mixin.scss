@@ -1,0 +1,40 @@
+@mixin fw-sm {
+    font-weight: $fw-sm;
+}
+@mixin fw-rg {
+    font-weight: $fw-rg;
+}
+@mixin fw-md {
+    font-weight: $fw-md;
+}
+@mixin fw-bd {
+    font-weight: $fw-bg;
+}
+@mixin fw-bk {
+    font-weight: $fw-bk;
+}
+//RWD螢幕
+$nb-media: 1280px;
+$pad-media: 992px;
+$phone-media: 767px;
+
+//電腦
+@mixin nb-width() {
+    @media all and (max-width: $nb-media) {
+        @content;
+    }
+}
+
+//平板
+@mixin pad-width() {
+    @media all and (max-width: $pad-media) {
+        @content;
+    }
+}
+
+//手機
+@mixin phone-width() {
+    @media all and (max-width: $phone-media) {
+        @content;
+    }
+}
