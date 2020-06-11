@@ -36,6 +36,48 @@
 .font-md {
     font-size: $font-md;
 }
+@include pad-width{
+    .title-pd-sb {
+        font-size: $title-sb;
+    }
+    .title-pd-lg {
+        font-size: $title-lg;
+    }
+    .title-pd-md {
+        font-size: $title-md;
+    }
+    .title-pd-sm {
+        font-size: $title-sm;
+    }
+    .font-pd-lg {
+        font-size: $font-lg;
+    }
+    .font-pd-md {
+        font-size: $font-md;
+    }
+}
+@include phone-width{
+    .title-ph-sb {
+        font-size: $title-sb;
+    }
+    .title-ph-lg {
+        font-size: $title-lg;
+    }
+    .title-ph-md {
+        font-size: $title-md;
+    }
+    .title-ph-sm {
+        font-size: $title-sm;
+    }
+    .font-ph-lg {
+        font-size: $font-lg;
+    }
+    .font-ph-md {
+        font-size: $font-md;
+    }
+}
+
+
 
 .upperCase {
     text-transform: uppercase;

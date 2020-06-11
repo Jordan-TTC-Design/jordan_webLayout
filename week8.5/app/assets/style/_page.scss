@@ -3,3 +3,21 @@
         padding: 132px 0;
     }
 }
+.topChoices{
+
+    .card-img-top{
+        height: 175px;
+        border-radius: 1rem;
+    }
+    .card__rank{
+         .icon-sm:last-child(){
+         color:red;
+     }
+    }
+}
+.inspiration{
+    .card-img-top{
+        height: 260px;
+        border-radius: 1rem;
+    }
+}

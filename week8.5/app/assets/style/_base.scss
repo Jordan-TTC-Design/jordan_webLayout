@@ -1,6 +1,6 @@
-* {
-    outline: 1px solid red;
-}
+// * {
+//     outline: 1px solid red;
+// }
 
 // 字型設定：
 
@@ -120,11 +120,11 @@ ul {
 }
 // 共用class
 
-.icon-md {
+.icon-lg {
     vertical-align: middle;
     font-size: 48px;
 }
-.icon-sm {
+.icon-md {
     vertical-align: middle;
     font-size: 24px;
 }
@@ -134,7 +134,7 @@ ul {
     justify-content: center;
 }
 
-.c-btn {
+.btn-custom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,5 +151,43 @@ ul {
     }
 }
 
+.bdrs-1 {
+    border-radius: 1rem;
+}
 //共用class-顏色
+.background-black {
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.card-textBox--overlay {
+    z-index: 99;
+}
+// 本次修改bs4
+.card-body {
+    padding: 0;
+}
 
+.text-sm {
+    font-size: 14px;
+}
+.text-xs {
+    font-size: 12px;
+}
+.text-decoration-through {
+    text-decoration: line-through;
+}
+.icon-sm {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.input-group-lg > .form-control:not(textarea),
+.input-group-lg > .custom-select,
+.input-group-lg > .input-group-append {
+    height: 56px;
+}
