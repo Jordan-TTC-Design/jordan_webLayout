@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>index</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link rel="stylesheet" href="./assets/style/all.css" />
+    </head>
+
+    <body>
+        <div class="header container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center py-1">
+                    <a href="./index.html" class="header__logo btn--center--lg"
+                        ><img src="./assets/images/ic-logo-aloha.svg" alt="logo"
+                    /></a>
+                    <nav class="header__nav">
+                        <ul class="d-flex">
+                            <li>
+                                <div class="dropdown">
+                                    <a
+                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        href="#"
+                                        role="button"
+                                        id="dropdownMenuLink"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons">
+                                            language
+                                        </span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">EN</a>
+                                        <a class="dropdown-item" href="#">中文</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="text-dark btn--center--lg mr-6">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html" class="text-dark btn--center--lg">Login</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        
+<main>
+    <section class="searchControl bg-bgColor mb-3">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12">
+                    <div class="searchBar">
+                        <!-- form-inline和form-row差異是什麼？ -->
+                        <form>
+                            <div class="form-row">
+                                <div class="col-lg-auto flex-grow-1">
+                                    <div class="dropdown">
+                                        <button
+                                            class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            <span class="material-icons mr-2">
+                                                location_on
+                                            </span>
+                                            Destination
+                                        </button>
+                                        <div
+                                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                            aria-labelledby="dropdownMenuButton"
+                                        >
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    BangKok
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Thailand</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Osaka
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Japan</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Roma
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Italy</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Paris
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Italy</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    ReyKjavik
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Iceland</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto flex-grow-1">
+                                    <div class="dropdown">
+                                        <button
+                                            class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            <span class="material-icons mr-2">
+                                                date_range
+                                            </span>
+                                            Check-in / Check-out
+                                        </button>
+                                        <div
+                                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                            aria-labelledby="dropdownMenuButton"
+                                        >
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    BangKok
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Thailand</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Osaka
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Japan</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Roma
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Italy</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Paris
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Italy</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    ReyKjavik
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Iceland</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto flex-grow-1">
+                                    <div class="dropdown">
+                                        <button
+                                            class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            <span class="material-icons mr-2">
+                                                person
+                                            </span>
+                                            Guests
+                                        </button>
+                                        <div
+                                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                            aria-labelledby="dropdownMenuButton"
+                                        >
+                                            <a
+                                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                                href="#"
+                                            >
+                                                <p>Adult</p>
+                                                <p class="d-flex justify-content-between align-items-center">
+                                                    <span class="material-icons mr-1"> remove </span>
+                                                    1
+                                                    <span class="material-icons ml-1"> add </span>
+                                                </p>
+                                            </a>
+                                            <a
+                                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                                href="#"
+                                            >
+                                                <p>Child</p>
+                                                <p class="d-flex justify-content-between align-items-center">
+                                                    <span class="material-icons mr-1"> remove </span>
+                                                    0
+                                                    <span class="material-icons ml-1"> add </span>
+                                                </p>
+                                            </a>
+                                            <a
+                                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                                href="#"
+                                            >
+                                                <p>Room</p>
+                                                <p class="d-flex justify-content-between align-items-center">
+                                                    <span class="material-icons mr-1"> remove </span>
+                                                    2
+                                                    <span class="material-icons ml-1"> add </span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto flex-grow-1">
+                                    <!-- 先改用a標籤 -->
+                                    <a
+                                        href="result.html"
+                                        class="btn btn-primary w-100 btn-custom-height d-flex align-items-center justify-content-center"
+                                        >SEARCH</a
+                                    >
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="SearchResult mb-md-9">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h1 class="pageTitle d-flex mb-3">BangkoK <span class="font-md text-primary">3,240</span></h1>
+                    <aside class="filterBox rounded bg-bgColor p-3">
+                        <form action="#">
+                            <div class="filterInnerbox">
+                                <h5 class="text-rg font-weight-bold mb-2">Deals</h5>
+                                <!-- 一般來說這裡id命名會怎麼命名好 -->
+                                <!-- 這裡id是不是建議要用小駝峰，因為可能會用在js -->
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDeal1" />
+                                    <label class="custom-control-label text-secondary" for="customCheckDeal1">
+                                        Free cancellation</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDeal2" />
+                                    <label class="custom-control-label text-secondary" for="customCheckDeal2">
+                                        No prepayment</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDeal3" />
+                                    <label class="custom-control-label text-secondary" for="customCheckDeal3">
+                                        Special offers</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="filterInnerbox">
+                                <h5 class="text-rg font-weight-bold mb-2">Popular filter</h5>
+                                <!-- 一般來說這裡id命名會怎麼命名好 -->
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckPopular1" />
+                                    <label class="custom-control-label text-secondary" for="customCheckPopular1">
+                                        Breakfast included</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckPopular2" />
+                                    <label class="custom-control-label text-secondary" for="customCheckPopular2">
+                                        Free Wi-Fi</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckPopular3" />
+                                    <label class="custom-control-label text-secondary" for="customCheckPopular3">
+                                        Swimming pool</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="filterInnerbox">
+                                <!-- 求range教學 -->
+                                <h5 class="text-rg font-weight-bold mb-2">Budget</h5>
+                                <input
+                                    type="range"
+                                    class="custom-range custom-range--start"
+                                    min="800"
+                                    max="4000"
+                                    id="customRange1"
+                                />
+                                <input
+                                    type="range"
+                                    class="custom-range custom-range--end"
+                                    min="800"
+                                    max="4000"
+                                    id="customRange2"
+                                />
+                                <div class="rangePriceBox d-flex align-items-center mb-3">
+                                    <p class="text-sm bg-white rounded d-block p-1 flex-grow-1">
+                                        <span class="text-xs font-weight-bold">MIN PRICE</span> <br />
+                                        TWD 800
+                                    </p>
+                                    <p class="text-secondary px-1">-</p>
+                                    <p class="text-sm bg-white rounded d-block p-1 flex-grow-1">
+                                        <span class="text-xs font-weight-bold">MAX PRICE</span> <br />
+                                        TWD 4,000+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="filterInnerbox">
+                                <h5 class="text-rg font-weight-bold mb-2">rating</h5>
+                                <!-- 一般來說這裡id命名會怎麼命名好 -->
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckRating5" />
+                                    <label
+                                        class="custom-control-label text-secondary d-flex align-items-center"
+                                        for="customCheckRating5"
+                                    >
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark mr-1"> star_rate </span>
+                                        5.0</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckRating4" />
+                                    <label
+                                        class="custom-control-label text-secondary d-flex align-items-center"
+                                        for="customCheckRating4"
+                                    >
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark mr-1"> star_rate </span>
+                                        4.0</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckRating3" />
+                                    <label
+                                        class="custom-control-label text-secondary d-flex align-items-center"
+                                        for="customCheckRating3"
+                                    >
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark mr-1"> star_rate </span>
+                                        3.0</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckRating4" />
+                                    <label
+                                        class="custom-control-label text-secondary d-flex align-items-center"
+                                        for="customCheckRating4"
+                                    >
+                                        <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                        <span class="material-icons icon-sm text-dark mr-1"> star_rate </span>
+                                        2.0</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckRating5" />
+                                    <label
+                                        class="custom-control-label text-secondary d-flex align-items-center"
+                                        for="customCheckRating5"
+                                    >
+                                        <span class="material-icons icon-sm text-dark mr-1"> star_rate </span>
+                                        1.0</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckRating6" />
+                                    <label class="custom-control-label text-secondary" for="customCheckRating6">
+                                        Unrated</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="filterInnerbox">
+                                <h5 class="text-rg font-weight-bold mb-2">Stay type</h5>
+                                <!-- 一般來說這裡id命名會怎麼命名好 -->
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckStayType1" />
+                                    <label class="custom-control-label text-secondary" for="customCheckStayType1">
+                                        Hotel</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckStayType2" />
+                                    <label class="custom-control-label text-secondary" for="customCheckStayType2">
+                                        Apartment</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-1">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckStayType3" />
+                                    <label class="custom-control-label text-secondary" for="customCheckStayType3">
+                                        Unique</label
+                                    >
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckStayType4" />
+                                    <label class="custom-control-label text-secondary" for="customCheckStayType4">
+                                        Hostel</label
+                                    >
+                                </div>
+                            </div>
+                        </form>
+                    </aside>
+                </div>
+                <div class="col-8">
+                    <div class="d-flex mb-3">
+                        <button class="btn font-weight-bold active text-primary">Recommended</button>
+                        <button class="btn font-weight-bold">Lowest Price</button>
+                        <button class="btn font-weight-bold">Best value</button>
+                        <button class="btn font-weight-bold">Distance to City Center</button>
+                    </div>
+                    <ul>
+                        <!-- 好像應該要先寫好rwd在複製不然會累死 -->
+                        <li class="rowCard">
+                            <a href="./detail.html" class=" d-flex">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                                    alt=""
+                                    class="rounded-left mr-2"
+                                />
+                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
+                                    <div class="col-12 col-md-7 h-100">
+                                        <p class="text-xs text-secondary">Rachada, Bangkok・2 km from center</p>
+                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
+                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
+                                        <div class="tagList d-flex">
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                            >
+                                                Free cancellation
+                                            </p>
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                            >
+                                                No prepayment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
+                                        <p class="text-secondary d-flex align-items-center justify-content-end">
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            4.0 (283)
+                                        </p>
+                                        <h5 class="font-lg font-weight-bold text-right">
+                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                            ><br />TWD 1,980
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <nav
+                        class="custom-paginationBox d-flex justify-content-between align-items-center p-2 rounded bg-bgColor"
+                        aria-label="Page navigation"
+                    >
+                        <!-- 想問這裡button需不需要包a，會不會影響disabled -->
+                        <button class="btn btn-outline-primary rounded font-weight-bold">
+                            <a href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </button>
+                        <ul class="pagination">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        </ul>
+                        <button class="btn btn-primary rounded font-weight-bold">
+                            <a class="text-white" href="#" tabindex="-1">Next</a>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="subscribe-row jumbotron jumbotron-fluid bg-bgColor mb-0 py-3">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <h4 class="col-5 ff-title title-sm font-weight-bold text-center">Subscribe for Exclusive Offer</h4>
+            <div class="col-7 input-group input-group-lg">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your email address"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                    <button class="btn btn-primary font-weight-bold px-4" id="basic-addon2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <footer class="footer py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 d-flex align-items-center">
+                        <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#" class="mr-lg-3 text-secondary text-sm">FAQs</a>
+                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Terms of use</a>
+                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Privacy policy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-5">
+                        <ul class="footer__iconBox d-flex justify-content-end">
+                            <li>
+                                <div class="dropdown">
+                                    <a
+                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        href="#"
+                                        role="button"
+                                        id="dropdownMenuLink"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons mr-1">
+                                            language
+                                        </span>
+                                        <p class="text-secondary">English</p>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">EN</a>
+                                        <a class="dropdown-item" href="#">中文</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a
+                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        href="#"
+                                        role="button"
+                                        id="dropdownMenuLink"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons mr-1">
+                                            attach_money
+                                        </span>
+                                        <p class="text-secondary">TWD</p>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">TWD</a>
+                                        <a class="dropdown-item" href="#">USD</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
+    </body>
+</html>

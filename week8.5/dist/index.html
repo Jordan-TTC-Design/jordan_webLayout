@@ -12,7 +12,7 @@
     <body>
         <div class="header container">
             <div class="row">
-                <div class="col-12 d-flex justify-content-between">
+                <div class="col-12 d-flex justify-content-between align-items-center py-1">
                     <a href="./index.html" class="header__logo btn--center--lg"
                         ><img src="./assets/images/ic-logo-aloha.svg" alt="logo"
                     /></a>
@@ -44,7 +44,7 @@
                                 <a href="#" class="text-dark btn--center--lg mr-6">Sign up</a>
                             </li>
                             <li>
-                                <a href="#" class="text-dark btn--center--lg">Login</a>
+                                <a href="./login.html" class="text-dark btn--center--lg">Login</a>
                             </li>
                         </ul>
                     </nav>
@@ -54,7 +54,7 @@
 
         
 <main>
-    <div class="banner">
+    <section class="homebanner">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -72,7 +72,203 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-10">
+                    <div class="searchBar bg-bgColor">
+                        <!-- form-inline和form-row差異是什麼？ -->
+                        <form>
+                            <div class="form-row ">
+                                <div class="col-3 ">
+                                    <div class="dropdown">
+                                        <button
+                                            class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            <span class="material-icons mr-2">
+                                                location_on
+                                            </span>
+                                            Destination
+                                        </button>
+                                        <div
+                                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                            aria-labelledby="dropdownMenuButton"
+                                        >
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    BangKok
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Thailand</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Osaka
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Japan</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Roma
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Italy</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Paris
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Italy</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    ReyKjavik
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Iceland</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 ">
+                                    <div class="dropdown">
+                                        <button
+                                            class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            <span class="material-icons mr-2">
+                                                date_range
+                                            </span>
+                                            Check-in / Check-out
+                                        </button>
+                                        <div
+                                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                            aria-labelledby="dropdownMenuButton"
+                                        >
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    BangKok
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Thailand</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Osaka
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Japan</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Roma
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Italy</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    Paris
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Italy</span>
+                                                </p>
+                                            </a>
+                                            <a class="dropdown-item d-flex py-1" href="#">
+                                                <span class="material-icons mr-1"> star_rate </span>
+                                                <p>
+                                                    ReyKjavik
+                                                    <br />
+                                                    <span class="text-xs text-secondary">Iceland</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 ">
+                                    <div class="dropdown">
+                                        <button
+                                            class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            <span class="material-icons mr-2">
+                                                person
+                                            </span>
+                                            Guests
+                                        </button>
+                                        <div
+                                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                            aria-labelledby="dropdownMenuButton"
+                                        >
+                                            <a
+                                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                                href="#"
+                                            >
+                                                <p>Adult</p>
+                                                <p class="d-flex justify-content-between align-items-center">
+                                                    <span class="material-icons mr-1"> remove </span>
+                                                    1
+                                                    <span class="material-icons ml-1"> add </span>
+                                                </p>
+                                            </a>
+                                            <a
+                                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                                href="#"
+                                            >
+                                                <p>Child</p>
+                                                <p class="d-flex justify-content-between align-items-center">
+                                                    <span class="material-icons mr-1"> remove </span>
+                                                    0
+                                                    <span class="material-icons ml-1"> add </span>
+                                                </p>
+                                            </a>
+                                            <a
+                                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                                href="#"
+                                            >
+                                                <p>Room</p>
+                                                <p class="d-flex justify-content-between align-items-center">
+                                                    <span class="material-icons mr-1"> remove </span>
+                                                    2
+                                                    <span class="material-icons ml-1"> add </span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 ">
+                                    <!-- 先改用a標籤 -->
+                                    <a href="result.html" class="btn btn-primary w-100 btn-custom-height d-flex align-items-center justify-content-center">SEARCH</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="topChoices container mb-9">
         <div class="h2 mb-lg-3">Top Choices</div>
@@ -247,9 +443,15 @@
         </div>
     </section>
     <section class="inspiration container mb-lg-9">
-        <h2 class="mb-lg-3">
-            Get Inspiration
-        </h2>
+        <div class="section__titleBox d-flex justify-content-between align-items-center ">
+            <h2 class="mb-lg-3">
+                Get Inspiration
+            </h2>
+            <a href="#" class="btn btn-outline-primary font-weight-bold">
+                SEE MORE
+            </a>
+        </div>
+        
         <div class="row">
             <div class="col-4">
                 <div class="card">
@@ -290,7 +492,7 @@
         <div class="container">
             <h2 class="title-md font-weight-bold text-center mb-lg-3">Subscribe for Exclusive Offer</h2>
             <div class="row justify-content-center">
-                <div class="col-6 input-group mb-3  input-group-lg">
+                <div class="col-6 input-group mb-3 input-group-lg">
                     <input
                         type="text"
                         class="form-control"
@@ -310,18 +512,18 @@
 
         <footer class="footer py-3">
             <div class="container">
-                <div class="row ">
+                <div class="row">
                     <div class="col-7 d-flex align-items-center">
-                            <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="#" class="mr-lg-3 text-secondary text-sm">FAQs</a>
-                                        <a href="#" class="mr-lg-3 text-secondary text-sm">Terms of use</a>
-                                        <a href="#" class="mr-lg-3 text-secondary text-sm">Privacy policy</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                        <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#" class="mr-lg-3 text-secondary text-sm">FAQs</a>
+                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Terms of use</a>
+                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Privacy policy</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="col-5">
                         <ul class="footer__iconBox d-flex justify-content-end">

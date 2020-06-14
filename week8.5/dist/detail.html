@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Rachada Hotel</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link rel="stylesheet" href="./assets/style/all.css" />
+    </head>
+
+    <body>
+        <div class="header container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center py-1">
+                    <a href="./index.html" class="header__logo btn--center--lg"
+                        ><img src="./assets/images/ic-logo-aloha.svg" alt="logo"
+                    /></a>
+                    <nav class="header__nav">
+                        <ul class="d-flex">
+                            <li>
+                                <div class="dropdown">
+                                    <a
+                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        href="#"
+                                        role="button"
+                                        id="dropdownMenuLink"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons">
+                                            language
+                                        </span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">EN</a>
+                                        <a class="dropdown-item" href="#">中文</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="text-dark btn--center--lg mr-6">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="./login.html" class="text-dark btn--center--lg">Login</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        
+<section class="searchControl bg-bgColor mb-3">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <div class="searchBar">
+                    <!-- form-inline和form-row差異是什麼？ -->
+                    <form>
+                        <div class="form-row">
+                            <div class="col-lg-auto flex-grow-1">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons mr-2">
+                                            location_on
+                                        </span>
+                                        Destination
+                                    </button>
+                                    <div
+                                        class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                BangKok
+                                                <br />
+                                                <span class="text-xs text-secondary">Thailand</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Osaka
+                                                <br />
+                                                <span class="text-xs text-secondary">Japan</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Roma
+                                                <br />
+                                                <span class="text-xs text-secondary">Italy</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Paris
+                                                <br />
+                                                <span class="text-xs text-secondary">Italy</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                ReyKjavik
+                                                <br />
+                                                <span class="text-xs text-secondary">Iceland</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-auto flex-grow-1">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons mr-2">
+                                            date_range
+                                        </span>
+                                        Check-in / Check-out
+                                    </button>
+                                    <div
+                                        class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                BangKok
+                                                <br />
+                                                <span class="text-xs text-secondary">Thailand</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Osaka
+                                                <br />
+                                                <span class="text-xs text-secondary">Japan</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Roma
+                                                <br />
+                                                <span class="text-xs text-secondary">Italy</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Paris
+                                                <br />
+                                                <span class="text-xs text-secondary">Italy</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                ReyKjavik
+                                                <br />
+                                                <span class="text-xs text-secondary">Iceland</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-auto flex-grow-1">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons mr-2">
+                                            person
+                                        </span>
+                                        Guests
+                                    </button>
+                                    <div
+                                        class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <a
+                                            class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                            href="#"
+                                        >
+                                            <p>Adult</p>
+                                            <p class="d-flex justify-content-between align-items-center">
+                                                <span class="material-icons mr-1"> remove </span>
+                                                1
+                                                <span class="material-icons ml-1"> add </span>
+                                            </p>
+                                        </a>
+                                        <a
+                                            class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                            href="#"
+                                        >
+                                            <p>Child</p>
+                                            <p class="d-flex justify-content-between align-items-center">
+                                                <span class="material-icons mr-1"> remove </span>
+                                                0
+                                                <span class="material-icons ml-1"> add </span>
+                                            </p>
+                                        </a>
+                                        <a
+                                            class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                            href="#"
+                                        >
+                                            <p>Room</p>
+                                            <p class="d-flex justify-content-between align-items-center">
+                                                <span class="material-icons mr-1"> remove </span>
+                                                2
+                                                <span class="material-icons ml-1"> add </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-auto flex-grow-1">
+                                <!-- 先改用a標籤 -->
+                                <a
+                                    href="result.html"
+                                    class="btn btn-primary w-100 btn-custom-height d-flex align-items-center justify-content-center"
+                                    >SEARCH</a
+                                >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main>
+    <div class="container">
+        <div class="pageItem__imgBox d-flex mb-3">
+            <div class="pageItem__img bg-rachadaHotelImg1 bg-cover bg-cover-size w-55 mr-1"></div>
+            <div class="w-45 h-100 d-flex flex-column">
+                <div class="pageItem__img bg-rachadaHotelImg1 bg-cover bg-cover-size w-100 h-50 mb-1"></div>
+                <div class="w-100 h-50 d-flex">
+                    <div class="pageItem__img bg-rachadaHotelImg1 bg-cover bg-cover-size w-45 mr-1"></div>
+                    <div class="w-55 h-100 d-flex flex-column">
+                        <div class="pageItem__img bg-rachadaHotelImg1 bg-cover bg-cover-size w-100 mb-1"></div>
+                        <button class="btn btn-dark py-2 font-weight-bold">See All 10 photos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pageItem__infoBox w-55 mb-9">
+            <!-- 這裡會不會變得太多flex -->
+            <div class="d-flex align-items-center">
+                <h2 class="ff-title title-sm font-weight-bold mr-2">Rachada Hotel</h2>
+                <p class="d-flex align-items-center text-secondary">
+                    <span class="material-icons icon-sm text-dark"> star_rate </span>
+                    <span class="material-icons icon-sm text-dark"> star_rate </span>
+                    <span class="material-icons icon-sm text-dark"> star_rate </span>
+                    <span class="material-icons icon-sm text-dark"> star_rate </span>
+                    <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                    4.0 (283)
+                </p>
+            </div>
+            <p class="text-primary text-sm mb-3">
+                318 Phaya Thai Road, Ratchathewi, Phaya Thai, 10400 Bangkok, Thailand
+            </p>
+            <p class="text-secondary text-sm">
+                The Rachada Hotel is an establishment that provides paid lodging on a short-term basis. Facilities
+                provided may range from a modest-quality mattress in a small room to large suites with bigger,
+                higher-quality beds, a dresser, a refrigerator and other kitchen facilities, upholstered chairs, a flat
+                screen television, and en-suite bathrooms.
+            </p>
+        </div>
+        <div class="pageItem__selectList w-55 mb-5">
+            <h4 class="ff-title font-weight-bold mb-3">Select your room</h4>
+            <!-- 這裡重複使用了result的tag，改大一點，在想是不是要寫成元件，就不用寫那麼多class -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <ul class="tagList d-flex flex-wrap">
+                    <!-- 先預留mb-1可以讓wrap時好看點 -->
+                    <li class="tagList__item">
+                        <p class="bg-bgColor rounded text-secondary text-sm px-2 py-1 mr-1 mb-1">
+                            Bangkok, Thailand
+                        </p>
+                    </li>
+                    <li>
+                        <p class="tagList__item bg-bgColor rounded text-secondary text-sm px-2 py-1 mr-1 mb-1">
+                            17 June - 19 June・2 nights
+                        </p>
+                    </li>
+                    <li>
+                        <p class="tagList__item bg-bgColor rounded text-secondary text-sm px-2 py-1 mb-1">
+                            2 adults・1 room
+                        </p>
+                    </li>
+                </ul>
+                <a href="#" class="d-block font-weight-bold mb-1">EDIT DETAIL</a>
+            </div>
+        </div>
+        <table class="custom-table table">
+            <thead>
+                <tr class="row font-weight-bold custom-table__line mb-2">
+                    <!-- <th class="col">Room Type</th> -->
+                    <th class="col-6" scope="col"><p>Room Type</p></th>
+                    <th class="col-2" scope="col"><p class="text-center">Sleeps</p></th>
+                    <th class="col-2" scope="col"><p class="text-center">Price</p></th>
+                    <th class="col-2" scope="col"><p class="text-center">Rooms</p></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="rowCard custom-table__line row d-flex mb-3 pb-3 pb-3">
+                    <td class="col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <img
+                                    src="https://images.unsplash.com/photo-1574643014728-053f16745e49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                    alt=""
+                                    class="rounded-left"
+                                />
+                            </div>
+                            <div class="rowCard__textBox col-6">
+                                <p class="font-weight-bold mb-2">
+                                    Deluxe Double Room A
+                                    <br />
+                                    <span class="text-xs text-secondary font-weight-normal mt-o5">1 bed (Queen size)</span>
+                                </p>
+                                <ul class="d-flex flex-wrap">
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            wifi
+                                        </span>
+                                        <p class="text-sm">Wi-Fi</p>
+                                    </li>
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            room_service
+                                        </span>
+                                        <p class="text-sm">room service</p>
+                                    </li>
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            restaurant
+                                        </span>
+                                        <p class="text-sm">breakfast</p>
+                                    </li>
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            smoke_free
+                                        </span>
+                                        <p class="text-sm">Smoke Free</p>
+                                    </li>
+                                    <li class="d-flex w-100 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            personal_video
+                                        </span>
+                                        <p class="text-sm">Television</p>
+                                    </li>
+                                    <li class="d-flex w-100 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            ac_unit
+                                        </span>
+                                        <p class="text-sm">Air conditioner</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="col-2 d-flex justify-content-center align-items-center">
+                        <span class="material-icons">
+                            person
+                        </span>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </td>
+                    <td class="col-2 d-flex justify-content-center align-items-center">
+                        <p class="text-weight-bold">TWD <span class="text-prmary">1,490</span></p>
+                    </td>
+                    <td class="col-2 d-flex justify-content-center align-items-center">
+                        <p class="d-flex justify-content-between align-items-center">
+                            <span class="material-icons mr-1"> remove </span>
+                            1
+                            <span class="material-icons ml-1"> add </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="rowCard custom-table__line row d-flex mb-3 pb-3">
+                    <td class="col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <img
+                                    src="https://images.unsplash.com/photo-1574643014728-053f16745e49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                    alt=""
+                                    class="rounded-left"
+                                />
+                            </div>
+                            <div class="rowCard__textBox col-6">
+                                <p class="font-weight-bold mb-2">
+                                    Deluxe Double Room A
+                                    <br />
+                                    <span class="text-xs text-secondary font-weight-normal mt-o5">1 bed (Queen size)</span>
+                                </p>
+                                <ul class="d-flex flex-wrap">
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            wifi
+                                        </span>
+                                        <p class="text-sm">Wi-Fi</p>
+                                    </li>
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            room_service
+                                        </span>
+                                        <p class="text-sm">room service</p>
+                                    </li>
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            restaurant
+                                        </span>
+                                        <p class="text-sm">breakfast</p>
+                                    </li>
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            smoke_free
+                                        </span>
+                                        <p class="text-sm">Smoke Free</p>
+                                    </li>
+                                    <li class="d-flex w-100 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            personal_video
+                                        </span>
+                                        <p class="text-sm">Television</p>
+                                    </li>
+                                    <li class="d-flex w-100 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            ac_unit
+                                        </span>
+                                        <p class="text-sm">Air conditioner</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="col-2 d-flex justify-content-center align-items-center">
+                        <span class="material-icons">
+                            person
+                        </span>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </td>
+                    <td class="col-2 d-flex justify-content-center align-items-center">
+                        <p class="text-weight-bold">TWD <span class="text-prmary">1,490</span></p>
+                    </td>
+                    <td class="col-2 d-flex justify-content-center align-items-center">
+                        <p class="d-flex justify-content-between align-items-center">
+                            <span class="material-icons mr-1"> remove </span>
+                            1
+                            <span class="material-icons ml-1"> add </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="rowCard row d-flex mb-9">
+                    <td class="col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <img
+                                    src="https://images.unsplash.com/photo-1574643014728-053f16745e49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                    alt=""
+                                    class="rounded-left"
+                                />
+                            </div>
+                            <div class="rowCard__textBox col-6">
+                                <p class="font-weight-bold mb-2">
+                                    Deluxe Double Room A
+                                    <br />
+                                    <span class="text-xs text-secondary font-weight-normal mt-o5">1 bed (Queen size)</span>
+                                </p>
+                                <ul class="d-flex flex-wrap">
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            wifi
+                                        </span>
+                                        <p class="text-sm">Wi-Fi</p>
+                                    </li>
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            room_service
+                                        </span>
+                                        <p class="text-sm">room service</p>
+                                    </li>
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            restaurant
+                                        </span>
+                                        <p class="text-sm">breakfast</p>
+                                    </li>
+                                    <li class="d-flex w-50 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            smoke_free
+                                        </span>
+                                        <p class="text-sm">Smoke Free</p>
+                                    </li>
+                                    <li class="d-flex w-100 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            personal_video
+                                        </span>
+                                        <p class="text-sm">Television</p>
+                                    </li>
+                                    <li class="d-flex w-100 text-secondary">
+                                        <span class="material-icons icon-sm mr-o5">
+                                            ac_unit
+                                        </span>
+                                        <p class="text-sm">Air conditioner</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="col-2 d-flex justify-content-center align-items-center">
+                        <span class="material-icons">
+                            person
+                        </span>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </td>
+                    <td class="col-2 d-flex justify-content-center align-items-center">
+                        <p class="text-weight-bold">TWD <span class="text-prmary">1,490</span></p>
+                    </td>
+                    <td class="col-2 d-flex justify-content-center align-items-center">
+                        <p class="d-flex justify-content-between align-items-center">
+                            <span class="material-icons mr-1"> remove </span>
+                            1
+                            <span class="material-icons ml-1"> add </span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<div class="subscribe-row jumbotron jumbotron-fluid bg-bgColor mb-0 py-3">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <h4 class="col-5 ff-title title-sm font-weight-bold text-center">Subscribe for Exclusive Offer</h4>
+            <div class="col-7 input-group input-group-lg">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your email address"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                    <button class="btn btn-primary font-weight-bold px-4" id="basic-addon2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <footer class="footer py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 d-flex align-items-center">
+                        <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#" class="mr-lg-3 text-secondary text-sm">FAQs</a>
+                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Terms of use</a>
+                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Privacy policy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-5">
+                        <ul class="footer__iconBox d-flex justify-content-end">
+                            <li>
+                                <div class="dropdown">
+                                    <a
+                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        href="#"
+                                        role="button"
+                                        id="dropdownMenuLink"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons mr-1">
+                                            language
+                                        </span>
+                                        <p class="text-secondary">English</p>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">EN</a>
+                                        <a class="dropdown-item" href="#">中文</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a
+                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        href="#"
+                                        role="button"
+                                        id="dropdownMenuLink"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons mr-1">
+                                            attach_money
+                                        </span>
+                                        <p class="text-secondary">TWD</p>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">TWD</a>
+                                        <a class="dropdown-item" href="#">USD</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
+    </body>
+</html>
