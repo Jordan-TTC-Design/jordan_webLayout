@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>index</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
         <link rel="stylesheet" href="./assets/style/all.css" />
     </head>
 
@@ -260,7 +261,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <h1 class="pageTitle d-flex mb-3">BangkoK <span class="font-md text-primary">3,240</span></h1>
+                    <h1 class="pageTitle d-flex mb-3 ff-title font-weight-bold">
+                        BangkoK <span class="font-md text-primary">3,240</span>
+                    </h1>
                     <aside class="filterBox rounded bg-bgColor p-3">
                         <form action="#">
                             <div class="filterInnerbox">
@@ -446,9 +449,9 @@
                         <button class="btn font-weight-bold">Distance to City Center</button>
                     </div>
                     <ul>
-                        <!-- 好像應該要先寫好rwd在複製不然會累死 -->
-                        <li class="rowCard">
-                            <a href="./detail.html" class=" d-flex">
+                        <!-- 好像應該要先寫好rwd在複製不然會累死 ?-->
+                        <li class="rowCard mb-3">
+                            <a href="./detail.html" class="d-flex">
                                 <img
                                     src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                                     alt=""
@@ -456,7 +459,331 @@
                                 />
                                 <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
                                     <div class="col-12 col-md-7 h-100">
-                                        <p class="text-xs text-secondary">Rachada, Bangkok・2 km from center</p>
+                                        <p class="text-xs text-secondary">
+                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
+                                        </p>
+                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
+                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
+                                        <div class="tagList d-flex">
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                            >
+                                                Free cancellation
+                                            </p>
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                            >
+                                                No prepayment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
+                                        <p class="text-secondary d-flex align-items-center justify-content-end">
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            4.0 (283)
+                                        </p>
+                                        <h5 class="font-lg font-weight-bold text-right">
+                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                            ><br />TWD 1,980
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="rowCard mb-3 pt-3">
+                            <a href="./detail.html" class="d-flex">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                                    alt=""
+                                    class="rounded-left mr-2"
+                                />
+                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
+                                    <div class="col-12 col-md-7 h-100">
+                                        <p class="text-xs text-secondary">
+                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
+                                        </p>
+                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
+                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
+                                        <div class="tagList d-flex">
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                            >
+                                                Free cancellation
+                                            </p>
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                            >
+                                                No prepayment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
+                                        <p class="text-secondary d-flex align-items-center justify-content-end">
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            4.0 (283)
+                                        </p>
+                                        <h5 class="font-lg font-weight-bold text-right">
+                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                            ><br />TWD 1,980
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="rowCard mb-3 pt-3">
+                            <a href="./detail.html" class="d-flex">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                                    alt=""
+                                    class="rounded-left mr-2"
+                                />
+                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
+                                    <div class="col-12 col-md-7 h-100">
+                                        <p class="text-xs text-secondary">
+                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
+                                        </p>
+                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
+                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
+                                        <div class="tagList d-flex">
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                            >
+                                                Free cancellation
+                                            </p>
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                            >
+                                                No prepayment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
+                                        <p class="text-secondary d-flex align-items-center justify-content-end">
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            4.0 (283)
+                                        </p>
+                                        <h5 class="font-lg font-weight-bold text-right">
+                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                            ><br />TWD 1,980
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="rowCard mb-3 pt-3">
+                            <a href="./detail.html" class="d-flex">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                                    alt=""
+                                    class="rounded-left mr-2"
+                                />
+                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
+                                    <div class="col-12 col-md-7 h-100">
+                                        <p class="text-xs text-secondary">
+                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
+                                        </p>
+                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
+                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
+                                        <div class="tagList d-flex">
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                            >
+                                                Free cancellation
+                                            </p>
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                            >
+                                                No prepayment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
+                                        <p class="text-secondary d-flex align-items-center justify-content-end">
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            4.0 (283)
+                                        </p>
+                                        <h5 class="font-lg font-weight-bold text-right">
+                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                            ><br />TWD 1,980
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="rowCard mb-3 pt-3">
+                            <a href="./detail.html" class="d-flex">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                                    alt=""
+                                    class="rounded-left mr-2"
+                                />
+                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
+                                    <div class="col-12 col-md-7 h-100">
+                                        <p class="text-xs text-secondary">
+                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
+                                        </p>
+                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
+                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
+                                        <div class="tagList d-flex">
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                            >
+                                                Free cancellation
+                                            </p>
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                            >
+                                                No prepayment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
+                                        <p class="text-secondary d-flex align-items-center justify-content-end">
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            4.0 (283)
+                                        </p>
+                                        <h5 class="font-lg font-weight-bold text-right">
+                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                            ><br />TWD 1,980
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="rowCard mb-3 pt-3">
+                            <a href="./detail.html" class="d-flex">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                                    alt=""
+                                    class="rounded-left mr-2"
+                                />
+                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
+                                    <div class="col-12 col-md-7 h-100">
+                                        <p class="text-xs text-secondary">
+                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
+                                        </p>
+                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
+                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
+                                        <div class="tagList d-flex">
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                            >
+                                                Free cancellation
+                                            </p>
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                            >
+                                                No prepayment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
+                                        <p class="text-secondary d-flex align-items-center justify-content-end">
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            4.0 (283)
+                                        </p>
+                                        <h5 class="font-lg font-weight-bold text-right">
+                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                            ><br />TWD 1,980
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="rowCard mb-3 pt-3">
+                            <a href="./detail.html" class="d-flex">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                                    alt=""
+                                    class="rounded-left mr-2"
+                                />
+                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
+                                    <div class="col-12 col-md-7 h-100">
+                                        <p class="text-xs text-secondary">
+                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
+                                        </p>
+                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
+                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
+                                        <div class="tagList d-flex">
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                            >
+                                                Free cancellation
+                                            </p>
+                                            <p
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                            >
+                                                No prepayment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
+                                        <p class="text-secondary d-flex align-items-center justify-content-end">
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            4.0 (283)
+                                        </p>
+                                        <h5 class="font-lg font-weight-bold text-right">
+                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                            ><br />TWD 1,980
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        <li class="rowCard mb-3 pt-3">
+                            <a href="./detail.html" class="d-flex">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                                    alt=""
+                                    class="rounded-left mr-2"
+                                />
+                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
+                                    <div class="col-12 col-md-7 h-100">
+                                        <p class="text-xs text-secondary">
+                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
+                                        </p>
                                         <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
                                         <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
                                         <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>

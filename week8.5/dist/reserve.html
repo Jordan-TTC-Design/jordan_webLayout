@@ -4,14 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title><%- title %></title>
+        <title>reserve</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
         <link rel="stylesheet" href="./assets/style/all.css" />
     </head>
 
     <body>
-        <div class="header container">
+        <div class="header container mb-3">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between align-items-center py-1">
                     <a href="./index.html" class="header__logo btn--center--lg"
@@ -52,13 +51,63 @@
                 </div>
             </div>
         </div>
-
-        <%- contents %>
-
-        <footer class="footer py-3">
+        <main>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    
+                    <div class="col-4 mb-9">
+                        <div>
+                            <h3 class="title-sm font-weight-bold mb-3">Reservation details</h3>
+                            <form>
+                                <div class="form-group  mb-2">
+                                  <label for="exampleInputEmail1">Name</label>
+                                  <input type="email" class="form-control h-custom" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group mb-2>
+                                  <label for="exampleInputPassword1">Email</label>
+                                  <input type="password" class="form-control h-custom" id="exampleInputEamil" placeholder="Password">
+                                </div>
+                                <div class="form-group mb-2>
+                                    <label for="exampleInputPassword1">Phone (optional)</label>
+                                    <input type="password" class="form-control h-custom" id="exampleInputPhone" placeholder="Password">
+                                  </div>
+                                <!-- 能否交怎麼使用button跳頁 -->
+                                <a href="./reservation-success.html" class="btn btn-primary h-custom font-weight-bold mb-1 d-flex align-items-center justify-content-center text-white">Reserve</a>
+                                  <p class="text-sm text-primary text-center">Reserve now, pay at stay</p>
+                            </form>
+                        </div>
+                    </div>
+                        <div class="col-4">
+                            <div class="bg-bgColor p-3 rounded">
+                            <div class="border-bottom-white pb-3 mb-3">
+                            <h5 class="font-weight-bold mb-2 text-rg">Booking details</h5>
+                            <p class="text-secondary text-sm"> 17 June 2020 - 19 June 2020・2 nights</p>
+                            <p class="text-secondary text-sm">2 adults・1 room</p>
+                            <p class="text-secondary text-sm"> Rachada Hotel</p>
+                            </div>
+                            <div class="border-bottom-white pb-3 mb-3">
+                            <h5 class="font-weight-bold mb-2 text-rg">Price summary</h5>
+                            <p class="text-secondary text-sm d-flex justify-content-between"> Deluxe Suite with Pool <span>TWD 3,960</span></p>
+                            <p class="text-secondary text-sm d-flex justify-content-between">VAT (7%)<span>TWD 277</span></p>
+                            <p class="text-secondary text-sm d-flex justify-content-between"> Property service charge<span>TWD 399</span></p>
+                            </div>
+                            <o class="d-flex justify-content-between text-secondary">Total <span class="font-weight-bold text-dark">TWD 4,633</span></o>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer  fixed-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-7 d-flex align-items-center">
+                    <div class="col-12">
+                        <!-- 這條線該下載哪區塊好 -->
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7 d-flex align-items-center py-3">
                         <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
                         <nav>
                             <ul>
@@ -123,7 +172,6 @@
                 </div>
             </div>
         </footer>
-
         <script src="./assets/js/vendors.js"></script>
         <script src="./assets/js/all.js"></script>
     </body>

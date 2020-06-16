@@ -1,6 +1,6 @@
-* {
-    outline: 1px solid red;
-}
+// * {
+//     outline: 1px solid red;
+// }
 
 // 字型設定：
 
@@ -257,12 +257,26 @@ ul {
     left: 0px;
     width: 100%;
 }
-
+.rowCardList{
+    .rowCardLine {
+        width: 100%;
+        position: relative;
+    }
+    .rowCardLine::after {
+        content: '';
+        border-bottom: 1px solid $gray-300;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
 .rowCard img {
     width: 255px;
     height: 175px;
     // object-fit超重要！！記起來
     object-fit: cover;
+
 }
 .custom-paginationBox {
     .pagination {

@@ -85,3 +85,32 @@
         transform: translateX(-100%);
     }
 }
+.user-pic{
+    width: 24px;
+    height: 24px;
+}
+.user-pic-md{
+width: 64px;
+height: 64px;
+}
+.bookingList{
+    
+    .rowCard__textBox{
+        position: relative;
+        .rowCard__textBox__Btn{
+            top: 16px;
+            right: 16px;
+        }
+    }
+    
+}
+
+.custom-swiper-banner{
+    .swiper-buttonBox{
+    }
+    .swiper-button-prev,.swiper-button-next{
+        color:white;
+        display: block;
+        transform: translateY(-70%);
+    }
+}

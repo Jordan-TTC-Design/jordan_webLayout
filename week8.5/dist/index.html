@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>index</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
         <link rel="stylesheet" href="./assets/style/all.css" />
     </head>
 
@@ -55,11 +56,22 @@
         
 <main>
     <section class="homebanner">
-        <div class="swiper-container">
+        <div class="custom-swiper-banner swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="bg-hotel bg-cover bg-cover-size">
-                        <h1 class="text-white">Discover your ideal hotel</h1>
+                    <div class="bg-hotel bg-cover bg-cover-size position-relative">
+                        <h1 class="text-white title-md font-weight-bold ff-title">Discover your ideal hotel</h1>
+                        <div class="container">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-10">
+                                    <div class="swiper-buttonBox">
+                                        <!-- 對於這個定位問題老師會給什麼建議 -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -69,8 +81,6 @@
                 </div>
                 <!-- Add Arrows -->
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
         <div class="container">
             <div class="row d-flex justify-content-center">
@@ -78,8 +88,8 @@
                     <div class="searchBar bg-bgColor">
                         <!-- form-inline和form-row差異是什麼？ -->
                         <form>
-                            <div class="form-row ">
-                                <div class="col-3 ">
+                            <div class="form-row">
+                                <div class="col-3">
                                     <div class="dropdown">
                                         <button
                                             class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
@@ -141,7 +151,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 ">
+                                <div class="col-4">
                                     <div class="dropdown">
                                         <button
                                             class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
@@ -203,7 +213,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-3 ">
+                                <div class="col-3">
                                     <div class="dropdown">
                                         <button
                                             class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
@@ -258,9 +268,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-2 ">
+                                <div class="col-2">
                                     <!-- 先改用a標籤 -->
-                                    <a href="result.html" class="btn btn-primary w-100 btn-custom-height d-flex align-items-center justify-content-center">SEARCH</a>
+                                    <a
+                                        href="result.html"
+                                        class="btn btn-primary w-100 btn-custom-height d-flex align-items-center justify-content-center ff-title font-weight-bold"
+                                        >SEARCH</a
+                                    >
                                 </div>
                             </div>
                         </form>
@@ -271,7 +285,7 @@
     </section>
 
     <section class="topChoices container mb-9">
-        <div class="h2 mb-lg-3">Top Choices</div>
+        <div class="h2 mb-lg-3 ff-title font-weight-bold">Top Choices</div>
         <ul class="row">
             <li class="col-3 card">
                 <div class="bg-hotelAqua card-img-top bg-cover"></div>
@@ -352,7 +366,7 @@
         </ul>
     </section>
     <section class="container popularDestinations mb-lg-9">
-        <div class="h2 mb-lg-3">Popular Destinations</div>
+        <div class="h2 mb-lg-3 ff-title font-weight-bold">Popular Destinations</div>
         <div class="row">
             <div class="col-4 mb-lg-3">
                 <div class="card bg-osaka bg-cover">
@@ -443,21 +457,21 @@
         </div>
     </section>
     <section class="inspiration container mb-lg-9">
-        <div class="section__titleBox d-flex justify-content-between align-items-center ">
-            <h2 class="mb-lg-3">
+        <div class="section__titleBox d-flex justify-content-between align-items-center mb-lg-3">
+            <h2 class="ff-title font-weight-bold">
                 Get Inspiration
             </h2>
             <a href="#" class="btn btn-outline-primary font-weight-bold">
                 SEE MORE
             </a>
         </div>
-        
+
         <div class="row">
             <div class="col-4">
                 <div class="card">
                     <div class="bg-romeDome bg-cover card-img-top mb-3"></div>
                     <div class="card-body">
-                        <h5 class="card-title mb-1">The fifth most visited country</h5>
+                        <h4 class="card-title mb-1 ff-title font-weight-bold">The fifth most visited country</h4>
                         <p class="card-text text-secondary">
                             Italy is the fifth most visited country in the world, with a total of 52.3 million…
                         </p>
@@ -468,7 +482,7 @@
                 <div class="card">
                     <div class="bg-thailand bg-cover card-img-top mb-3"></div>
                     <div class="card-body">
-                        <h5 class="card-title mb-1">Visit Thailand for Bangkok</h5>
+                        <h4 class="card-title mb-1 ff-title font-weight-bold">Visit Thailand for Bangkok</h4>
                         <p class="card-text text-secondary">
                             Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…
                         </p>
@@ -479,7 +493,7 @@
                 <div class="card">
                     <div class="bg-lordOfRing bg-cover card-img-top mb-3"></div>
                     <div class="card-body">
-                        <h5 class="card-title mb-1">Lord of the Rings Tour</h5>
+                        <h4 class="card-title mb-1 ff-title font-weight-bold">Lord of the Rings Tour</h4>
                         <p class="card-text text-secondary">
                             The national cuisine has been described as Pacific Rim, incorporating the native Māori…
                         </p>
