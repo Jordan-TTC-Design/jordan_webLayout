@@ -236,85 +236,129 @@ current: index
     </section>
 
     <section class="topChoices container mb-9">
-        <div class="h2 mb-lg-3 ff-title font-weight-bold">Top Choices</div>
-        <ul class="row">
-            <li class="col-3 card">
-                <div class="bg-hotelAqua card-img-top bg-cover"></div>
-                <!-- 還是不太會用img標籤 -->
-                <!-- <img
-                    src="https://images.unsplash.com/photo-1569335468888-1d3e4a5a3595?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                    alt=""
-                    class="card-img-top"
-                /> -->
-                <div class="card-body">
-                    <p class="card-title font-weight-bold mb-1">Mr. Kawasaki Inn</p>
-                    <p class="card__rank d-flex align-items-center mb-1">
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm mr-o5"> star_rate </span>
-                        5.0
-                        <span class="text-xs text-secondary">・2k reviews</span>
-                    </p>
-                    <p class="text-sm">
-                        TWD 2,480
-                        <span class="ml-1 text-xs text-secondary text-decoration-through">TWD 3,980</span>
-                    </p>
-                </div>
+        <ul class="custom-nav nav nav-tabs font-weight-bold mb-3" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a
+                    class="nav-link active"
+                    id="bali-tab"
+                    data-toggle="tab"
+                    href="#bali"
+                    role="tab"
+                    aria-controls="bali"
+                    aria-selected="true"
+                    >Bali<span class="text-sm align-top">128</span></a
+                >
             </li>
-            <li class="col-3 card">
-                <div class="bg-kawasakiInn card-img-top bg-cover mb-1"></div>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold mb-1">Mr. Kawasaki Inn</p>
-                    <p class="card__rank d-flex align-items-center mb-1">
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm mr-o5"> star_rate </span>
-                        4.0
-                        <span class="text-xs text-secondary">・500 reviews</span>
-                    </p>
-                    <p class="text-sm">
-                        TWD 3,380
-                    </p>
-                </div>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="okinawa-tab"
+                    data-toggle="tab"
+                    href="#okinawa"
+                    role="tab"
+                    aria-controls="okinawa"
+                    aria-selected="true"
+                    >Okinawa<span class="text-sm align-top">67</span></a
+                >
             </li>
-            <li class="col-3 card">
-                <div class="bg-weeklyParadise card-img-top bg-cover mb-1"></div>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold mb-1">Weekly Paradise</p>
-                    <p class="card__rank d-flex align-items-center mb-1">
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm mr-o5"> star_rate </span>
-                        4.0
-                        <span class="text-xs text-secondary">・283 reviews</span>
-                    </p>
-                    <p class="text-sm">
-                        TWD 4,780
-                    </p>
-                </div>
-            </li>
-            <li class="col-3 card">
-                <div class="bg-beastHotel card-img-top bg-cover mb-1"></div>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold mb-1">Beast Hotel</p>
-                    <p class="card__rank d-flex align-items-center mb-1">
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm"> star_rate </span>
-                        <span class="material-icons icon-sm mr-o5"> star_rate </span>
-                        4.0
-                        <span class="text-xs text-secondary">・470 reviews</span>
-                    </p>
-                    <p class="text-sm">
-                        TWD 1,980
-                    </p>
-                </div>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="taipei-tab"
+                    data-toggle="tab"
+                    href="#taipei"
+                    role="tab"
+                    aria-controls="taipei"
+                    aria-selected="true"
+                    >Taipei<span class="text-sm align-top">53</span></a
+                >
             </li>
         </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="bali" role="tabpanel" aria-labelledby="bali-tab">
+                <div class="h2 mb-lg-3 ff-title font-weight-bold">Top Choices</div>
+                <ul class="row">
+                    <li class="col-3 card">
+                        <div class="bg-hotelAqua card-img-top bg-cover"></div>
+                        <!-- 還是不太會用img標籤 -->
+                        <!-- <img
+                            src="https://images.unsplash.com/photo-1569335468888-1d3e4a5a3595?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                            alt=""
+                            class="card-img-top"
+                        /> -->
+                        <div class="card-body">
+                            <p class="card-title font-weight-bold mb-1">Mr. Kawasaki Inn</p>
+                            <p class="card__rank d-flex align-items-center mb-1">
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm mr-o5"> star_rate </span>
+                                5.0
+                                <span class="text-xs text-secondary">・2k reviews</span>
+                            </p>
+                            <p class="text-sm">
+                                TWD 2,480
+                                <span class="ml-1 text-xs text-secondary text-decoration-through">TWD 3,980</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-3 card">
+                        <div class="bg-kawasakiInn card-img-top bg-cover mb-1"></div>
+                        <div class="card-body">
+                            <p class="card-title font-weight-bold mb-1">Mr. Kawasaki Inn</p>
+                            <p class="card__rank d-flex align-items-center mb-1">
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm mr-o5"> star_rate </span>
+                                4.0
+                                <span class="text-xs text-secondary">・500 reviews</span>
+                            </p>
+                            <p class="text-sm">
+                                TWD 3,380
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-3 card">
+                        <div class="bg-weeklyParadise card-img-top bg-cover mb-1"></div>
+                        <div class="card-body">
+                            <p class="card-title font-weight-bold mb-1">Weekly Paradise</p>
+                            <p class="card__rank d-flex align-items-center mb-1">
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm mr-o5"> star_rate </span>
+                                4.0
+                                <span class="text-xs text-secondary">・283 reviews</span>
+                            </p>
+                            <p class="text-sm">
+                                TWD 4,780
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-3 card">
+                        <div class="bg-beastHotel card-img-top bg-cover mb-1"></div>
+                        <div class="card-body">
+                            <p class="card-title font-weight-bold mb-1">Beast Hotel</p>
+                            <p class="card__rank d-flex align-items-center mb-1">
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm"> star_rate </span>
+                                <span class="material-icons icon-sm mr-o5"> star_rate </span>
+                                4.0
+                                <span class="text-xs text-secondary">・470 reviews</span>
+                            </p>
+                            <p class="text-sm">
+                                TWD 1,980
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="okinawa" role="tabpanel" aria-labelledby="okinawa-tab">...</div>
+            <div class="tab-pane fade" id="taipei" role="tabpanel" aria-labelledby="taipei-tab">...</div>
+        </div>
     </section>
     <section class="container popularDestinations mb-lg-9">
         <div class="h2 mb-lg-3 ff-title font-weight-bold">Popular Destinations</div>

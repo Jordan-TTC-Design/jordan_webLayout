@@ -13708,6 +13708,23 @@ ul {
   left: 15px;
 }
 
+.custom-nav .nav-link {
+  color: #717171;
+  font-size: 24px;
+  background-color: transparent;
+  border: 0;
+}
+
+.custom-nav .nav-link:hover {
+  background-color: #f1f0f8;
+  color: #6c51e2;
+}
+
+.custom-nav .nav-link.active {
+  color: #6c51e2;
+  border-bottom: 2px solid #6c51e2;
+}
+
 .d-block {
   display: block;
 }

@@ -330,3 +330,20 @@ ul {
         left: 15px;
     }
 }
+.custom-nav{
+    .nav-link{
+        color:$secondary;
+        font-size: 24px;
+        background-color: transparent;
+        border:0;
+    }
+    .nav-link:hover{
+        background-color: $bgColor;
+        color:$primary;
+    }
+    .nav-link.active{
+        color:$primary;
+        
+        border-bottom: 2px solid $primary;
+    }
+}
