@@ -4,21 +4,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>reserve</title>
+        <title>reserve-success</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
         <link rel="stylesheet" href="./assets/style/all.css" />
     </head>
 
     <body>
-        <div class="header container mb-3">
+        <div class="header container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between align-items-center py-1">
+                    <button class="btn d-md-none d-flex">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </button>
                     <a href="./index.html" class="header__logo btn--center--lg"
                         ><img src="./assets/images/ic-logo-aloha.svg" alt="logo"
                     /></a>
                     <nav class="header__nav">
                         <ul class="d-flex">
-                            <li>
+                            <li class="d-md-block d-none">
                                 <div class="dropdown">
                                     <a
                                         class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
@@ -40,7 +46,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="d-md-block d-none">
                                 <a href="#" class="text-dark btn--center--lg mr-6">Sign up</a>
                             </li>
                             <li>
@@ -51,14 +57,19 @@
                 </div>
             </div>
         </div>
+
+        
         <main>
-            <section class="reservation">
+            <section class="reservation mt-3">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-8">
-                            <h1 class="pageTitle ff-title font-weight-bold mb-4">Reservation received!</h1>
-                            <div class="line mb-3"></div>
-                            <ul class="reservation__detail pt-3">
+                        <div class="col-lg-8 col-12">
+                            <h1 class="pageTitle ff-title font-weight-bold mb-md-4 mb-3 font-ph-lg pb-3 border-bottom">
+                                Reservation received!
+                            </h1>
+                            <!-- 這種要用line還是border-bottom -->
+                            <!-- <div class="line mb-3"></div> -->
+                            <ul class="reservation__detail">
                                 <li class="mb-2">
                                     <div class="row">
                                         <div class="col-3">
@@ -84,7 +95,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="mb-3">
+                                <li class="mb-3 pb-3 border-bottom">
                                     <div class="row">
                                         <div class="col-3">
                                             <p class="font-weight-bold">phone</p>
@@ -94,8 +105,8 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><div class="line "></div></li>
-                                <li class="pt-3  mb-3">
+                                <!-- <li><div class="line "></div></li> -->
+                                <li class="mb-3 pb-3 border-bottom">
                                     <div class="row">
                                         <div class="col-3">
                                             <p class="font-weight-bold">Room</p>
@@ -105,9 +116,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><div class="line"></div></li>
+                                <!-- <li><div class="line"></div></li> -->
 
-                                <li class="pt-3 mb-2">
+                                <li class="mb-2">
                                     <div class="row">
                                         <div class="col-3">
                                             <p class="font-weight-bold">Check-in</p>
@@ -129,9 +140,13 @@
                                 </li>
                                 <li><div class="line"></div></li>
                             </ul>
-                            <div class="d-flex justify-content-end pt-3">
-                              <a href="./reserve.html" class="btn btn-outline-primary py-2 px-4 font-weight-bold mr-1">edit reservation</a>  
-                              <a href="./index.html" class="btn btn-primary py-2 px-4 font-weight-bold">Homepage</a>  
+                            <div class="d-flex justify-content-end pt-3 mb-md-9 mb-6 flex-md-row flex-column">
+                                <a
+                                    href="./reserve.html"
+                                    class="btn btn-outline-primary font-weight-bold py-2 px-4 mr-md-1 mr-0 mb-md-0 mb-1"
+                                    >Edit Reservation</a
+                                >
+                                <a href="./index.html" class="btn btn-primary py-2 px-4 font-weight-bold">Home Page</a>
                             </div>
                         </div>
                     </div>
@@ -139,8 +154,8 @@
             </section>
         </main>
 
-        
-        <footer class="footer  fixed-bottom">
+
+        <footer class="footer fixed-bottom position-pd-static">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -148,20 +163,20 @@
                         <div class="border-bottom"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-7 d-flex align-items-center py-3">
+                <div class="row py-3 bg-white">
+                    <div class="col-lg-7 col-12 d-flex align-items-center justify-content-md-between flex-md-row flex-column-reverse">
                         <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
                         <nav>
                             <ul>
-                                <li>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">FAQs</a>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Terms of use</a>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Privacy policy</a>
+                                <li class="mb-md-0 mb-2">
+                                    <a href="#" class="mr-3 text-secondary text-sm">FAQs</a>
+                                    <a href="#" class="mr-3 text-secondary text-sm">Terms of use</a>
+                                    <a href="#" class="mr-3 text-secondary text-sm">Privacy policy</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 d-none d-lg-block">
                         <ul class="footer__iconBox d-flex justify-content-end">
                             <li>
                                 <div class="dropdown">
@@ -214,6 +229,7 @@
                 </div>
             </div>
         </footer>
+
         <script src="./assets/js/vendors.js"></script>
         <script src="./assets/js/all.js"></script>
     </body>

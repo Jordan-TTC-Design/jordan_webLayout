@@ -11,15 +11,20 @@
     </head>
 
     <body>
-        <div class="header container">
+        <div class="header container ">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between align-items-center py-1">
+                    <button class="btn d-md-none d-flex">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </button>
                     <a href="./index.html" class="header__logo btn--center--lg"
                         ><img src="./assets/images/ic-logo-aloha.svg" alt="logo"
                     /></a>
                     <nav class="header__nav">
                         <ul class="d-flex">
-                            <li>
+                            <li class="d-md-block d-none">
                                 <div class="dropdown">
                                     <a
                                         class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
@@ -41,7 +46,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="d-md-block d-none">
                                 <a href="#" class="text-dark btn--center--lg mr-6">Sign up</a>
                             </li>
                             <li>
@@ -54,217 +59,432 @@
         </div>
 
         
-<main>
-    <section class="searchControl bg-bgColor mb-3">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-12">
-                    <div class="searchBar">
-                        <!-- form-inline和form-row差異是什麼？ -->
-                        <form>
-                            <div class="form-row">
-                                <div class="col-lg-auto flex-grow-1">
-                                    <div class="dropdown">
-                                        <button
-                                            class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
-                                            type="button"
-                                            id="dropdownMenuButton"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false"
-                                        >
-                                            <span class="material-icons mr-2">
-                                                location_on
-                                            </span>
-                                            Destination
-                                        </button>
-                                        <div
-                                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
-                                            aria-labelledby="dropdownMenuButton"
-                                        >
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    BangKok
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Thailand</span>
-                                                </p>
-                                            </a>
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    Osaka
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Japan</span>
-                                                </p>
-                                            </a>
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    Roma
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Italy</span>
-                                                </p>
-                                            </a>
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    Paris
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Italy</span>
-                                                </p>
-                                            </a>
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    ReyKjavik
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Iceland</span>
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-auto flex-grow-1">
-                                    <div class="dropdown">
-                                        <button
-                                            class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
-                                            type="button"
-                                            id="dropdownMenuButton"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false"
-                                        >
-                                            <span class="material-icons mr-2">
-                                                date_range
-                                            </span>
-                                            Check-in / Check-out
-                                        </button>
-                                        <div
-                                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
-                                            aria-labelledby="dropdownMenuButton"
-                                        >
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    BangKok
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Thailand</span>
-                                                </p>
-                                            </a>
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    Osaka
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Japan</span>
-                                                </p>
-                                            </a>
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    Roma
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Italy</span>
-                                                </p>
-                                            </a>
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    Paris
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Italy</span>
-                                                </p>
-                                            </a>
-                                            <a class="dropdown-item d-flex py-1" href="#">
-                                                <span class="material-icons mr-1"> star_rate </span>
-                                                <p>
-                                                    ReyKjavik
-                                                    <br />
-                                                    <span class="text-xs text-secondary">Iceland</span>
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-auto flex-grow-1">
-                                    <div class="dropdown">
-                                        <button
-                                            class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
-                                            type="button"
-                                            id="dropdownMenuButton"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false"
-                                        >
-                                            <span class="material-icons mr-2">
-                                                person
-                                            </span>
-                                            Guests
-                                        </button>
-                                        <div
-                                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
-                                            aria-labelledby="dropdownMenuButton"
-                                        >
-                                            <a
-                                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
-                                                href="#"
-                                            >
-                                                <p>Adult</p>
-                                                <p class="d-flex justify-content-between align-items-center">
-                                                    <span class="material-icons mr-1"> remove </span>
-                                                    1
-                                                    <span class="material-icons ml-1"> add </span>
-                                                </p>
-                                            </a>
-                                            <a
-                                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
-                                                href="#"
-                                            >
-                                                <p>Child</p>
-                                                <p class="d-flex justify-content-between align-items-center">
-                                                    <span class="material-icons mr-1"> remove </span>
-                                                    0
-                                                    <span class="material-icons ml-1"> add </span>
-                                                </p>
-                                            </a>
-                                            <a
-                                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
-                                                href="#"
-                                            >
-                                                <p>Room</p>
-                                                <p class="d-flex justify-content-between align-items-center">
-                                                    <span class="material-icons mr-1"> remove </span>
-                                                    2
-                                                    <span class="material-icons ml-1"> add </span>
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-auto flex-grow-1">
-                                    <!-- 先改用a標籤 -->
-                                    <a
-                                        href="result.html"
-                                        class="btn btn-primary w-100 btn-custom-height d-flex align-items-center justify-content-center"
-                                        >SEARCH</a
+<!-- 電腦、平版的搜尋bar -->
+<section class="searchControl bg-bgColor mb-3 d-md-block d-none">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <div class="searchBar">
+                    <!-- form-inline和form-row差異是什麼？ -->
+                    <form>
+                        <div class="form-row flex-nowrap">
+                            <div class="col-auto flex-grow-1">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-white text-xs text-dark font-weight-bold btn-custom-height p-lg-2 p-md-1 w-100 d-flex align-items-center"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
                                     >
+                                        <span class="material-icons mr-lg-2 mr-md-1">
+                                            location_on
+                                        </span>
+                                        <p class="text-left">
+                                            Destination
+                                            <br />
+                                            <span class="text-sm text-secondary font-weight-normal">
+                                                Bangkok, Thailand</span
+                                            >
+                                        </p>
+                                    </button>
+                                    <div
+                                        class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                BangKok
+                                                <br />
+                                                <span class="text-xs text-secondary">Thailand</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Osaka
+                                                <br />
+                                                <span class="text-xs text-secondary">Japan</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Roma
+                                                <br />
+                                                <span class="text-xs text-secondary">Italy</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Paris
+                                                <br />
+                                                <span class="text-xs text-secondary">Italy</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                ReyKjavik
+                                                <br />
+                                                <span class="text-xs text-secondary">Iceland</span>
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-auto flex-grow-1">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-white text-xs text-dark btn-custom-height p-lg-2 p-md-1 w-100 d-flex align-items-center font-weight-bold"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons mr-lg-2 mr-md-1">
+                                            date_range
+                                        </span>
+                                        <div class="d-flex justify-content-between w-100">
+                                            <p class="text-left">
+                                                Check-in
+                                                <br />
+                                                <span class="text-sm text-secondary font-weight-normal"> 17 June</span>
+                                            </p>
+                                            <div class="border-right border-light"></div>
+                                            <p class="text-left">
+                                                Check-out
+                                                <br />
+                                                <span class="text-sm text-secondary font-weight-normal"> 19 June</span>
+                                            </p>
+                                        </div>
+                                    </button>
+                                    <div
+                                        class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                BangKok
+                                                <br />
+                                                <span class="text-xs text-secondary">Thailand</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Osaka
+                                                <br />
+                                                <span class="text-xs text-secondary">Japan</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Roma
+                                                <br />
+                                                <span class="text-xs text-secondary">Italy</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                Paris
+                                                <br />
+                                                <span class="text-xs text-secondary">Italy</span>
+                                            </p>
+                                        </a>
+                                        <a class="dropdown-item d-flex py-1" href="#">
+                                            <span class="material-icons mr-1"> star_rate </span>
+                                            <p>
+                                                ReyKjavik
+                                                <br />
+                                                <span class="text-xs text-secondary">Iceland</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto flex-grow-1">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-white text-xs text-dark font-weight-bold btn-custom-height p-lg-2 p-md-1 w-100 d-flex align-items-center"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span class="material-icons mr-lg-2 mr-md-1">
+                                            person
+                                        </span>
+                                        <p class="text-left">
+                                            Destination
+                                            <br />
+                                            <span class="text-sm text-secondary font-weight-normal">
+                                                2 adults・1 room</span
+                                            >
+                                        </p>
+                                    </button>
+                                    <div
+                                        class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <a
+                                            class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                            href="#"
+                                        >
+                                            <p>Adult</p>
+                                            <p class="d-flex justify-content-between align-items-center">
+                                                <span class="material-icons mr-1"> remove </span>
+                                                1
+                                                <span class="material-icons ml-1"> add </span>
+                                            </p>
+                                        </a>
+                                        <a
+                                            class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                            href="#"
+                                        >
+                                            <p>Child</p>
+                                            <p class="d-flex justify-content-between align-items-center">
+                                                <span class="material-icons mr-1"> remove </span>
+                                                0
+                                                <span class="material-icons ml-1"> add </span>
+                                            </p>
+                                        </a>
+                                        <a
+                                            class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                            href="#"
+                                        >
+                                            <p>Room</p>
+                                            <p class="d-flex justify-content-between align-items-center">
+                                                <span class="material-icons mr-1"> remove </span>
+                                                2
+                                                <span class="material-icons ml-1"> add </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto flex-grow-1">
+                                <!-- 先改用a標籤 -->
+                                <a
+                                    href="result.html"
+                                    class="btn btn-primary w-100 btn-custom-height font-weight-bold d-flex align-items-center justify-content-center"
+                                    >SEARCH</a
+                                >
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="SearchResult mb-md-9">
+    </div>
+</section>
+
+<!-- 手機版的搜尋bar -->
+<section class="searchControl-ph bg-bgColor mb-3 d-md-none">
+    <div>
+        <form>
+            <div class="form-row d-flex flex-nowrap w-100">
+                <div class="col-4 flex-grow-1">
+                    <div class="dropdown">
+                        <button
+                            class="btn text-xs text-dark text-secondary btn-custom-height w-100 text-center"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <p>
+                                Bangkok
+                            </p>
+                        </button>
+                        <div
+                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                            aria-labelledby="dropdownMenuButton"
+                        >
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    BangKok
+                                    <br />
+                                    <span class="text-xs text-secondary">Thailand</span>
+                                </p>
+                            </a>
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    Osaka
+                                    <br />
+                                    <span class="text-xs text-secondary">Japan</span>
+                                </p>
+                            </a>
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    Roma
+                                    <br />
+                                    <span class="text-xs text-secondary">Italy</span>
+                                </p>
+                            </a>
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    Paris
+                                    <br />
+                                    <span class="text-xs text-secondary">Italy</span>
+                                </p>
+                            </a>
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    ReyKjavik
+                                    <br />
+                                    <span class="text-xs text-secondary">Iceland</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right border-light my-1"></div>
+                <div class="col-4 flex-grow-1">
+                    <div class="dropdown">
+                        <button
+                            class="btn text-xs text-dark text-secondary btn-custom-height w-100 text-center"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <p>
+                                17 June - 19 June
+                            </p>
+                        </button>
+                        <div
+                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                            aria-labelledby="dropdownMenuButton"
+                        >
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    BangKok
+                                    <br />
+                                    <span class="text-xs text-secondary">Thailand</span>
+                                </p>
+                            </a>
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    Osaka
+                                    <br />
+                                    <span class="text-xs text-secondary">Japan</span>
+                                </p>
+                            </a>
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    Roma
+                                    <br />
+                                    <span class="text-xs text-secondary">Italy</span>
+                                </p>
+                            </a>
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    Paris
+                                    <br />
+                                    <span class="text-xs text-secondary">Italy</span>
+                                </p>
+                            </a>
+                            <a class="dropdown-item d-flex py-1" href="#">
+                                <span class="material-icons mr-1"> star_rate </span>
+                                <p>
+                                    ReyKjavik
+                                    <br />
+                                    <span class="text-xs text-secondary">Iceland</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right border-light my-1"></div>
+                <div class="col-4 flex-grow-1">
+                    <div class="dropdown">
+                        <button
+                            class="btn text-xs text-dark text-secondary btn-custom-height w-100 text-center"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <p>
+                                2 adults・1 room
+                            </p>
+                        </button>
+                        <div
+                            class="dropdown-menu w-100 dropdown-menu--custom mt-1"
+                            aria-labelledby="dropdownMenuButton"
+                        >
+                            <a
+                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                href="#"
+                            >
+                                <p>Adult</p>
+                                <p class="d-flex justify-content-between align-items-center">
+                                    <span class="material-icons mr-1"> remove </span>
+                                    1
+                                    <span class="material-icons ml-1"> add </span>
+                                </p>
+                            </a>
+                            <a
+                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                href="#"
+                            >
+                                <p>Child</p>
+                                <p class="d-flex justify-content-between align-items-center">
+                                    <span class="material-icons mr-1"> remove </span>
+                                    0
+                                    <span class="material-icons ml-1"> add </span>
+                                </p>
+                            </a>
+                            <a
+                                class="dropdown-item d-flex justify-content-between align-items-center py-1 btn-custom-height"
+                                href="#"
+                            >
+                                <p>Room</p>
+                                <p class="d-flex justify-content-between align-items-center">
+                                    <span class="material-icons mr-1"> remove </span>
+                                    2
+                                    <span class="material-icons ml-1"> add </span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<main>
+    <!-- 搜尋列表 -->
+    <section class="SearchResult mb-lg-9 mb-6">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <h1 class="pageTitle d-flex mb-3 ff-title font-weight-bold">
+                <!-- 左邊塞選列表 -->
+                <div class="col-md-4 col-12 d-flex flex-column align-items-md-stretch align-items-center">
+                    <h1 class="pageTitle d-flex mb-lg-2 mb-md-3 mb-1 ff-title font-weight-bold title-pd-sm">
                         BangkoK <span class="font-md text-primary">3,240</span>
                     </h1>
-                    <aside class="filterBox rounded bg-bgColor p-3">
+                    <aside class="filterBox rounded bg-bgColor p-3 d-md-block d-none">
                         <form action="#">
                             <div class="filterInnerbox">
                                 <h5 class="text-rg font-weight-bold mb-2">Deals</h5>
@@ -333,7 +553,7 @@
                                         <span class="text-xs font-weight-bold">MIN PRICE</span> <br />
                                         TWD 800
                                     </p>
-                                    <p class="text-secondary px-1">-</p>
+                                    <p class="text-secondary px-1 d-md-none">-</p>
                                     <p class="text-sm bg-white rounded d-block p-1 flex-grow-1">
                                         <span class="text-xs font-weight-bold">MAX PRICE</span> <br />
                                         TWD 4,000+
@@ -441,54 +661,107 @@
                         </form>
                     </aside>
                 </div>
-                <div class="col-8">
-                    <div class="d-flex mb-3">
-                        <button class="btn font-weight-bold active text-primary">Recommended</button>
-                        <button class="btn font-weight-bold">Lowest Price</button>
-                        <button class="btn font-weight-bold">Best value</button>
-                        <button class="btn font-weight-bold">Distance to City Center</button>
+                <!-- 右邊顯示列表 -->
+                <div class="col-md-8 col-12">
+                    <!-- 手機版塞選＆nav -->
+                    <div class="d-md-none d-flex py-1 mb-1">
+                        <button
+                            class="btn w-50 text-dark font-weight-bold py-1 d-flex align-items-center justify-content-center"
+                        >
+                            <span class="material-icons mr-1">
+                                filter_list
+                            </span>
+                            Filter
+                        </button>
+                        <button
+                            class="btn w-50 text-dark font-weight-bold py-1 d-flex align-items-center justify-content-center"
+                        >
+                            <span class="material-icons mr-1">
+                                sort
+                            </span>
+                            Sort
+                        </button>
                     </div>
+                    <!-- 控制nav 手機不顯示-->
+                    <ul
+                        class="d-md-flex d-none flex-nowrap align-items-center justify-content-start overflow-scroll mb-3"
+                    >
+                        <li class="">
+                            <button class="btn font-weight-bold active text-primary d-inline-block">Recommended</button>
+                        </li>
+                        <!-- 一定要加上text-nowrap才不換行 -->
+                        <li>
+                            <button class="btn text-nowrap font-weight-bold d-inline-block">Lowest Price</button>
+                        </li>
+                        <li>
+                            <button class="btn text-nowrap font-weight-bold d-inline-block">Best value</button>
+                        </li>
+                        <li>
+                            <button class="btn text-nowrap font-weight-bold d-inline-block">
+                                Distance to City Center
+                            </button>
+                        </li>
+                    </ul>
                     <ul>
                         <!-- 好像應該要先寫好rwd在複製不然會累死 ?-->
-                        <li class="rowCard mb-3">
+                        <li class="rowCard mb-lg-3 mb-md-2">
+                            <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
-                                <img
+                                <!-- <img
                                     src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                                     alt=""
-                                    class="rounded-left mr-2"
-                                />
-                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
-                                    <div class="col-12 col-md-7 h-100">
-                                        <p class="text-xs text-secondary">
-                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
-                                        </p>
-                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
-                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
-                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
-                                        <div class="tagList d-flex">
+                                    class="rounded-left mr-lg-2 mr-md-1"
+                                /> -->
+                                <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left mr-lg-2 mr-1 w-40"></div>
+                                <div
+                                    class="rowCard__textBox w-100 d-flex justify-content-between flex-column py-lg-2 py-1"
+                                >
+                                    <div
+                                        class="d-flex align-items-start justify-content-between flex-md-row flex-column"
+                                    >
+                                        <div>
+                                            <p class="text-xs text-secondary">
+                                                Rachada, Bangkok<span class="text-primary d-md-none"
+                                                    >・2 km from center</span
+                                                >
+                                            </p>
+                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                                Rachada Hotel
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                        >
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <p class="d-flex">
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            </p>
+                                            <p>4.0 (283)</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                    <p class="text-xs text-secondary mb-lg-2 mb-md-1">
+                                        2 guests・1 bed (Queen size)
+                                    </p>
+                                    <div class="d-flex justify-content-md-between justify-content-end">
+                                        <div class="tagList d-md-flex d-none flex-wrap align-items-end">
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xxs px-1 py-o5 mr-o5 mb-md-o5"
                                             >
                                                 Free cancellation
                                             </p>
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xx px-1 py-o5"
                                             >
                                                 No prepayment
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
-                                        <p class="text-secondary d-flex align-items-center justify-content-end">
-                                            <!-- 我覺得這裡好像不應該用flex -->
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
-                                            4.0 (283)
-                                        </p>
-                                        <h5 class="font-lg font-weight-bold text-right">
-                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                        <h5 class="font-lg text-pd-rg font-weight-bold text-right text-dark">
+                                            <span class="text-xs text-secondary font-weight-normal d-md-inline d-none"
+                                                >per night</span
                                             ><br />TWD 1,980
                                         </h5>
                                     </div>
@@ -496,45 +769,64 @@
                             </a>
                         </li>
                         <li class="line"></li>
-                        <li class="rowCard mb-3 pt-3">
+                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                            <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
-                                <img
+                                <!-- <img
                                     src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                                     alt=""
-                                    class="rounded-left mr-2"
-                                />
-                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
-                                    <div class="col-12 col-md-7 h-100">
-                                        <p class="text-xs text-secondary">
-                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
-                                        </p>
-                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
-                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
-                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
-                                        <div class="tagList d-flex">
+                                    class="rounded-left mr-lg-2 mr-md-1"
+                                /> -->
+                                <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left mr-lg-2 mr-1 w-40"></div>
+                                <div
+                                    class="rowCard__textBox w-100 d-flex justify-content-between flex-column py-lg-2 py-1"
+                                >
+                                    <div
+                                        class="d-flex align-items-start justify-content-between flex-md-row flex-column"
+                                    >
+                                        <div>
+                                            <p class="text-xs text-secondary">
+                                                Rachada, Bangkok<span class="text-primary d-md-none"
+                                                    >・2 km from center</span
+                                                >
+                                            </p>
+                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                                Rachada Hotel
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                        >
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <p class="d-flex">
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            </p>
+                                            <p>4.0 (283)</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                    <p class="text-xs text-secondary mb-lg-2 mb-md-1">
+                                        2 guests・1 bed (Queen size)
+                                    </p>
+                                    <div class="d-flex justify-content-md-between justify-content-end">
+                                        <div class="tagList d-md-flex d-none flex-wrap align-items-end">
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xxs px-1 py-o5 mr-o5 mb-md-o5"
                                             >
                                                 Free cancellation
                                             </p>
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xx px-1 py-o5"
                                             >
                                                 No prepayment
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
-                                        <p class="text-secondary d-flex align-items-center justify-content-end">
-                                            <!-- 我覺得這裡好像不應該用flex -->
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
-                                            4.0 (283)
-                                        </p>
-                                        <h5 class="font-lg font-weight-bold text-right">
-                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                        <h5 class="font-lg text-pd-rg font-weight-bold text-right text-dark">
+                                            <span class="text-xs text-secondary font-weight-normal d-md-inline d-none"
+                                                >per night</span
                                             ><br />TWD 1,980
                                         </h5>
                                     </div>
@@ -542,45 +834,64 @@
                             </a>
                         </li>
                         <li class="line"></li>
-                        <li class="rowCard mb-3 pt-3">
+                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                            <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
-                                <img
+                                <!-- <img
                                     src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                                     alt=""
-                                    class="rounded-left mr-2"
-                                />
-                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
-                                    <div class="col-12 col-md-7 h-100">
-                                        <p class="text-xs text-secondary">
-                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
-                                        </p>
-                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
-                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
-                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
-                                        <div class="tagList d-flex">
+                                    class="rounded-left mr-lg-2 mr-md-1"
+                                /> -->
+                                <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left mr-lg-2 mr-1 w-40"></div>
+                                <div
+                                    class="rowCard__textBox w-100 d-flex justify-content-between flex-column py-lg-2 py-1"
+                                >
+                                    <div
+                                        class="d-flex align-items-start justify-content-between flex-md-row flex-column"
+                                    >
+                                        <div>
+                                            <p class="text-xs text-secondary">
+                                                Rachada, Bangkok<span class="text-primary d-md-none"
+                                                    >・2 km from center</span
+                                                >
+                                            </p>
+                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                                Rachada Hotel
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                        >
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <p class="d-flex">
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            </p>
+                                            <p>4.0 (283)</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                    <p class="text-xs text-secondary mb-lg-2 mb-md-1">
+                                        2 guests・1 bed (Queen size)
+                                    </p>
+                                    <div class="d-flex justify-content-md-between justify-content-end">
+                                        <div class="tagList d-md-flex d-none flex-wrap align-items-end">
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xxs px-1 py-o5 mr-o5 mb-md-o5"
                                             >
                                                 Free cancellation
                                             </p>
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xx px-1 py-o5"
                                             >
                                                 No prepayment
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
-                                        <p class="text-secondary d-flex align-items-center justify-content-end">
-                                            <!-- 我覺得這裡好像不應該用flex -->
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
-                                            4.0 (283)
-                                        </p>
-                                        <h5 class="font-lg font-weight-bold text-right">
-                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                        <h5 class="font-lg text-pd-rg font-weight-bold text-right text-dark">
+                                            <span class="text-xs text-secondary font-weight-normal d-md-inline d-none"
+                                                >per night</span
                                             ><br />TWD 1,980
                                         </h5>
                                     </div>
@@ -588,45 +899,64 @@
                             </a>
                         </li>
                         <li class="line"></li>
-                        <li class="rowCard mb-3 pt-3">
+                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                            <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
-                                <img
+                                <!-- <img
                                     src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                                     alt=""
-                                    class="rounded-left mr-2"
-                                />
-                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
-                                    <div class="col-12 col-md-7 h-100">
-                                        <p class="text-xs text-secondary">
-                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
-                                        </p>
-                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
-                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
-                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
-                                        <div class="tagList d-flex">
+                                    class="rounded-left mr-lg-2 mr-md-1"
+                                /> -->
+                                <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left mr-lg-2 mr-1 w-40"></div>
+                                <div
+                                    class="rowCard__textBox w-100 d-flex justify-content-between flex-column py-lg-2 py-1"
+                                >
+                                    <div
+                                        class="d-flex align-items-start justify-content-between flex-md-row flex-column"
+                                    >
+                                        <div>
+                                            <p class="text-xs text-secondary">
+                                                Rachada, Bangkok<span class="text-primary d-md-none"
+                                                    >・2 km from center</span
+                                                >
+                                            </p>
+                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                                Rachada Hotel
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                        >
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <p class="d-flex">
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            </p>
+                                            <p>4.0 (283)</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                    <p class="text-xs text-secondary mb-lg-2 mb-md-1">
+                                        2 guests・1 bed (Queen size)
+                                    </p>
+                                    <div class="d-flex justify-content-md-between justify-content-end">
+                                        <div class="tagList d-md-flex d-none flex-wrap align-items-end">
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xxs px-1 py-o5 mr-o5 mb-md-o5"
                                             >
                                                 Free cancellation
                                             </p>
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xx px-1 py-o5"
                                             >
                                                 No prepayment
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
-                                        <p class="text-secondary d-flex align-items-center justify-content-end">
-                                            <!-- 我覺得這裡好像不應該用flex -->
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
-                                            4.0 (283)
-                                        </p>
-                                        <h5 class="font-lg font-weight-bold text-right">
-                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                        <h5 class="font-lg text-pd-rg font-weight-bold text-right text-dark">
+                                            <span class="text-xs text-secondary font-weight-normal d-md-inline d-none"
+                                                >per night</span
                                             ><br />TWD 1,980
                                         </h5>
                                     </div>
@@ -634,45 +964,64 @@
                             </a>
                         </li>
                         <li class="line"></li>
-                        <li class="rowCard mb-3 pt-3">
+                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                            <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
-                                <img
+                                <!-- <img
                                     src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                                     alt=""
-                                    class="rounded-left mr-2"
-                                />
-                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
-                                    <div class="col-12 col-md-7 h-100">
-                                        <p class="text-xs text-secondary">
-                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
-                                        </p>
-                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
-                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
-                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
-                                        <div class="tagList d-flex">
+                                    class="rounded-left mr-lg-2 mr-md-1"
+                                /> -->
+                                <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left mr-lg-2 mr-1 w-40"></div>
+                                <div
+                                    class="rowCard__textBox w-100 d-flex justify-content-between flex-column py-lg-2 py-1"
+                                >
+                                    <div
+                                        class="d-flex align-items-start justify-content-between flex-md-row flex-column"
+                                    >
+                                        <div>
+                                            <p class="text-xs text-secondary">
+                                                Rachada, Bangkok<span class="text-primary d-md-none"
+                                                    >・2 km from center</span
+                                                >
+                                            </p>
+                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                                Rachada Hotel
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                        >
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <p class="d-flex">
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            </p>
+                                            <p>4.0 (283)</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                    <p class="text-xs text-secondary mb-lg-2 mb-md-1">
+                                        2 guests・1 bed (Queen size)
+                                    </p>
+                                    <div class="d-flex justify-content-md-between justify-content-end">
+                                        <div class="tagList d-md-flex d-none flex-wrap align-items-end">
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xxs px-1 py-o5 mr-o5 mb-md-o5"
                                             >
                                                 Free cancellation
                                             </p>
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xx px-1 py-o5"
                                             >
                                                 No prepayment
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
-                                        <p class="text-secondary d-flex align-items-center justify-content-end">
-                                            <!-- 我覺得這裡好像不應該用flex -->
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
-                                            4.0 (283)
-                                        </p>
-                                        <h5 class="font-lg font-weight-bold text-right">
-                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                        <h5 class="font-lg text-pd-rg font-weight-bold text-right text-dark">
+                                            <span class="text-xs text-secondary font-weight-normal d-md-inline d-none"
+                                                >per night</span
                                             ><br />TWD 1,980
                                         </h5>
                                     </div>
@@ -680,45 +1029,64 @@
                             </a>
                         </li>
                         <li class="line"></li>
-                        <li class="rowCard mb-3 pt-3">
+                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                            <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
-                                <img
+                                <!-- <img
                                     src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                                     alt=""
-                                    class="rounded-left mr-2"
-                                />
-                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
-                                    <div class="col-12 col-md-7 h-100">
-                                        <p class="text-xs text-secondary">
-                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
-                                        </p>
-                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
-                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
-                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
-                                        <div class="tagList d-flex">
+                                    class="rounded-left mr-lg-2 mr-md-1"
+                                /> -->
+                                <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left mr-lg-2 mr-1 w-40"></div>
+                                <div
+                                    class="rowCard__textBox w-100 d-flex justify-content-between flex-column py-lg-2 py-1"
+                                >
+                                    <div
+                                        class="d-flex align-items-start justify-content-between flex-md-row flex-column"
+                                    >
+                                        <div>
+                                            <p class="text-xs text-secondary">
+                                                Rachada, Bangkok<span class="text-primary d-md-none"
+                                                    >・2 km from center</span
+                                                >
+                                            </p>
+                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                                Rachada Hotel
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                        >
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <p class="d-flex">
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            </p>
+                                            <p>4.0 (283)</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                    <p class="text-xs text-secondary mb-lg-2 mb-md-1">
+                                        2 guests・1 bed (Queen size)
+                                    </p>
+                                    <div class="d-flex justify-content-md-between justify-content-end">
+                                        <div class="tagList d-md-flex d-none flex-wrap align-items-end">
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xxs px-1 py-o5 mr-o5 mb-md-o5"
                                             >
                                                 Free cancellation
                                             </p>
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xx px-1 py-o5"
                                             >
                                                 No prepayment
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
-                                        <p class="text-secondary d-flex align-items-center justify-content-end">
-                                            <!-- 我覺得這裡好像不應該用flex -->
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
-                                            4.0 (283)
-                                        </p>
-                                        <h5 class="font-lg font-weight-bold text-right">
-                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                        <h5 class="font-lg text-pd-rg font-weight-bold text-right text-dark">
+                                            <span class="text-xs text-secondary font-weight-normal d-md-inline d-none"
+                                                >per night</span
                                             ><br />TWD 1,980
                                         </h5>
                                     </div>
@@ -726,45 +1094,64 @@
                             </a>
                         </li>
                         <li class="line"></li>
-                        <li class="rowCard mb-3 pt-3">
+                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                            <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
-                                <img
+                                <!-- <img
                                     src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                                     alt=""
-                                    class="rounded-left mr-2"
-                                />
-                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
-                                    <div class="col-12 col-md-7 h-100">
-                                        <p class="text-xs text-secondary">
-                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
-                                        </p>
-                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
-                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
-                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
-                                        <div class="tagList d-flex">
+                                    class="rounded-left mr-lg-2 mr-md-1"
+                                /> -->
+                                <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left mr-lg-2 mr-1 w-40"></div>
+                                <div
+                                    class="rowCard__textBox w-100 d-flex justify-content-between flex-column py-lg-2 py-1"
+                                >
+                                    <div
+                                        class="d-flex align-items-start justify-content-between flex-md-row flex-column"
+                                    >
+                                        <div>
+                                            <p class="text-xs text-secondary">
+                                                Rachada, Bangkok<span class="text-primary d-md-none"
+                                                    >・2 km from center</span
+                                                >
+                                            </p>
+                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                                Rachada Hotel
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                        >
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <p class="d-flex">
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            </p>
+                                            <p>4.0 (283)</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                    <p class="text-xs text-secondary mb-lg-2 mb-md-1">
+                                        2 guests・1 bed (Queen size)
+                                    </p>
+                                    <div class="d-flex justify-content-md-between justify-content-end">
+                                        <div class="tagList d-md-flex d-none flex-wrap align-items-end">
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xxs px-1 py-o5 mr-o5 mb-md-o5"
                                             >
                                                 Free cancellation
                                             </p>
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xx px-1 py-o5"
                                             >
                                                 No prepayment
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
-                                        <p class="text-secondary d-flex align-items-center justify-content-end">
-                                            <!-- 我覺得這裡好像不應該用flex -->
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
-                                            4.0 (283)
-                                        </p>
-                                        <h5 class="font-lg font-weight-bold text-right">
-                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                        <h5 class="font-lg text-pd-rg font-weight-bold text-right text-dark">
+                                            <span class="text-xs text-secondary font-weight-normal d-md-inline d-none"
+                                                >per night</span
                                             ><br />TWD 1,980
                                         </h5>
                                     </div>
@@ -772,45 +1159,64 @@
                             </a>
                         </li>
                         <li class="line"></li>
-                        <li class="rowCard mb-3 pt-3">
+                        <li class="rowCard mb-lg-3 mb-2 pt-lg-3 pt-md-2">
+                            <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
-                                <img
+                                <!-- <img
                                     src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
                                     alt=""
-                                    class="rounded-left mr-2"
-                                />
-                                <div class="rowCard__textBox row w-100 d-flex align-items-center py-2">
-                                    <div class="col-12 col-md-7 h-100">
-                                        <p class="text-xs text-secondary">
-                                            Rachada, Bangkok<span class="text-primary">・2 km from center</span>
-                                        </p>
-                                        <h4 class="font-weight-bold text-dark mb-2">Rachada Hotel</h4>
-                                        <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
-                                        <p class="text-xs text-secondary mb-md-2">2 guests・1 bed (Queen size)</p>
-                                        <div class="tagList d-flex">
+                                    class="rounded-left mr-lg-2 mr-md-1"
+                                /> -->
+                                <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left mr-lg-2 mr-1 w-40"></div>
+                                <div
+                                    class="rowCard__textBox w-100 d-flex justify-content-between flex-column py-lg-2 py-1"
+                                >
+                                    <div
+                                        class="d-flex align-items-start justify-content-between flex-md-row flex-column"
+                                    >
+                                        <div>
+                                            <p class="text-xs text-secondary">
+                                                Rachada, Bangkok<span class="text-primary d-md-none"
+                                                    >・2 km from center</span
+                                                >
+                                            </p>
+                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                                Rachada Hotel
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                        >
+                                            <!-- 我覺得這裡好像不應該用flex -->
+                                            <p class="d-flex">
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark"> star_rate </span>
+                                                <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
+                                            </p>
+                                            <p>4.0 (283)</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm font-weight-bold mb-md-o5">Deluxe Double Room</p>
+                                    <p class="text-xs text-secondary mb-lg-2 mb-md-1">
+                                        2 guests・1 bed (Queen size)
+                                    </p>
+                                    <div class="d-flex justify-content-md-between justify-content-end">
+                                        <div class="tagList d-md-flex d-none flex-wrap align-items-end">
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5 mr-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xxs px-1 py-o5 mr-o5 mb-md-o5"
                                             >
                                                 Free cancellation
                                             </p>
                                             <p
-                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs px-1 py-o5"
+                                                class="tagList__item bg-bgColor rounded-pill text-secondary text-xs text-pd-xx px-1 py-o5"
                                             >
                                                 No prepayment
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5 h-100 d-flex flex-column justify-content-between">
-                                        <p class="text-secondary d-flex align-items-center justify-content-end">
-                                            <!-- 我覺得這裡好像不應該用flex -->
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark"> star_rate </span>
-                                            <span class="material-icons icon-sm text-dark mr-o5"> star_rate </span>
-                                            4.0 (283)
-                                        </p>
-                                        <h5 class="font-lg font-weight-bold text-right">
-                                            <span class="text-xs text-secondary font-weight-normal">per night</span
+                                        <h5 class="font-lg text-pd-rg font-weight-bold text-right text-dark">
+                                            <span class="text-xs text-secondary font-weight-normal d-md-inline d-none"
+                                                >per night</span
                                             ><br />TWD 1,980
                                         </h5>
                                     </div>
@@ -818,8 +1224,9 @@
                             </a>
                         </li>
                     </ul>
+                    <!-- 最下面的分頁 -->
                     <nav
-                        class="custom-paginationBox d-flex justify-content-between align-items-center p-2 rounded bg-bgColor"
+                        class="custom-paginationBox d-flex justify-content-between align-items-center p-2 mx-md-0 mx-2 rounded bg-bgColor m-0-auto"
                         aria-label="Page navigation"
                     >
                         <!-- 想問這裡button需不需要包a，會不會影響disabled -->
@@ -829,10 +1236,10 @@
                         <ul class="pagination">
                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item d-md-block d-none"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item d-lg-block d-none"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item d-lg-block d-none"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item d-lg-block d-none"><a class="page-link" href="#">6</a></li>
                             <li class="page-item"><a class="page-link" href="#">...</a></li>
                             <li class="page-item"><a class="page-link" href="#">9</a></li>
                         </ul>
@@ -847,18 +1254,22 @@
 </main>
 <div class="subscribe-row jumbotron jumbotron-fluid bg-bgColor mb-0 py-3">
     <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <h4 class="col-5 ff-title title-sm font-weight-bold text-center">Subscribe for Exclusive Offer</h4>
-            <div class="col-7 input-group input-group-lg">
+        <div class="row justify-content-between align-items-center flex-md-row flex-column">
+            <h4 class="col-lg-5 col-md-4 col-12 ff-title title-sm font-pd-lg font-weight-bold text-center mb-md-0 mb-2">
+                Subscribe for Exclusive Offer
+            </h4>
+            <div class="col-lg-7 col-md-8 col-12 input-group input-group-lg">
                 <input
                     type="text"
-                    class="form-control"
+                    class="form-control text-pd-rg"
                     placeholder="Your email address"
                     aria-label="Recipient's username"
                     aria-describedby="basic-addon2"
                 />
                 <div class="input-group-append">
-                    <button class="btn btn-primary font-weight-bold px-4" id="basic-addon2">Subscribe</button>
+                    <button class="btn btn-primary font-weight-bold px-4 text-pd-rg" id="basic-addon2">
+                        Subscribe
+                    </button>
                 </div>
             </div>
         </div>
@@ -869,19 +1280,26 @@
         <footer class="footer py-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-7 d-flex align-items-center">
+                    <div
+                        class="col-lg-7 col-12 d-flex align-items-center justify-content-md-between flex-md-row flex-column-reverse"
+                    >
                         <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
+
                         <nav>
-                            <ul>
+                            <ul class="mb-md-0 mb-2 d-flex">
                                 <li>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">FAQs</a>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Terms of use</a>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Privacy policy</a>
+                                    <a href="#" class="mr-3 text-secondary text-sm">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="mr-3 text-secondary text-sm">Terms of use</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="mr-3 text-secondary text-sm">Privacy policy</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 d-none d-lg-block">
                         <ul class="footer__iconBox d-flex justify-content-end">
                             <li>
                                 <div class="dropdown">

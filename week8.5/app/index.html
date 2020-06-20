@@ -7,18 +7,25 @@ current: index
 
 <main>
     <section class="homebanner">
-        <div class="custom-swiper-banner swiper-container">
+        <!-- banner -->
+        <div class="custom-swiper-banner swiper-container position-relative">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="bg-hotel bg-cover bg-cover-size position-relative">
-                        <h1 class="text-white title-md font-weight-bold ff-title">Discover your ideal hotel</h1>
+                    <div class="bg-hotel bg-cover bg-cover-size d-flex align-items-center">
                         <div class="container">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-10">
-                                    <div class="swiper-buttonBox">
-                                        <!-- 對於這個定位問題老師會給什麼建議 -->
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-md-8 col-12">
+                                    <h1 class="text-white title-md title-ph-sm font-weight-bold ff-title px-md-0 px-6">
+                                        Discover your ideal hotel in Taiwan
+                                    </h1>
+                                </div>
+                                <div class="swiper-buttonBox">
+                                    <!-- 對於這個定位問題老師會給什麼建議 -->
+                                    <div class="swiper-button-next">
+                                        <img src="./assets/images/keyboard_arrow_right.svg" alt="" />
+                                    </div>
+                                    <div class="swiper-button-prev">
+                                        <img src="./assets/images/keyboard_arrow_left.svg" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -26,21 +33,61 @@ current: index
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="bg-hotel bg-cover bg-cover-size">
-                        <h1 class="text-white">Discover your ideal hotel</h1>
+                    <div class="bg-hotel bg-cover bg-cover-size d-flex align-items-center">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-md-8 col-12">
+                                    <h1 class="text-white title-md title-ph-sm font-weight-bold ff-title px-md-0 px-6">
+                                        Discover your ideal hotel in Taipei
+                                    </h1>
+                                </div>
+                                <div class="swiper-buttonBox">
+                                    <!-- 對於這個定位問題老師會給什麼建議 -->
+                                    <div class="swiper-button-next">
+                                        <img src="./assets/images/keyboard_arrow_right.svg" alt="" />
+                                    </div>
+                                    <div class="swiper-button-prev">
+                                        <img src="./assets/images/keyboard_arrow_left.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Add Arrows -->
+                <div class="swiper-slide">
+                    <div class="bg-hotel bg-cover bg-cover-size d-flex align-items-center">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-md-8 col-12">
+                                    <h1 class="text-white title-md title-ph-sm font-weight-bold ff-title px-md-0 px-6">
+                                        Discover your ideal hotel in Japan
+                                    </h1>
+                                </div>
+                                <div class="swiper-buttonBox">
+                                    <!-- 對於這個定位問題老師會給什麼建議 -->
+                                    <div class="swiper-button-next">
+                                        <img src="./assets/images/keyboard_arrow_right.svg" alt="" />
+                                    </div>
+                                    <div class="swiper-button-prev">
+                                        <img src="./assets/images/keyboard_arrow_left.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- searchBar -->
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-10">
-                    <div class="searchBar bg-bgColor">
+                <div class="col-md-10 col-12">
+                    <div class="searchBar bg-bgColor mb-lg-0 mb-6 p-3">
                         <!-- form-inline和form-row差異是什麼？ -->
                         <form>
                             <div class="form-row">
-                                <div class="col-3">
+                                <div class="col-lg-3 col-12 mb-lg-0 mb-2">
                                     <div class="dropdown">
                                         <button
                                             class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
@@ -102,7 +149,7 @@ current: index
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-lg-4 col-12 mb-lg-0 mb-2">
                                     <div class="dropdown">
                                         <button
                                             class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
@@ -164,7 +211,7 @@ current: index
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-lg-3 col-12 mb-lg-0 mb-2">
                                     <div class="dropdown">
                                         <button
                                             class="btn btn-white text-secondary btn-custom-height p-2 w-100 d-flex align-items-center"
@@ -219,7 +266,7 @@ current: index
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-lg-2 col-12">
                                     <!-- 先改用a標籤 -->
                                     <a
                                         href="result.html"
@@ -235,11 +282,11 @@ current: index
         </div>
     </section>
 
-    <section class="topChoices container mb-9">
+    <section class="topChoices container mb-lg-9 mb-6">
         <ul class="custom-nav nav nav-tabs font-weight-bold mb-3" id="myTab" role="tablist">
             <li class="nav-item">
                 <a
-                    class="nav-link active"
+                    class="nav-link active font-lg font-ph-md"
                     id="bali-tab"
                     data-toggle="tab"
                     href="#bali"
@@ -251,7 +298,7 @@ current: index
             </li>
             <li class="nav-item">
                 <a
-                    class="nav-link"
+                    class="nav-link font-lg font-ph-md"
                     id="okinawa-tab"
                     data-toggle="tab"
                     href="#okinawa"
@@ -263,7 +310,7 @@ current: index
             </li>
             <li class="nav-item">
                 <a
-                    class="nav-link"
+                    class="nav-link font-lg font-ph-md"
                     id="taipei-tab"
                     data-toggle="tab"
                     href="#taipei"
@@ -276,9 +323,9 @@ current: index
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="bali" role="tabpanel" aria-labelledby="bali-tab">
-                <div class="h2 mb-lg-3 ff-title font-weight-bold">Top Choices</div>
-                <ul class="row">
-                    <li class="col-3 card">
+                <div class="h2 mb-3 ff-title font-weight-bold font-ph-lg">Top Choices</div>
+                <ul class="row overflow-scroll flex-nowrap">
+                    <li class="col-lg-3 col-md-5 col-9 card">
                         <div class="bg-hotelAqua card-img-top bg-cover"></div>
                         <!-- 還是不太會用img標籤 -->
                         <!-- <img
@@ -303,7 +350,7 @@ current: index
                             </p>
                         </div>
                     </li>
-                    <li class="col-3 card">
+                    <li class="col-lg-3 col-md-5 col-9 card">
                         <div class="bg-kawasakiInn card-img-top bg-cover mb-1"></div>
                         <div class="card-body">
                             <p class="card-title font-weight-bold mb-1">Mr. Kawasaki Inn</p>
@@ -320,7 +367,7 @@ current: index
                             </p>
                         </div>
                     </li>
-                    <li class="col-3 card">
+                    <li class="col-lg-3 col-md-5 col-9 card">
                         <div class="bg-weeklyParadise card-img-top bg-cover mb-1"></div>
                         <div class="card-body">
                             <p class="card-title font-weight-bold mb-1">Weekly Paradise</p>
@@ -337,7 +384,7 @@ current: index
                             </p>
                         </div>
                     </li>
-                    <li class="col-3 card">
+                    <li class="col-lg-3 col-md-5 col-9 card">
                         <div class="bg-beastHotel card-img-top bg-cover mb-1"></div>
                         <div class="card-body">
                             <p class="card-title font-weight-bold mb-1">Beast Hotel</p>
@@ -360,10 +407,10 @@ current: index
             <div class="tab-pane fade" id="taipei" role="tabpanel" aria-labelledby="taipei-tab">...</div>
         </div>
     </section>
-    <section class="container popularDestinations mb-lg-9">
-        <div class="h2 mb-lg-3 ff-title font-weight-bold">Popular Destinations</div>
+    <section class="container popularDestinations mb-lg-9 mb-6">
+        <div class="h2 mb-3 ff-title font-weight-bold font-ph-lg">Popular Destinations</div>
         <div class="row">
-            <div class="col-4 mb-lg-3">
+            <div class="col-lg-4 col-md-6 col-12 mb-md-3 mb-1">
                 <div class="card bg-osaka bg-cover">
                     <div class="background-black bdrs-1"></div>
 
@@ -378,7 +425,7 @@ current: index
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-lg-3">
+            <div class="col-lg-4 col-md-6 col-12 mb-md-3 mb-1">
                 <div class="card bg-kyoto bg-cover">
                     <div class="background-black bdrs-1"></div>
                     <div class="card-textBox--overlay py-2 px-3 d-flex justify-content-between align-items-center">
@@ -392,7 +439,7 @@ current: index
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-lg-3">
+            <div class="col-lg-4 col-md-6 col-12 mb-md-3 mb-1">
                 <div class="card bg-reykjavík bg-cover">
                     <div class="background-black bdrs-1"></div>
                     <div class="card-textBox--overlay py-2 px-3 d-flex justify-content-between align-items-center">
@@ -406,7 +453,7 @@ current: index
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-md-3 mb-1">
                 <div class="card bg-paris bg-cover">
                     <div class="background-black bdrs-1"></div>
 
@@ -421,7 +468,7 @@ current: index
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-12 mb-md-0 mb-md-3 mb-1">
                 <div class="card bg-roma bg-cover">
                     <div class="background-black bdrs-1"></div>
                     <div class="card-textBox--overlay py-2 px-3 d-flex justify-content-between align-items-center">
@@ -435,7 +482,7 @@ current: index
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-12">
                 <div class="card bg-bangkok bg-cover">
                     <div class="background-black bdrs-1"></div>
                     <div class="card-textBox--overlay py-2 px-3 d-flex justify-content-between align-items-center">
@@ -451,9 +498,9 @@ current: index
             </div>
         </div>
     </section>
-    <section class="inspiration container mb-lg-9">
-        <div class="section__titleBox d-flex justify-content-between align-items-center mb-lg-3">
-            <h2 class="ff-title font-weight-bold">
+    <section class="inspiration container mb-lg-9 mb-6">
+        <div class="section__titleBox d-flex justify-content-between align-items-center mb-3">
+            <h2 class="ff-title font-weight-bold font-ph-lg">
                 Get Inspiration
             </h2>
             <a href="#" class="btn btn-outline-primary font-weight-bold">
@@ -461,34 +508,36 @@ current: index
             </a>
         </div>
 
-        <div class="row">
-            <div class="col-4">
+        <div class="row overflow-scroll flex-nowrap">
+            <div class="col-md-4 col-9">
                 <div class="card">
                     <div class="bg-romeDome bg-cover card-img-top mb-3"></div>
                     <div class="card-body">
-                        <h4 class="card-title mb-1 ff-title font-weight-bold">The fifth most visited country</h4>
+                        <h4 class="card-title mb-1 ff-title font-weight-bold font-ph-md">
+                            The fifth most visited country
+                        </h4>
                         <p class="card-text text-secondary">
                             Italy is the fifth most visited country in the world, with a total of 52.3 million…
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-9">
                 <div class="card">
                     <div class="bg-thailand bg-cover card-img-top mb-3"></div>
                     <div class="card-body">
-                        <h4 class="card-title mb-1 ff-title font-weight-bold">Visit Thailand for Bangkok</h4>
+                        <h4 class="card-title mb-1 ff-title font-weight-bold font-ph-md">Visit Thailand for Bangkok</h4>
                         <p class="card-text text-secondary">
                             Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-9">
                 <div class="card">
                     <div class="bg-lordOfRing bg-cover card-img-top mb-3"></div>
                     <div class="card-body">
-                        <h4 class="card-title mb-1 ff-title font-weight-bold">Lord of the Rings Tour</h4>
+                        <h4 class="card-title mb-1 ff-title font-weight-bold font-ph-md">Lord of the Rings Tour</h4>
                         <p class="card-text text-secondary">
                             The national cuisine has been described as Pacific Rim, incorporating the native Māori…
                         </p>
@@ -497,20 +546,20 @@ current: index
             </div>
         </div>
     </section>
-    <div class="jumbotron jumbotron-fluid bg-bgColor mb-0">
+    <div class="custom-jumbotron-lg jumbotron jumbotron-fluid bg-bgColor mb-0">
         <div class="container">
-            <h2 class="title-md font-weight-bold text-center mb-lg-3">Subscribe for Exclusive Offer</h2>
+            <h2 class="title-md font-weight-bold text-center mb-3 font-ph-lg">Subscribe for Exclusive Offer</h2>
             <div class="row justify-content-center">
-                <div class="col-6 input-group mb-3 input-group-lg">
+                <div class="col-lg-6 col-md-10 col-12 input-group input-group-lg">
                     <input
                         type="text"
-                        class="form-control"
+                        class="form-control text-pd-rg"
                         placeholder="Your email address"
                         aria-label="Recipient's username"
                         aria-describedby="basic-addon2"
                     />
                     <div class="input-group-append">
-                        <button class="btn btn-primary font-weight-bold" id="basic-addon2">Subscribe</button>
+                        <button class="btn btn-primary font-weight-bold text-pd-rg" id="basic-addon2">Subscribe</button>
                     </div>
                 </div>
             </div>

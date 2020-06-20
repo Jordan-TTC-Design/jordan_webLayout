@@ -11,19 +11,19 @@
     </head>
 
     <body>
-        <div class="header container ">
+        <div class="header container mb-3 ">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between align-items-center py-1">
-                    <button class="btn d-md-none d-flex">
+                    <button class="col-4 btn d-md-none d-flex">
                         <span class="material-icons">
                             menu
                         </span>
                     </button>
-                    <a href="./index.html" class="header__logo btn--center--lg"
+                    <a href="./index.html" class="header__logo btn--center--lg col-md-3 col-4"
                         ><img src="./assets/images/ic-logo-aloha.svg" alt="logo"
                     /></a>
-                    <nav class="header__nav">
-                        <ul class="d-flex">
+                    <nav class="header__nav col-4 col-md-9">
+                        <ul class="d-flex justify-content-end">
                             <li class="d-md-block d-none">
                                 <div class="dropdown">
                                     <a
@@ -46,11 +46,24 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="d-md-block d-none">
-                                <a href="#" class="text-dark btn--center--lg mr-6">Sign up</a>
-                            </li>
                             <li>
-                                <a href="./login.html" class="text-dark btn--center--lg">Login</a>
+                                <div class="dropdown">
+                                    <a
+                                        class="text-dark dropdown-toggle btn--center--lg"
+                                        href="#"
+                                        role="button"
+                                        id="dropdownMenuLink"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <div class="user-pic bg-user bg-cover rounded-circle mr-1"></div>
+
+                                        <p>David Lin</p>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"></div>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -60,23 +73,22 @@
 
         <%- contents %>
 
-        <footer class="footer py-3">
+        <footer class="footer fixed-bottom position-pd-static">
             <div class="container">
                 <div class="row">
-                    <div
-                        class="col-lg-7 col-12 d-flex align-items-center justify-content-md-between flex-md-row flex-column-reverse"
-                    >
+                    <div class="col-12">
+                        <!-- 這條線該下載哪區塊好 -->
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+                <div class="row py-3 bg-white">
+                    <div class="col-lg-7 col-12 d-flex align-items-center justify-content-md-between flex-md-row flex-column-reverse">
                         <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
-
                         <nav>
-                            <ul class="mb-md-0 mb-2 d-flex">
-                                <li>
+                            <ul>
+                                <li class="mb-md-0 mb-2">
                                     <a href="#" class="mr-3 text-secondary text-sm">FAQs</a>
-                                </li>
-                                <li>
                                     <a href="#" class="mr-3 text-secondary text-sm">Terms of use</a>
-                                </li>
-                                <li>
                                     <a href="#" class="mr-3 text-secondary text-sm">Privacy policy</a>
                                 </li>
                             </ul>

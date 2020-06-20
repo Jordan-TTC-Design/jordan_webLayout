@@ -36,6 +36,18 @@
 .font-md {
     font-size: $font-md;
 }
+.text-rg {
+    font-size: 16px;
+}
+.text-sm {
+    font-size: 14px;
+}
+.text-xs {
+    font-size: 12px;
+}
+.text-xxs {
+    font-size: 10px;
+}
 @include pad-width {
     .title-pd-sb {
         font-size: $title-sb;
@@ -54,6 +66,18 @@
     }
     .font-pd-md {
         font-size: $font-md;
+    }
+    .text-pd-rg {
+        font-size: 16px;
+    }
+    .text-pd-sm {
+        font-size: 14px;
+    }
+    .text-pd-xs {
+        font-size: 12px;
+    }
+    .text-pd-xxs {
+        font-size: 10px;
     }
 }
 @include phone-width {
@@ -74,6 +98,18 @@
     }
     .font-ph-md {
         font-size: $font-md;
+    }
+    .text-ph-rg {
+        font-size: 16px;
+    }
+    .text-ph-sm {
+        font-size: 14px;
+    }
+    .text-ph-xs {
+        font-size: 12px;
+    }
+    .text-ph-xxs {
+        font-size: 10px;
     }
 }
 
@@ -115,7 +151,9 @@
     display: flex;
     align-items: center;
 }
-
+.m-0-auto {
+    margin: 0 auto;
+}
 .line {
     position: relative;
     &::after {
@@ -127,4 +165,105 @@
         left: 0;
     }
 }
+.visible {
+    visibility: visible;
+}
+.invisible {
+    visibility: hidden;
+}
+@include pad-width {
+    .visible-pd {
+        visibility: visible;
+    }
+    .invisible-pd {
+        visibility: hidden;
+    }
+}
+@include phone-width {
+    .visible-ph {
+        visibility: visible;
+    }
+    .invisible-ph {
+        visibility: hidden;
+    }
+}
+.overflow-scroll {
+    overflow: auto;
+}
+@include pad-width {
+    .overflow-pd-scroll {
+        overflow: auto;
+    }
+}
+@include phone-width {
+    .overflow-ph-scroll {
+        overflow: auto;
+    }
+}
+@include pad-width {
+    .position-pd-static {
+        position: static;
+    }
+}
+@include phone-width {
+    .position-ph-static {
+        position: static;
+    }
+}
+.border-bottom-white {
+    border-bottom: 1px solid $white;
+}
 
+@include phone-width {
+    .container-ph-fluid {
+        padding: 0;
+    }
+}
+@include phone-width {
+    .bg-ph-bgColor {
+        background-color: $bgColor !important;
+    }
+}
+.no-gutters {
+    & > .col,
+    & > [class*='col-'] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.border-none {
+    border: none !important;
+    @include pad-width {
+        .border-pd-none {
+            border: none !important;
+        }
+    }
+
+    @include phone-width {
+        .border-ph-none {
+            border: none !important;
+        }
+    }
+}
+@include phone-width {
+    .border-ph {
+        border: 1px solid #dee2e6 !important;
+    }
+}
+@include phone-width {
+    .rounded-ph-0 {
+        border-radius: 0 !important;
+    }
+}
+nclude phone-width {
+    .pr-ph-0 {
+        padding-right: 0 !important;
+    }
+    .pl-ph-0 {
+        padding-left: 0 !important;
+    }
+}
+
+.brightness{
+    filter:brightness(100%);
+    }

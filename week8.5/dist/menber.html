@@ -4,21 +4,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Login</title>
+        <title>member</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
         <link rel="stylesheet" href="./assets/style/all.css" />
     </head>
 
     <body>
-        <div class="header container mb-3">
+        <div class="header container mb-3 ">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between align-items-center py-1">
-                    <a href="./index.html" class="header__logo btn--center--lg"
+                    <button class="col-4 btn d-md-none d-flex">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </button>
+                    <a href="./index.html" class="header__logo btn--center--lg col-md-3 col-4"
                         ><img src="./assets/images/ic-logo-aloha.svg" alt="logo"
                     /></a>
-                    <nav class="header__nav">
-                        <ul class="d-flex">
-                            <li>
+                    <nav class="header__nav col-4 col-md-9">
+                        <ul class="d-flex justify-content-end">
+                            <li class="d-md-block d-none">
                                 <div class="dropdown">
                                     <a
                                         class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
@@ -64,10 +70,12 @@
                 </div>
             </div>
         </div>
-        <main>
+
+                <main>
             <div class="container">
-                <div class="row">
-                    <div class="col-8">
+                <div class="row flex-lg-row flex-column-reverse">
+                    <!-- booking列表 -->
+                    <div class="col-lg-8 col-12">
                         <!-- 這裡放section會不會怪 -->
                         <section class="bookingList rowCardList">
                             <h1 class="font-lg font-weight-bold mb-3">My Bookings</h1>
@@ -75,15 +83,13 @@
                                 <li class="mr-3"><a href="#" class="font-weight-bold text-primary">Upcoming</a></li>
                                 <li><a href="#" class="font-weight-bold text-dark">Completed</a></li>
                             </ul>
-                            <div class="rowCard d-flex">
-                                <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left mr-2 w-35"></div>
-
-                                <div class="rowCard__textBox py-2 flex-grow-1 position-relative">
-                                    <a
-                                        href="#"
-                                        class="rowCard__textBox__Btn btn text-primary font-weight-bold position-absolute"
-                                        >view details</a
-                                    >
+                            <!-- rowcard開始 -->
+                            <div class="d-flex rowCard flex-md-row flex-column">
+                                <div class="mr-md-2 flex-grow-1">
+                                    <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left rounded-ph-0 "></div>
+                                </div>
+                                <div class="rowCard__textBox py-2 px-md-0 px-2 position-relative ">
+                                    
                                     <ul class="rowCard__textlist">
                                         <li class="li rowCard__textItem d-flex mb-1">
                                             <span class="material-icons mr-2">
@@ -117,26 +123,28 @@
                                             </p>
                                         </li>
                                     </ul>
+                                    <a
+                                        href="#"
+                                        class="rowCard__textBox__Btn btn text-primary font-weight-bold "
+                                        >view details</a
+                                    >
                                 </div>
                             </div>
                             <div class="rowCardLine mb-3 pb-3"></div>
-                            <div class="rowCard d-flex mb-3">
-                                <div class="rowCard__img bg-cover bg-wowLifeHotel rounded-left mr-2 w-35"></div>
-
-                                <div class="rowCard__textBox py-2 flex-grow-1 position-relative">
-                                    <a
-                                        href="#"
-                                        class="rowCard__textBox__Btn btn text-primary font-weight-bold position-absolute"
-                                        >view details</a
-                                    >
+                            <div class="d-flex rowCard flex-md-row flex-column mb-3">
+                                <div class="mr-md-2 flex-grow-1">
+                                    <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left rounded-ph-0 "></div>
+                                </div>
+                                <div class="rowCard__textBox py-2 px-md-0 px-2 position-relative ">
+                                    
                                     <ul class="rowCard__textlist">
                                         <li class="li rowCard__textItem d-flex mb-1">
                                             <span class="material-icons mr-2">
                                                 hotel
                                             </span>
                                             <p class="font-weight-bold">
-                                                WOW Life Hotel <br /><span class="text-sm font-weight-normal"
-                                                    >Standard Double Room</span
+                                                Rachada Hotel <br /><span class="text-sm font-weight-normal"
+                                                    >Deluxe Suite with Pool</span
                                                 >
                                             </p>
                                         </li>
@@ -145,8 +153,9 @@
                                                 date_range
                                             </span>
                                             <p class="font-weight-bold">
-                                                8 Sep 2020 - 15 Sep 2020 <br /><span class="text-sm font-weight-normal"
-                                                    >7 nights・2 adults</span
+                                                17 June 2020 - 19 June 2020 <br /><span
+                                                    class="text-sm font-weight-normal"
+                                                    >2 nights・2 adults</span
                                                 >
                                             </p>
                                         </li>
@@ -155,18 +164,25 @@
                                                 attach_money
                                             </span>
                                             <p class="font-weight-bold">
-                                                TWD 13,084 <br /><span class="text-sm font-weight-normal"
+                                                TWD 4,633 <br /><span class="text-sm font-weight-normal"
                                                     >includes taxes and charges</span
                                                 >
                                             </p>
                                         </li>
                                     </ul>
+                                    <a
+                                        href="#"
+                                        class="rowCard__textBox__Btn btn text-primary font-weight-bold "
+                                        >view details</a
+                                    >
                                 </div>
                             </div>
                         </section>
                     </div>
-                    <div class="col-4">
-                        <section class="profile">
+
+                    <!-- 個人資訊 -->
+                    <div class="col-lg-4 col-12">
+                        <section class="profile mb-lg-0 mb-6">
                             <div class="d-flex align-items-center justify-content-between mb-3">
                                 <div class="d-flex">
                                     <h4 class="font-weight-bold mr-1">Profile</h4>
@@ -181,37 +197,46 @@
                                 </div>
                                 <a href="#" class="text-sm text-primary font-weight-bold">EDIT</a>
                             </div>
-                            <div class="p-3 bg-bgColor rounded">
-                                <div class="d-flex justify-content-between mb-3">
+                            <div class="p-3 bg-bgColor rounded d-flex flex-lg-column flex-md-row flex-column">
+                                <div class="d-flex justify-content-between mb-3 w-100">
                                     <div>
                                         <h5 class="font-weight-bold mb-3">User details</h5>
-                                        <p class="text-sm text-secondary mb-2">David Lin</p>
-                                        <p class="text-sm text-secondary mb-2">david0520@mail.com.tw</p>
-                                        <p class="text-sm text-secondary">+886 9 32 456 789</p>
+                                        <div class="d-flex">
+                                            <div
+                                                class="bg-user bg-cover user-pic-md d-none rounded d-lg-none d-md-block mr-2"
+                                            ></div>
+                                            <div>
+                                                <p class="text-sm text-secondary mb-2">David Lin</p>
+                                                <p class="text-sm text-secondary mb-2">david0520@mail.com.tw</p>
+                                                <p class="text-sm text-secondary">+886 9 32 456 789</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="bg-user bg-cover user-pic-md rounded"></div>
+                                    <div class="bg-user bg-cover user-pic-md rounded d-lg-block d-md-none"></div>
                                 </div>
-                                <h5 class="font-weight-bold mb-3">Payment methods</h5>
-                                <div class="d-flex">
-                                    <div class="w-50 p-2 bg-white mr-1">
-                                        <p class="text-sm text-secondary mb-o5">xxxx-xxxx-7890</p>
-                                        <p class="text-sm text-secondary mb-o5">DAVID LIN</p>
-                                        <p
-                                            class="text-sm text-secondary d-flex justify-content-between align-items-center"
-                                        >
-                                            08/2029
-                                            <span class="material-icons text-dark">
-                                                credit_card
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="w-50 p-2 bg-white d-flex justify-content-center align-items-center">
-                                        <!-- 這裡是不是應該要用a或是button，但是就要多修尺寸 -->
-                                        <p class="p-o5 rounded-circle bg-primary">
-                                            <span class="material-icons align-middle text-white">
-                                                add
-                                            </span>
-                                        </p>
+                                <div class="w-100">
+                                    <h5 class="font-weight-bold mb-3">Payment methods</h5>
+                                    <div class="d-flex">
+                                        <div class="w-50 p-2 bg-white mr-1">
+                                            <p class="text-sm text-secondary mb-o5">xxxx-xxxx-7890</p>
+                                            <p class="text-sm text-secondary mb-o5">DAVID LIN</p>
+                                            <p
+                                                class="text-sm text-secondary d-flex justify-content-between align-items-center"
+                                            >
+                                                08/2029
+                                                <span class="material-icons text-dark">
+                                                    credit_card
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="w-50 p-2 bg-white d-flex justify-content-center align-items-center">
+                                            <!-- 這裡是不是應該要用a或是button，但是就要多修尺寸 -->
+                                            <p class="p-o5 rounded-circle bg-primary">
+                                                <span class="material-icons align-middle text-white">
+                                                    add
+                                                </span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +245,9 @@
                 </div>
             </div>
         </main>
-        <footer class="footer  fixed-bottom">
+
+
+        <footer class="footer fixed-bottom position-pd-static">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -228,20 +255,20 @@
                         <div class="border-bottom"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-7 d-flex align-items-center py-3">
+                <div class="row py-3 bg-white">
+                    <div class="col-lg-7 col-12 d-flex align-items-center justify-content-md-between flex-md-row flex-column-reverse">
                         <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
                         <nav>
                             <ul>
-                                <li>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">FAQs</a>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Terms of use</a>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Privacy policy</a>
+                                <li class="mb-md-0 mb-2">
+                                    <a href="#" class="mr-3 text-secondary text-sm">FAQs</a>
+                                    <a href="#" class="mr-3 text-secondary text-sm">Terms of use</a>
+                                    <a href="#" class="mr-3 text-secondary text-sm">Privacy policy</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 d-none d-lg-block">
                         <ul class="footer__iconBox d-flex justify-content-end">
                             <li>
                                 <div class="dropdown">

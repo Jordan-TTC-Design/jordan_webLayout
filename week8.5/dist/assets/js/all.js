@@ -8,6 +8,17 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
+  }); //reservation
+
+  $('#reserveDetail').click(function () {
+    $('#reserveInfoDropDown').toggleClass('active');
+    $('#phoneTotlePrice').toggleClass('invisible');
+  });
+  $('#detailListAdd').click(function () {
+    $('.detail__reserveBox').addClass('active');
+  });
+  $('#detailReserveCancel').click(function () {
+    $('.detail__reserveBox').removeClass('active');
   });
 });
 //# sourceMappingURL=all.js.map

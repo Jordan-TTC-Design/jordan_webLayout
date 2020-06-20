@@ -5,12 +5,24 @@
         z-index: -1;
     }
     .bg-cover-size {
-        padding: 132px 0;
+        height: 320px;
     }
     .searchBar {
         transform: translateY(-50%);
+        @include pad-width {
+            transform: translateY(0%);
+            margin-top: -50px;
+        }
     }
 }
+.searchBar {
+    padding: 24px 0;
+    border-radius: 8px;
+    @include pad-width {
+        padding: 16px 0;
+    }
+}
+
 .topChoices {
     .card-img-top {
         height: 175px;
@@ -44,9 +56,15 @@
         border-radius: 4px;
     }
     height: 434px;
+    @include pad-width {
+        height: 268px;
+    }
 }
 .loginHeader {
     margin-bottom: 104px;
+    @include phone-width {
+        margin-bottom: 0;
+    }
 }
 .login {
     position: relative;
@@ -57,9 +75,11 @@
         height: 100vh;
     }
     .loginTitleBox {
-       
         position: relative;
         height: 100vh;
+        @include phone-width {
+            height: auto;
+        }
         // flex-shrink: 1;
     }
     // background-color: $gray-300;
@@ -76,41 +96,89 @@
             height: 56px;
         }
     }
-    .custom-form::before{
+    .custom-form::before {
         content: '';
         background-color: #fff;
         width: 30px;
         height: 100vh;
         position: absolute;
         transform: translateX(-100%);
+        @include pad-width {
+            display: none;
+        }
     }
 }
-.user-pic{
+.user-pic {
     width: 24px;
     height: 24px;
 }
-.user-pic-md{
-width: 64px;
-height: 64px;
+.user-pic-md {
+    width: 64px;
+    height: 64px;
 }
-.bookingList{
-    
-    .rowCard__textBox{
-        position: relative;
-        .rowCard__textBox__Btn{
-            top: 16px;
-            right: 16px;
+.bookingList {
+    .rowCard {
+        @include phone-width {
         }
     }
-    
+    .rowCard__img {
+        height: 226px;
+    }
+    .rowCard__textBox {
+        width: 65%;
+        position: relative;
+        .rowCard__textBox__Btn {
+            top: 16px;
+            right: 16px;
+            position: absolute;
+            @include phone-width {
+                position: static;
+            }
+        }
+        @include phone-width {
+            width: 100%;
+            background-color: $bgColor;
+        }
+    }
 }
 
-.custom-swiper-banner{
-    .swiper-buttonBox{
-    }
-    .swiper-button-prev,.swiper-button-next{
-        color:white;
+.custom-swiper-banner {
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: white;
         display: block;
         transform: translateY(-70%);
+    }
+}
+.reserve {
+    .custom-dropdown {
+        @include phone-width {
+            overflow: hidden;
+            height: 0;
+            // 為什麼轉場沒法針對overflow，反而會產生黑線
+            transition: all 0.5s;
+            &.active {
+                height: auto;
+                border-top: 1px solid $white;
+                padding-top: 16px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.detail {
+    .custom-swiper-banner {
+        height: 249px;
+    }
+}
+.detail__reserveBox {
+    height: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+            // 為什麼轉場沒法針對height:auto，反而會產生黑線
+    &.active {
+        height: auto;
     }
 }

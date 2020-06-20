@@ -182,15 +182,7 @@ ul {
 .card-body {
     padding: 0;
 }
-.text-rg {
-    font-size: 16px;
-}
-.text-sm {
-    font-size: 14px;
-}
-.text-xs {
-    font-size: 12px;
-}
+
 .text-decoration-through {
     text-decoration: line-through;
 }
@@ -204,16 +196,18 @@ ul {
 .input-group-lg > .input-group-append {
     height: 56px;
 }
+.input-group-lg > .input-group-append > button.text-pd-rg,
+.input-group-lg > .form-control.text-pd-rg {
+    @include pad-width {
+        font-size: 16px;
+    }
+}
 .dropdown-menu--custom {
     border: none;
     box-shadow: 3px 3px #f3d42e;
     box-shadow: 0 0 10px 1px $gray-300;
 }
-.searchBar {
-    // margin-top: -20px;
-    padding: 24px 26px;
-    border-radius: 8px;
-}
+
 
 //自製的checkbox，改bs4
 .custom-checkbox {
@@ -257,7 +251,7 @@ ul {
     left: 0px;
     width: 100%;
 }
-.rowCardList{
+.rowCardList {
     .rowCardLine {
         width: 100%;
         position: relative;
@@ -273,10 +267,14 @@ ul {
 }
 .rowCard img {
     width: 255px;
-    height: 175px;
+    height: auto;
+    max-height: 100%;
     // object-fit超重要！！記起來
     object-fit: cover;
-
+    @include pad-width {
+        width: 150px;
+        height: 100%;
+    }
 }
 .custom-paginationBox {
     .pagination {
@@ -296,8 +294,10 @@ ul {
 }
 
 .custom-table {
-    .rowCard__textBox {
-        margin-left: -14px;
+    .rowCard {
+        li {
+            margin-bottom: 8px;
+        }
     }
     thead {
         th {
@@ -313,37 +313,32 @@ ul {
         border: 0;
         padding: 8px 15px;
     }
-    .rowCard {
-        li {
-            margin-bottom: 8px;
-        }
-    }
-    tr.custom-table__line {
-        position: relative;
-    }
-    tr.custom-table__line::after {
-        content: '';
-        border-bottom: 1px solid $gray-300;
-        position: absolute;
-        bottom: 0;
-        right: 15px;
-        left: 15px;
-    }
 }
-.custom-nav{
-    .nav-link{
-        color:$secondary;
-        font-size: 24px;
+.custom-nav {
+    .nav-link {
+        color: $secondary;
         background-color: transparent;
-        border:0;
+        border: 0;
     }
-    .nav-link:hover{
+    .nav-link:hover {
         background-color: $bgColor;
-        color:$primary;
+        color: $primary;
     }
-    .nav-link.active{
-        color:$primary;
-        
+    .nav-link.active {
+        color: $primary;
+
         border-bottom: 2px solid $primary;
     }
 }
+@include pad-width {
+    .bg-pd-transparent {
+        background-color: transparent !important;
+    }
+}
+.custom-jumbotron-lg {
+    @include phone-width {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+

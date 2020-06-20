@@ -1,63 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>reserve</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-        <link rel="stylesheet" href="./assets/style/all.css" />
-    </head>
-
-    <body>
-        <div class="header container mb-3">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-between align-items-center py-1">
-                    <a href="./index.html" class="header__logo btn--center--lg"
-                        ><img src="./assets/images/ic-logo-aloha.svg" alt="logo"
-                    /></a>
-                    <nav class="header__nav">
-                        <ul class="d-flex">
-                            <li>
-                                <div class="dropdown">
-                                    <a
-                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
-                                        href="#"
-                                        role="button"
-                                        id="dropdownMenuLink"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                    >
-                                        <span class="material-icons">
-                                            language
-                                        </span>
-                                    </a>
-
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">EN</a>
-                                        <a class="dropdown-item" href="#">中文</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="text-dark btn--center--lg mr-6">Sign up</a>
-                            </li>
-                            <li>
-                                <a href="./login.html" class="text-dark btn--center--lg">Login</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+---
+title: reserve
+layout: ./app/layout2.ejs
+engine: ejs
+current: reserve
+---
         <main>
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    
-                    <div class="col-4 mb-9">
-                        <div>
-                            <h3 class="title-sm font-weight-bold mb-3">Reservation details</h3>
+            <div class="reserve container">
+                <div class="row d-flex justify-content-md-center flex-md-row flex-column-reverse">
+                    <!-- reserve的表格區 -->
+                    <div class="col-lg-4 col-md-6 col-12 ">
+                        <div class="mb-md-9 mb-6">
+                            <h3 class="title-sm font-weight-bold mb-3  ">Reservation details</h3>
                             <form>
                                 <div class="form-group  mb-2">
                                   <label for="exampleInputEmail1">Name</label>
@@ -77,102 +30,35 @@
                             </form>
                         </div>
                     </div>
-                        <div class="col-4">
-                            <div class="bg-bgColor p-3 rounded">
-                            <div class="border-bottom-white pb-3 mb-3">
-                            <h5 class="font-weight-bold mb-2 text-rg">Booking details</h5>
-                            <p class="text-secondary text-sm"> 17 June 2020 - 19 June 2020・2 nights</p>
-                            <p class="text-secondary text-sm">2 adults・1 room</p>
-                            <p class="text-secondary text-sm"> Rachada Hotel</p>
+                    <!-- reserve的資訊區 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                            <div class="bg-bgColor p-3 rounded mb-md-0 mb-3 ">
+                                <div class="d-md-none d-flex justify-content-between align-items-center">
+                                    <p id="phoneTotlePrice" class="d-flex justify-content-between text-secondary">Total <span class="font-weight-bold text-dark ml-md-0 ml-1">TWD 4,633</span></p>
+                                    <button id="reserveDetail" class="btn text-primary d-flex align-items-center font-weight-bold">Detail<span class="material-icons">
+                                        keyboard_arrow_down
+                                        </span></button>
+                                </div>
+                            <div id="reserveInfoDropDown" class="custom-dropdown">
+                                <div class="border-bottom-white pb-3 mb-3">
+                                    <h5 class="font-weight-bold mb-2 text-rg">Booking details</h5>
+                                    <p class="text-secondary text-sm"> 17 June 2020 - 19 June 2020・2 nights</p>
+                                    <p class="text-secondary text-sm">2 adults・1 room</p>
+                                    <p class="text-secondary text-sm"> Rachada Hotel</p>
+                                </div>
+                                <div class="border-bottom-white pb-3 mb-3">
+                                    <h5 class="font-weight-bold mb-2 text-rg">Price summary</h5>
+                                    <p class="text-secondary text-sm d-flex justify-content-between"> Deluxe Suite with Pool <span>TWD 3,960</span></p>
+                                    <p class="text-secondary text-sm d-flex justify-content-between">VAT (7%)<span>TWD 277</span></p>
+                                    <p class="text-secondary text-sm d-flex justify-content-between"> Property service charge<span>TWD 399</span></p>
+                                </div>
+                                <div>
+                                    <p class="d-flex justify-content-between text-secondary">Total <span class="font-weight-bold text-dark ml-md-0 ml-1">TWD 4,633</span></p>
+                                </div>
                             </div>
-                            <div class="border-bottom-white pb-3 mb-3">
-                            <h5 class="font-weight-bold mb-2 text-rg">Price summary</h5>
-                            <p class="text-secondary text-sm d-flex justify-content-between"> Deluxe Suite with Pool <span>TWD 3,960</span></p>
-                            <p class="text-secondary text-sm d-flex justify-content-between">VAT (7%)<span>TWD 277</span></p>
-                            <p class="text-secondary text-sm d-flex justify-content-between"> Property service charge<span>TWD 399</span></p>
-                            </div>
-                            <o class="d-flex justify-content-between text-secondary">Total <span class="font-weight-bold text-dark">TWD 4,633</span></o>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        
-        <footer class="footer  fixed-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- 這條線該下載哪區塊好 -->
-                        <div class="border-bottom"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-7 d-flex align-items-center py-3">
-                        <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">FAQs</a>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Terms of use</a>
-                                    <a href="#" class="mr-lg-3 text-secondary text-sm">Privacy policy</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-5">
-                        <ul class="footer__iconBox d-flex justify-content-end">
-                            <li>
-                                <div class="dropdown">
-                                    <a
-                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
-                                        href="#"
-                                        role="button"
-                                        id="dropdownMenuLink"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                    >
-                                        <span class="material-icons mr-1">
-                                            language
-                                        </span>
-                                        <p class="text-secondary">English</p>
-                                    </a>
-
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">EN</a>
-                                        <a class="dropdown-item" href="#">中文</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="dropdown">
-                                    <a
-                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
-                                        href="#"
-                                        role="button"
-                                        id="dropdownMenuLink"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                    >
-                                        <span class="material-icons mr-1">
-                                            attach_money
-                                        </span>
-                                        <p class="text-secondary">TWD</p>
-                                    </a>
-
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">TWD</a>
-                                        <a class="dropdown-item" href="#">USD</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="./assets/js/vendors.js"></script>
-        <script src="./assets/js/all.js"></script>
-    </body>
-</html>
