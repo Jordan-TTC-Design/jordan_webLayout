@@ -19,7 +19,7 @@
                             menu
                         </span>
                     </button>
-                    <a href="./index.html" class="header__logo btn--center--lg col-md-3 col-4"
+                    <a href="./index.html" class="header__logo col-md-3 col-4 btn--center--lg"
                         ><img src="./assets/images/ic-logo-aloha.svg" alt="logo"
                     /></a>
                     <nav class="header__nav col-4 col-md-9">
@@ -27,7 +27,7 @@
                             <li class="d-md-block d-none">
                                 <div class="dropdown">
                                     <a
-                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        class="btnLanguage dropdown-toggle btn--center--lg text-dark mr-6"
                                         href="#"
                                         role="button"
                                         id="dropdownMenuLink"
@@ -49,7 +49,7 @@
                             <li>
                                 <div class="dropdown">
                                     <a
-                                        class="text-dark dropdown-toggle btn--center--lg"
+                                        class="dropdown-toggle btn--center--lg text-dark"
                                         href="#"
                                         role="button"
                                         id="dropdownMenuLink"
@@ -84,11 +84,11 @@
                                 <li><a href="#" class="font-weight-bold text-dark">Completed</a></li>
                             </ul>
                             <!-- rowcard開始 -->
-                            <div class="d-flex rowCard flex-md-row flex-column">
-                                <div class="mr-md-2 flex-grow-1">
-                                    <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left rounded-ph-0 "></div>
+                            <div class="rowCard d-flex flex-md-row flex-column">
+                                <div class="flex-grow-1 mr-md-2">
+                                    <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left rounded-ph-0"></div>
                                 </div>
-                                <div class="rowCard__textBox py-2 px-md-0 px-2 position-relative ">
+                                <div class="rowCard__textBox position-relative py-2 px-md-0 px-2">
                                     
                                     <ul class="rowCard__textlist">
                                         <li class="li rowCard__textItem d-flex mb-1">
@@ -131,11 +131,11 @@
                                 </div>
                             </div>
                             <div class="rowCardLine mb-3 pb-3"></div>
-                            <div class="d-flex rowCard flex-md-row flex-column mb-3">
-                                <div class="mr-md-2 flex-grow-1">
+                            <div class="rowCard d-flex flex-md-row flex-column mb-3">
+                                <div class="flex-grow-1 mr-md-2">
                                     <div class="rowCard__img bg-cover bg-rachadaHotel rounded-left rounded-ph-0 "></div>
                                 </div>
-                                <div class="rowCard__textBox py-2 px-md-0 px-2 position-relative ">
+                                <div class="rowCard__textBox position-relative py-2 px-md-0 px-2 ">
                                     
                                     <ul class="rowCard__textlist">
                                         <li class="li rowCard__textItem d-flex mb-1">
@@ -197,7 +197,7 @@
                                 </div>
                                 <a href="#" class="text-sm text-primary font-weight-bold">EDIT</a>
                             </div>
-                            <div class="p-3 bg-bgColor rounded d-flex flex-lg-column flex-md-row flex-column">
+                            <div class="d-flex flex-lg-column flex-md-row flex-column bg-bgColor rounded p-3 ">
                                 <div class="d-flex justify-content-between mb-3 w-100">
                                     <div>
                                         <h5 class="font-weight-bold mb-3">User details</h5>
@@ -217,11 +217,11 @@
                                 <div class="w-100">
                                     <h5 class="font-weight-bold mb-3">Payment methods</h5>
                                     <div class="d-flex">
-                                        <div class="w-50 p-2 bg-white mr-1">
+                                        <div class="w-50 bg-white p-2 mr-1">
                                             <p class="text-sm text-secondary mb-o5">xxxx-xxxx-7890</p>
                                             <p class="text-sm text-secondary mb-o5">DAVID LIN</p>
                                             <p
-                                                class="text-sm text-secondary d-flex justify-content-between align-items-center"
+                                                class="d-flex justify-content-between align-items-center text-sm text-secondary"
                                             >
                                                 08/2029
                                                 <span class="material-icons text-dark">
@@ -229,7 +229,8 @@
                                                 </span>
                                             </p>
                                         </div>
-                                        <div class="w-50 p-2 bg-white d-flex justify-content-center align-items-center">
+                                        <!-- 這裡的class名稱不知是不是這樣排序好 -->
+                                        <div class="w-50 bg-white d-flex justify-content-center align-items-center p-2">
                                             <!-- 這裡是不是應該要用a或是button，但是就要多修尺寸 -->
                                             <p class="p-o5 rounded-circle bg-primary">
                                                 <span class="material-icons align-middle text-white">

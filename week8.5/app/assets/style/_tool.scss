@@ -8,14 +8,50 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
-.box-border {
-    border: 1px solid #000;
-}
 .bg-cover-size {
     width: 100%;
     height: 100%;
     flex-shrink: 1;
 }
+@include phone-width {
+    .bg-ph-bgColor {
+        background-color: $bgColor !important;
+    }
+}
+//border
+
+.box-border {
+    border: 1px solid #000;
+}
+.border-bottom-white {
+    border-bottom: 1px solid $white;
+}
+.border-none {
+    border: none !important;
+    @include pad-width {
+        .border-pd-none {
+            border: none !important;
+        }
+    }
+
+    @include phone-width {
+        .border-ph-none {
+            border: none !important;
+        }
+    }
+}
+@include phone-width {
+    .border-ph {
+        border: 1px solid #dee2e6 !important;
+    }
+}
+//手機版圓角歸0
+@include phone-width {
+    .rounded-ph-0 {
+        border-radius: 0 !important;
+    }
+}
+
 
 // 字體
 .title-sb {
@@ -112,7 +148,6 @@
         font-size: 10px;
     }
 }
-
 .upperCase {
     text-transform: uppercase;
 }
@@ -141,6 +176,8 @@
 .mouse-pointer {
     cursor: pointer;
 }
+
+//按鈕工具
 .btn--center {
     height: 36px;
     display: flex;
@@ -151,9 +188,28 @@
     display: flex;
     align-items: center;
 }
+
+// 間隔工具
 .m-0-auto {
     margin: 0 auto;
 }
+//手機版padiing歸0
+@include phone-width {
+    .pr-ph-0 {
+        padding-right: 0 !important;
+    }
+    .pl-ph-0 {
+        padding-left: 0 !important;
+    }
+}
+@include phone-width {
+    .container-ph-fluid {
+        padding: 0;
+    }
+}
+
+
+// 格線工具
 .line {
     position: relative;
     &::after {
@@ -165,6 +221,8 @@
         left: 0;
     }
 }
+
+//隱藏或顯示
 .visible {
     visibility: visible;
 }
@@ -187,6 +245,8 @@
         visibility: hidden;
     }
 }
+
+//overflow-滾輪工具
 .overflow-scroll {
     overflow: auto;
 }
@@ -200,6 +260,8 @@
         overflow: auto;
     }
 }
+
+// poisiton定位
 @include pad-width {
     .position-pd-static {
         position: static;
@@ -210,20 +272,8 @@
         position: static;
     }
 }
-.border-bottom-white {
-    border-bottom: 1px solid $white;
-}
 
-@include phone-width {
-    .container-ph-fluid {
-        padding: 0;
-    }
-}
-@include phone-width {
-    .bg-ph-bgColor {
-        background-color: $bgColor !important;
-    }
-}
+//grid，沒有間隔
 .no-gutters {
     & > .col,
     & > [class*='col-'] {
@@ -231,39 +281,8 @@
         padding-left: 0;
     }
 }
-.border-none {
-    border: none !important;
-    @include pad-width {
-        .border-pd-none {
-            border: none !important;
-        }
-    }
 
-    @include phone-width {
-        .border-ph-none {
-            border: none !important;
-        }
-    }
+//調亮
+.brightness {
+    filter: brightness(100%);
 }
-@include phone-width {
-    .border-ph {
-        border: 1px solid #dee2e6 !important;
-    }
-}
-@include phone-width {
-    .rounded-ph-0 {
-        border-radius: 0 !important;
-    }
-}
-nclude phone-width {
-    .pr-ph-0 {
-        padding-right: 0 !important;
-    }
-    .pl-ph-0 {
-        padding-left: 0 !important;
-    }
-}
-
-.brightness{
-    filter:brightness(100%);
-    }

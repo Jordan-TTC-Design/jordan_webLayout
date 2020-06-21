@@ -119,6 +119,10 @@ ul {
 }
 // 共用class
 
+// 共用class--客制尺寸
+.h-custom {
+    height: 56px;
+}
 .icon-lg {
     vertical-align: middle;
     font-size: 48px;
@@ -130,12 +134,13 @@ ul {
 .icon-sm {
     font-size: 18px;
 }
+
+// 共用class--客制按鈕
 .link-btn {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .btn-custom {
     display: flex;
     align-items: center;
@@ -149,6 +154,7 @@ ul {
     background-color: $white;
 }
 
+// 共用class--客制分頁
 .c-pagination {
     .page-link {
         color: $secondary;
@@ -159,12 +165,12 @@ ul {
         text-decoration: underline;
     }
 }
-.h-custom {
-    height: 56px;
-}
+
+// 共用class--其他
 .bdrs-1 {
     border-radius: 1rem;
 }
+
 //共用class-顏色
 .background-black {
     background-color: black;
@@ -178,7 +184,17 @@ ul {
 .card-textBox--overlay {
     z-index: 99;
 }
-// 本次修改bs4
+
+//共用search bar
+.searchBar {
+    padding: 24px 0;
+    border-radius: 8px;
+    @include pad-width {
+        padding: 16px 0;
+    }
+}
+
+// 本次修改bs4的css屬性
 .card-body {
     padding: 0;
 }
@@ -202,14 +218,11 @@ ul {
         font-size: 16px;
     }
 }
-.dropdown-menu--custom {
-    border: none;
-    box-shadow: 3px 3px #f3d42e;
-    box-shadow: 0 0 10px 1px $gray-300;
-}
 
 
-//自製的checkbox，改bs4
+
+//客製bs4屬性，用於搭配bs4使用
+//客製bs4屬性--checkbox
 .custom-checkbox {
     padding-left: 32px;
     .custom-control-input {
@@ -251,31 +264,12 @@ ul {
     left: 0px;
     width: 100%;
 }
-.rowCardList {
-    .rowCardLine {
-        width: 100%;
-        position: relative;
-    }
-    .rowCardLine::after {
-        content: '';
-        border-bottom: 1px solid $gray-300;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
+.dropdown-menu--custom {
+    border: none;
+    box-shadow: 3px 3px #f3d42e;
+    box-shadow: 0 0 10px 1px $gray-300;
 }
-.rowCard img {
-    width: 255px;
-    height: auto;
-    max-height: 100%;
-    // object-fit超重要！！記起來
-    object-fit: cover;
-    @include pad-width {
-        width: 150px;
-        height: 100%;
-    }
-}
+//客製bs4屬性--分頁
 .custom-paginationBox {
     .pagination {
         border-radius: 0;
@@ -293,6 +287,7 @@ ul {
     }
 }
 
+//客製bs4屬性--表格
 .custom-table {
     .rowCard {
         li {
@@ -314,6 +309,8 @@ ul {
         padding: 8px 15px;
     }
 }
+
+//客製bs4屬性--nav
 .custom-nav {
     .nav-link {
         color: $secondary;
@@ -330,11 +327,8 @@ ul {
         border-bottom: 2px solid $primary;
     }
 }
-@include pad-width {
-    .bg-pd-transparent {
-        background-color: transparent !important;
-    }
-}
+
+//客製bs4屬性--大廣告看板
 .custom-jumbotron-lg {
     @include phone-width {
         padding-top: 24px;
@@ -342,3 +336,35 @@ ul {
     }
 }
 
+
+// 這區有點不知道要放哪一支scss
+.rowCard img {
+    width: 255px;
+    height: auto;
+    max-height: 100%;
+    // object-fit超重要！！記起來
+    object-fit: cover;
+    @include pad-width {
+        width: 150px;
+        height: 100%;
+    }
+}
+@include pad-width {
+    .bg-pd-transparent {
+        background-color: transparent !important;
+    }
+}
+.rowCardList {
+    .rowCardLine {
+        width: 100%;
+        position: relative;
+    }
+    .rowCardLine::after {
+        content: '';
+        border-bottom: 1px solid $gray-300;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}

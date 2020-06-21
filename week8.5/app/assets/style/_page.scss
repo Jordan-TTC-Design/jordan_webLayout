@@ -1,3 +1,4 @@
+// 首頁
 .homebanner {
     z-index: 1;
     position: relative;
@@ -15,14 +16,8 @@
         }
     }
 }
-.searchBar {
-    padding: 24px 0;
-    border-radius: 8px;
-    @include pad-width {
-        padding: 16px 0;
-    }
-}
 
+// 首頁的內容
 .topChoices {
     .card-img-top {
         height: 175px;
@@ -41,6 +36,7 @@
     }
 }
 
+// 搜尋結果頁
 .filterBox {
     position: relative;
     .filterInnerbox:not(:last-child) {
@@ -48,8 +44,45 @@
         margin-bottom: 24px;
         border-bottom: 1px solid white;
     }
+    //新增filiter動畫效果
+    @include phone-width {
+        position: fixed;
+        z-index: 60;
+        top: -150%;
+        overflow: auto;
+        height: 100vh;
+        margin-top: 60px;
+        transition: all 0.5s;
+        .filiterResultBtnBox {
+            visibility: hidden;
+            width: 100%;
+            left: 0;
+            bottom: -100%;
+            z-index: 61;
+            transition: all 1s;
+        }
+        .filterBoxTitle {
+            width: 100%;
+            left: 0;
+            top: -150%;
+            z-index: 61;
+            height: 60px;
+            transition: all 0.5s;
+        }
+        &.active {
+            top: 0;
+            .filterBoxTitle {
+                position: fixed;
+                top: 0%;
+            }
+            .filiterResultBtnBox {
+                position: fixed;
+                bottom: 0;
+                visibility: visible;
+            }
+        }
+    }
 }
-
 .pageItem__imgBox {
     .pageItem__img {
         flex-shrink: 1;
@@ -60,6 +93,32 @@
         height: 268px;
     }
 }
+// 產品頁面
+.detail {
+    .custom-swiper-banner {
+        height: 249px;
+        .swiper-button-prev,
+        .swiper-button-next {
+            // color: white;
+            display: block;
+            transform: translateY(-70%);
+        }
+    }
+}
+
+// 產品頁面點擊+1會出現的下面彈跳預定視窗
+.detail__reserveBox {
+    height: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    // 為什麼轉場沒法針對height:auto，反而會產生黑線
+    &.active {
+        height: auto;
+    }
+}
+
+// 登入頁面
 .loginHeader {
     margin-bottom: 104px;
     @include phone-width {
@@ -108,6 +167,8 @@
         }
     }
 }
+
+// 會員頁面
 .user-pic {
     width: 24px;
     height: 24px;
@@ -116,7 +177,9 @@
     width: 64px;
     height: 64px;
 }
+// 會員頁面裡面的booking列表
 .bookingList {
+    // booking的卡片
     .rowCard {
         @include phone-width {
         }
@@ -142,14 +205,7 @@
     }
 }
 
-.custom-swiper-banner {
-    .swiper-button-prev,
-    .swiper-button-next {
-        color: white;
-        display: block;
-        transform: translateY(-70%);
-    }
-}
+// reserve頁面
 .reserve {
     .custom-dropdown {
         @include phone-width {
@@ -164,21 +220,5 @@
                 margin-top: 8px;
             }
         }
-    }
-}
-
-.detail {
-    .custom-swiper-banner {
-        height: 249px;
-    }
-}
-.detail__reserveBox {
-    height: 0;
-    bottom: 0;
-    overflow: hidden;
-    transition: all 0.5s;
-            // 為什麼轉場沒法針對height:auto，反而會產生黑線
-    &.active {
-        height: auto;
     }
 }

@@ -19,4 +19,11 @@ $(document).ready(() => {
     $('#detailReserveCancel').click(function () {
         $('.detail__reserveBox').removeClass('active')
     })
+    $('#filiter').click(function () {
+        $('.filterBox').addClass('active')
+    })
+    $('#filterBoxClose').click(function () {
+        $('.filterBox').removeClass('active')
+    })
+    
 })

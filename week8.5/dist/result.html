@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>index</title>
+        <title>result</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
         <link rel="stylesheet" href="./assets/style/all.css" />
@@ -27,7 +27,7 @@
                             <li class="d-md-block d-none">
                                 <div class="dropdown">
                                     <a
-                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        class="btnLanguage dropdown-toggle btn--center--lg text-dark mr-6"
                                         href="#"
                                         role="button"
                                         id="dropdownMenuLink"
@@ -47,10 +47,10 @@
                                 </div>
                             </li>
                             <li class="d-md-block d-none">
-                                <a href="#" class="text-dark btn--center--lg mr-6">Sign up</a>
+                                <a href="#" class=" btn--center--lg text-dark mr-6">Sign up</a>
                             </li>
                             <li>
-                                <a href="./login.html" class="text-dark btn--center--lg">Login</a>
+                                <a href="./login.html" class=" btn--center--lg text-dark">Login</a>
                             </li>
                         </ul>
                     </nav>
@@ -71,7 +71,7 @@
                             <div class="col-auto flex-grow-1">
                                 <div class="dropdown">
                                     <button
-                                        class="btn btn-white text-xs text-dark font-weight-bold btn-custom-height p-lg-2 p-md-1 w-100 d-flex align-items-center"
+                                        class="btn btn-white btn-custom-height d-flex align-items-center p-lg-2 p-md-1 w-100 text-xs text-dark font-weight-bold"
                                         type="button"
                                         id="dropdownMenuButton"
                                         data-toggle="dropdown"
@@ -139,7 +139,7 @@
                             <div class="col-auto flex-grow-1">
                                 <div class="dropdown">
                                     <button
-                                        class="btn btn-white text-xs text-dark btn-custom-height p-lg-2 p-md-1 w-100 d-flex align-items-center font-weight-bold"
+                                        class="btn btn-white btn-custom-height d-flex align-items-center p-lg-2 p-md-1 w-100 text-xs text-dark font-weight-bold"
                                         type="button"
                                         id="dropdownMenuButton"
                                         data-toggle="dropdown"
@@ -213,7 +213,7 @@
                             <div class="col-auto flex-grow-1">
                                 <div class="dropdown">
                                     <button
-                                        class="btn btn-white text-xs text-dark font-weight-bold btn-custom-height p-lg-2 p-md-1 w-100 d-flex align-items-center"
+                                        class="btn btn-white btn-custom-height d-flex align-items-center p-lg-2 p-md-1 w-100 text-xs text-dark font-weight-bold"
                                         type="button"
                                         id="dropdownMenuButton"
                                         data-toggle="dropdown"
@@ -275,7 +275,7 @@
                                 <!-- 先改用a標籤 -->
                                 <a
                                     href="result.html"
-                                    class="btn btn-primary w-100 btn-custom-height font-weight-bold d-flex align-items-center justify-content-center"
+                                    class="btn btn-primary w-100 btn-custom-height d-flex align-items-center justify-content-center font-weight-bold"
                                     >SEARCH</a
                                 >
                             </div>
@@ -288,7 +288,7 @@
 </section>
 
 <!-- 手機版的搜尋bar -->
-<section class="searchControl-ph bg-bgColor mb-3 d-md-none">
+<section class="searchControl-ph d-md-none bg-bgColor mb-3">
     <div>
         <form>
             <div class="form-row d-flex flex-nowrap w-100">
@@ -484,7 +484,23 @@
                     <h1 class="pageTitle d-flex mb-lg-2 mb-md-3 mb-1 ff-title font-weight-bold title-pd-sm">
                         BangkoK <span class="font-md text-primary">3,240</span>
                     </h1>
-                    <aside class="filterBox rounded bg-bgColor p-3 d-md-block d-none">
+                    <aside class="filterBox rounded bg-bgColor p-3 d-md-block w-100">
+                        <div
+                            class="filterBoxTitle d-md-none d-flex justify-content-between align-items-center bg-white mb-3 px-2"
+                        >
+                            <p class="d-flex align-items-center">
+                                <span class="material-icons mr-1">
+                                    filter_list
+                                </span>
+                                Filter
+                            </p>
+                            <div>
+                                <span id="filterBoxClose" class="material-icons">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+
                         <form action="#">
                             <div class="filterInnerbox">
                                 <h5 class="text-rg font-weight-bold mb-2">Deals</h5>
@@ -659,6 +675,15 @@
                                 </div>
                             </div>
                         </form>
+                        <div class="filiterResultBtnBox d-md-none d-flex flex-column bg-dark rounded-top py-3 px-2">
+                            <h4 class="ff-title font-weight-bold text-white mb-3">Find 1,245 results</h4>
+                            <div class="d-flex w-100">
+                                <button class="btn-custom btn btn-outline-light w-50 font-weight-bold mr-1">
+                                    Clear
+                                </button>
+                                <button class="btn-custom btn btn-primary w-50 font-weight-bold">Filter</button>
+                            </div>
+                        </div>
                     </aside>
                 </div>
                 <!-- 右邊顯示列表 -->
@@ -666,7 +691,8 @@
                     <!-- 手機版塞選＆nav -->
                     <div class="d-md-none d-flex py-1 mb-1">
                         <button
-                            class="btn w-50 text-dark font-weight-bold py-1 d-flex align-items-center justify-content-center"
+                            id="filiter"
+                            class="btn d-flex align-items-center justify-content-center py-1 w-50 text-dark font-weight-bold"
                         >
                             <span class="material-icons mr-1">
                                 filter_list
@@ -674,7 +700,7 @@
                             Filter
                         </button>
                         <button
-                            class="btn w-50 text-dark font-weight-bold py-1 d-flex align-items-center justify-content-center"
+                            class="btn d-flex align-items-center justify-content-center py-1 w-50 text-dark font-weight-bold"
                         >
                             <span class="material-icons mr-1">
                                 sort
@@ -704,7 +730,8 @@
                     </ul>
                     <ul>
                         <!-- 好像應該要先寫好rwd在複製不然會累死 ?-->
-                        <li class="rowCard mb-lg-3 mb-md-2">
+                        <!-- 改成border-bottom取代line，卡片可觸控範圍變大 -->
+                        <li class="rowCard border-bottom pb-lg-3 pb-md-2">
                             <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
                                 <!-- <img
@@ -725,12 +752,12 @@
                                                     >・2 km from center</span
                                                 >
                                             </p>
-                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                            <h4 class="text-pd-rg font-weight-bold text-dark mb-lg-2 mb-md-1">
                                                 Rachada Hotel
                                             </h4>
                                         </div>
                                         <div
-                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                            class="d-flex align-items-center justify-content-end flex-wrap text-secondary"
                                         >
                                             <!-- 我覺得這裡好像不應該用flex -->
                                             <p class="d-flex">
@@ -768,8 +795,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="line"></li>
-                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                        <li class="rowCard border-bottom py-lg-3 py-md-2">
                             <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
                                 <!-- <img
@@ -790,12 +816,12 @@
                                                     >・2 km from center</span
                                                 >
                                             </p>
-                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                            <h4 class="text-pd-rg font-weight-bold text-dark mb-lg-2 mb-md-1">
                                                 Rachada Hotel
                                             </h4>
                                         </div>
                                         <div
-                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                            class="d-flex align-items-center justify-content-end flex-wrap text-secondary"
                                         >
                                             <!-- 我覺得這裡好像不應該用flex -->
                                             <p class="d-flex">
@@ -833,8 +859,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="line"></li>
-                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                        <li class="rowCard border-bottom py-lg-3 py-md-2">
                             <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
                                 <!-- <img
@@ -855,12 +880,12 @@
                                                     >・2 km from center</span
                                                 >
                                             </p>
-                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                            <h4 class="text-pd-rg font-weight-bold text-dark mb-lg-2 mb-md-1">
                                                 Rachada Hotel
                                             </h4>
                                         </div>
                                         <div
-                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                            class="d-flex align-items-center justify-content-end flex-wrap text-secondary"
                                         >
                                             <!-- 我覺得這裡好像不應該用flex -->
                                             <p class="d-flex">
@@ -898,8 +923,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="line"></li>
-                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                        <li class="rowCard border-bottom py-lg-3 py-md-2">
                             <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
                                 <!-- <img
@@ -920,12 +944,12 @@
                                                     >・2 km from center</span
                                                 >
                                             </p>
-                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                            <h4 class="text-pd-rg font-weight-bold text-dark mb-lg-2 mb-md-1">
                                                 Rachada Hotel
                                             </h4>
                                         </div>
                                         <div
-                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                            class="d-flex align-items-center justify-content-end flex-wrap text-secondary"
                                         >
                                             <!-- 我覺得這裡好像不應該用flex -->
                                             <p class="d-flex">
@@ -963,8 +987,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="line"></li>
-                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                        <li class="rowCard border-bottom py-lg-3 py-md-2">
                             <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
                                 <!-- <img
@@ -985,12 +1008,12 @@
                                                     >・2 km from center</span
                                                 >
                                             </p>
-                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                            <h4 class="text-pd-rg font-weight-bold text-dark mb-lg-2 mb-md-1">
                                                 Rachada Hotel
                                             </h4>
                                         </div>
                                         <div
-                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                            class="d-flex align-items-center justify-content-end flex-wrap text-secondary"
                                         >
                                             <!-- 我覺得這裡好像不應該用flex -->
                                             <p class="d-flex">
@@ -1028,8 +1051,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="line"></li>
-                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                        <li class="rowCard border-bottom py-lg-3 py-md-2">
                             <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
                                 <!-- <img
@@ -1050,12 +1072,12 @@
                                                     >・2 km from center</span
                                                 >
                                             </p>
-                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                            <h4 class="text-pd-rg font-weight-bold text-dark mb-lg-2 mb-md-1">
                                                 Rachada Hotel
                                             </h4>
                                         </div>
                                         <div
-                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                            class="d-flex align-items-center justify-content-end flex-wrap text-secondary"
                                         >
                                             <!-- 我覺得這裡好像不應該用flex -->
                                             <p class="d-flex">
@@ -1093,8 +1115,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="line"></li>
-                        <li class="rowCard mb-lg-3 mb-md-2 pt-lg-3 pt-md-2">
+                        <li class="rowCard border-bottom py-lg-3 py-md-2">
                             <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
                                 <!-- <img
@@ -1115,12 +1136,12 @@
                                                     >・2 km from center</span
                                                 >
                                             </p>
-                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                            <h4 class="text-pd-rg font-weight-bold text-dark mb-lg-2 mb-md-1">
                                                 Rachada Hotel
                                             </h4>
                                         </div>
                                         <div
-                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                            class="d-flex align-items-center justify-content-end flex-wrap text-secondary"
                                         >
                                             <!-- 我覺得這裡好像不應該用flex -->
                                             <p class="d-flex">
@@ -1158,7 +1179,6 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="line"></li>
                         <li class="rowCard mb-lg-3 mb-2 pt-lg-3 pt-md-2">
                             <!-- 這裡要用a? -->
                             <a href="./detail.html" class="d-flex">
@@ -1180,12 +1200,12 @@
                                                     >・2 km from center</span
                                                 >
                                             </p>
-                                            <h4 class="font-weight-bold text-dark mb-lg-2 mb-md-1 text-pd-rg">
+                                            <h4 class="text-pd-rg font-weight-bold text-dark mb-lg-2 mb-md-1">
                                                 Rachada Hotel
                                             </h4>
                                         </div>
                                         <div
-                                            class="text-secondary d-flex align-items-center justify-content-end flex-wrap"
+                                            class="d-flex align-items-center justify-content-end flex-wrap text-secondary"
                                         >
                                             <!-- 我覺得這裡好像不應該用flex -->
                                             <p class="d-flex">
@@ -1226,7 +1246,7 @@
                     </ul>
                     <!-- 最下面的分頁 -->
                     <nav
-                        class="custom-paginationBox d-flex justify-content-between align-items-center p-2 mx-md-0 mx-2 rounded bg-bgColor m-0-auto"
+                        class="custom-paginationBox d-flex justify-content-between align-items-center rounded bg-bgColor p-2 mx-md-0 mx-2 m-0-auto"
                         aria-label="Page navigation"
                     >
                         <!-- 想問這裡button需不需要包a，會不會影響disabled -->
@@ -1283,18 +1303,18 @@
                     <div
                         class="col-lg-7 col-12 d-flex align-items-center justify-content-md-between flex-md-row flex-column-reverse"
                     >
-                        <p class="mr-lg-8 text-secondary text-sm">© 2020 ALOHA, Inc. All rights reserved.</p>
+                        <p class="text-sm text-secondary mr-lg-8 ">© 2020 ALOHA, Inc. All rights reserved.</p>
 
                         <nav>
-                            <ul class="mb-md-0 mb-2 d-flex">
+                            <ul class=" d-flex mb-md-0 mb-2">
                                 <li>
-                                    <a href="#" class="mr-3 text-secondary text-sm">FAQs</a>
+                                    <a href="#" class="text-secondary text-sm mr-3">FAQs</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="mr-3 text-secondary text-sm">Terms of use</a>
+                                    <a href="#" class="text-secondary text-sm mr-3">Terms of use</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="mr-3 text-secondary text-sm">Privacy policy</a>
+                                    <a href="#" class="text-secondary text-sm mr-3">Privacy policy</a>
                                 </li>
                             </ul>
                         </nav>
@@ -1304,7 +1324,7 @@
                             <li>
                                 <div class="dropdown">
                                     <a
-                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        class="btnLanguage dropdown-toggle btn--center--lg text-dark mr-6"
                                         href="#"
                                         role="button"
                                         id="dropdownMenuLink"
@@ -1327,7 +1347,7 @@
                             <li>
                                 <div class="dropdown">
                                     <a
-                                        class="btnLanguage text-dark dropdown-toggle btn--center--lg mr-6"
+                                        class="btnLanguage dropdown-toggle btn--center--lg text-dark mr-6"
                                         href="#"
                                         role="button"
                                         id="dropdownMenuLink"
